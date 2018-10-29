@@ -1,7 +1,11 @@
-import User from 'components/User'
 import * as React from 'react'
+import { Router } from '@reach/router'
 import styled, { ThemeProvider } from 'styled-components'
-import { IUser } from 'utils/types'
+import Header from './Header'
+import Footer from './Footer'
+import Home from 'pages/Home'
+import About from 'pages/About'
+import Contact from 'pages/Contact'
 
 export const theme = {
   black: '#222222',
@@ -24,9 +28,21 @@ class App extends React.Component<{}, {}> {
     return (
       <React.StrictMode>
         <ThemeProvider theme={theme}>
-          <AppWrapper className="hi" data-testid="app">
-            <User>{({ user, error }: { user: IUser; error: string }) => <>{error && <h1>{error}</h1>}</>}</User>
-          </AppWrapper>
+          <>
+            <Router>
+              <Header path="/*" />
+            </Router>
+            <AppWrapper className="hi" data-testid="app">
+              <Router>
+                <Home path="/" />
+                <About path="/about" />
+                <Contact path="/contact" />
+              </Router>
+            </AppWrapper>
+            <Router primary={false}>
+              <Footer path="/*" />
+            </Router>
+          </>
         </ThemeProvider>
       </React.StrictMode>
     )
