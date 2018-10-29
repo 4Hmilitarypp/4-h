@@ -1,0 +1,11 @@
+{
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "node_modules/**/*.ts", "coverage/lcov-report/*.js"]
+  },
+  "rules": {
+    "jsx-no-lambda": false,
+    "curly": [true, "ignore-same-line"],
+    "no-console": { "options": "log", "severity": "warning" },
+    "member-access": false
+  }
+}
