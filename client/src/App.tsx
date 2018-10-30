@@ -12,7 +12,6 @@ export const theme = {
   green: '#0ac775',
   grey: '#364940',
   lightGrey: '#799687',
-  maxWidth: '1000px',
   primary1: '#654597',
   primary2: '#AB81CD',
   primary3: '#9C95DC',

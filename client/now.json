@@ -1,0 +1,15 @@
+{
+  "type": "static",
+  "static": {
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "index.html"
+      }
+    ]
+  },
+  "name": "4-hmpp",
+  "alias": "4-hmpp-test",
+  "dotenv": ".env",
+  "public": true
+}
