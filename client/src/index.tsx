@@ -1,9 +1,9 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import restApi from 'utils/api'
 import App from './App'
-import './styles/index.css'
-import './styles/reset.css'
+import './assets/styles/index.css'
+import './assets/styles/reset.css'
+import restApi from './utils/api'
 // import registerServiceWorker from './registerServicesWorker'
 
 restApi.init()

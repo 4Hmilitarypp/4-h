@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { IApiError, IUser } from 'utils/types'
+import { IApiError, IUser } from '../types'
 import restApi from '../utils/api'
 
 // TODO Add a error handler that will turn errors into

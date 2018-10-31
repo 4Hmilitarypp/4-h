@@ -1,4 +1,4 @@
-import Input from 'components/Input'
+import Input from '../Input'
 import * as React from 'react'
 import { cleanup, fireEvent, render } from 'react-testing-library'
 

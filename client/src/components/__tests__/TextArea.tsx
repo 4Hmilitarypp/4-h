@@ -1,4 +1,4 @@
-import TextArea from 'components/TextArea'
+import TextArea from '../TextArea'
 import * as React from 'react'
 import { cleanup, fireEvent, render } from 'react-testing-library'
 

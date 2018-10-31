@@ -2,8 +2,8 @@ import * as faker from 'faker'
 import * as React from 'react'
 import { cleanup, render, wait } from 'react-testing-library'
 jest.mock('utils/api')
-import restApi from 'utils/api'
-import { IApiError } from 'utils/types'
+import restApi from '../../utils/api'
+import { IApiError } from '../../types'
 import User from '../User'
 
 beforeEach(() => (restApi as any).reset())

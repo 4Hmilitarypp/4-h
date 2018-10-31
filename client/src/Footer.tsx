@@ -1,6 +1,6 @@
+import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components'
-import { RouteComponentProps } from '@reach/router'
 
 const Footer: React.SFC<RouteComponentProps> = () => (
   <FooterContainer>

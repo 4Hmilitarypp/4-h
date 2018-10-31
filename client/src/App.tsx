@@ -1,22 +1,19 @@
-import * as React from 'react'
 import { Router } from '@reach/router'
+import * as React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import Header from './Header'
 import Footer from './Footer'
-import Home from 'pages/Home'
-import About from 'pages/About'
-import Contact from 'pages/Contact'
+import Header from './Header'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
 
 export const theme = {
   black: '#222222',
   green: '#0ac775',
   grey: '#364940',
   lightGrey: '#799687',
-  primary1: '#654597',
-  primary2: '#AB81CD',
-  primary3: '#9C95DC',
-  primary4: '#C19AB7',
-  secondary: '#339966',
+  primary: '#339966',
+  secondary: '#5a2a82',
 
   warning: '#bb0000',
   white: '#fff',

@@ -9,16 +9,16 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
-    "react-scripts-ts": "3.1.0",
+    "react-scripts": "^2.1.0",
     "react-spring": "^5.9.2",
     "styled-components": "^4.0.2"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject",
-    "coverage": "react-scripts-ts test --env=jsdom --coverage"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --env=jsdom --coverage"
   },
   "devDependencies": {
     "@types/faker": "^4.1.4",
@@ -58,5 +58,11 @@
         "lines": 80
       }
     }
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

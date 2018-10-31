@@ -13,6 +13,8 @@ function reset() {
 }
 reset()
 
-module.exports = {
-  default: mock,
-}
+export default mock
+
+// module.exports = {
+//   default: mock,
+// }

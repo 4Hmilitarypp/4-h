@@ -1,5 +1,5 @@
 import * as axios from 'axios'
-import { IApiError, IUser } from 'utils/types'
+import { IApiError, IUser } from '../types'
 
 let api: axios.AxiosInstance
 let isLoggedIn: boolean
