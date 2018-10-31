@@ -16,4 +16,12 @@ export interface IApiError {
   }
 }
 
+export interface IBackgroundCoords {
+  height: number
+  left: number
+  open: boolean
+  top: number
+  width: number
+}
+
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>
