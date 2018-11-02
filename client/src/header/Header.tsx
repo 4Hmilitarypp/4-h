@@ -6,6 +6,8 @@ import logo from '../assets/images/4h-logo.png'
 import DropdownBackground from './DropdownBackground'
 import LinkGroup from './LinkGroup'
 
+const DropdownLink: React.SFC = props => <Link tabIndex={0} {...props} />
+
 const Header: React.SFC<RouteComponentProps> = () => {
   const [backgroundCoords, setBackgroundCoords] = React.useState({
     height: 100,
@@ -29,68 +31,68 @@ const Header: React.SFC<RouteComponentProps> = () => {
         </Heading>
         <Links>
           <LinkGroup title="About Us" manageBackground={backgroundManagement}>
-            <DropdownLink to="/about">
+            <StyledDropdownLink to="/about">
               <LinkTitle>About Us</LinkTitle>
               <LinkDescription>Learn about the 4-H Military Partnership</LinkDescription>
-            </DropdownLink>
-            <DropdownLink to="/history">
+            </StyledDropdownLink>
+            <StyledDropdownLink to="/history">
               <LinkTitle>History</LinkTitle>
               <LinkDescription>Learn about our history</LinkDescription>
-            </DropdownLink>
+            </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="Partners" manageBackground={backgroundManagement}>
-            <DropdownLink to="/partners">
+            <StyledDropdownLink to="/partners">
               <LinkTitle>Partners List</LinkTitle>
               <LinkDescription>View all of the partners affiliated with 4-H</LinkDescription>
-            </DropdownLink>
+            </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="Events" manageBackground={backgroundManagement}>
-            <DropdownLink to="/past-events">
+            <StyledDropdownLink to="/past-events">
               <LinkTitle>Past Events</LinkTitle>
               <LinkDescription>Check out some of the past events we have sponsored</LinkDescription>
-            </DropdownLink>
-            <DropdownLink to="/upcoming-events">
+            </StyledDropdownLink>
+            <StyledDropdownLink to="/upcoming-events">
               <LinkTitle>Upcoming Events</LinkTitle>
               <LinkDescription>Get involved with one of our upcoming events</LinkDescription>
-            </DropdownLink>
-            <DropdownLink to="/photos">
+            </StyledDropdownLink>
+            <StyledDropdownLink to="/photos">
               <LinkTitle>Photos</LinkTitle>
               <LinkDescription>View some of the photos taken at our fun events</LinkDescription>
-            </DropdownLink>
+            </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="4-H Club" manageBackground={backgroundManagement}>
-            <DropdownLink to="/4-h-club">
+            <StyledDropdownLink to="/4-h-club">
               <LinkTitle>About</LinkTitle>
               <LinkDescription>Learn about 4-H club in general</LinkDescription>
-            </DropdownLink>
-            <DropdownLink as="a" href="https://4-h.org">
+            </StyledDropdownLink>
+            <StyledDropdownLink as="a" href="https://4-h.org">
               <LinkTitle>4-H Website</LinkTitle>
               <LinkDescription>Check out the 4-H official website</LinkDescription>
-            </DropdownLink>
+            </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="Educators" manageBackground={backgroundManagement}>
-            <DropdownLink to="/webinars">
+            <StyledDropdownLink to="/webinars">
               <LinkTitle>Webinars</LinkTitle>
               <LinkDescription>Watch recorded webinars</LinkDescription>
-            </DropdownLink>
-            <DropdownLink to="/research">
+            </StyledDropdownLink>
+            <StyledDropdownLink to="/research">
               <LinkTitle>Research</LinkTitle>
               <LinkDescription>Read up on some relevant research articles</LinkDescription>
-            </DropdownLink>
-            <DropdownLink to="/resources">
+            </StyledDropdownLink>
+            <StyledDropdownLink to="/resources">
               <LinkTitle>Resources</LinkTitle>
               <LinkDescription>Find the educating resources you need</LinkDescription>
-            </DropdownLink>
+            </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="Connect" manageBackground={backgroundManagement}>
-            <DropdownLink to="/find-a-liaison">
+            <StyledDropdownLink to="/find-a-liaison">
               <LinkTitle>Find A Liaison</LinkTitle>
               <LinkDescription>Get connected with the liaison closest to you</LinkDescription>
-            </DropdownLink>
-            <DropdownLink to="/contact-us">
+            </StyledDropdownLink>
+            <StyledDropdownLink to="/contact-us">
               <LinkTitle>Contact Us</LinkTitle>
               <LinkDescription>Send us a message to answer any questions</LinkDescription>
-            </DropdownLink>
+            </StyledDropdownLink>
           </LinkGroup>
         </Links>
         <SignIn to="sign-in">Sign In</SignIn>
@@ -131,7 +133,7 @@ const Links = styled.ul`
 const LinkTitle = styled.p`
   color: ${props => props.theme.primary};
 `
-const DropdownLink: any = styled(Link)`
+const StyledDropdownLink: any = styled(DropdownLink)`
   display: block;
   &:not(:first-child) {
     padding-top: 1rem;

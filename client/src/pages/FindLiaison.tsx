@@ -2,8 +2,8 @@ import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components'
 
-const About: React.SFC<RouteComponentProps> = () => <PageWrapper>About</PageWrapper>
-export default About
+const FindLiaison: React.SFC<RouteComponentProps> = () => <PageWrapper>FindLiaison</PageWrapper>
+export default FindLiaison
 
 const PageWrapper = styled.div`
   padding: 2rem;

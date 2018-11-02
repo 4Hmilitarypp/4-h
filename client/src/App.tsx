@@ -4,8 +4,19 @@ import styled, { ThemeProvider } from 'styled-components'
 import Footer from './Footer'
 import Header from './header/Header'
 import About from './pages/About'
+import About4HClub from './pages/About4HClub'
 import Contact from './pages/Contact'
+import FindLiaison from './pages/FindLiaison'
+import History from './pages/History'
 import Home from './pages/Home'
+import Partners from './pages/Partners'
+import PastEvents from './pages/PastEvents'
+import Photos from './pages/Photos'
+import Research from './pages/Research'
+import Resources from './pages/Resources'
+import SignIn from './pages/SignIn'
+import UpcomingEvents from './pages/UpcomingEvents'
+import Webinars from './pages/Webinars'
 
 export const theme = {
   black: '#222222',
@@ -34,6 +45,19 @@ class App extends React.Component<{}, {}> {
               <Home path="/" />
               <About path="/about" />
               <Contact path="/contact" />
+              <About path="/about" />
+              <History path="/history" />
+              <Partners path="/partners" />
+              <PastEvents path="/past-events" />
+              <UpcomingEvents path="/upcoming-events" />
+              <Photos path="/photos" />
+              <About4HClub path="/4-h-club" />
+              <Webinars path="/webinars" />
+              <Research path="/research" />
+              <Resources path="/resources" />
+              <FindLiaison path="/find-a-liaison" />
+              <Contact path="/contact-us" />
+              <SignIn path="sign-in" />
             </Router>
             <Router primary={false}>
               <Footer path="/*" />

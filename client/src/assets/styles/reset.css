@@ -163,3 +163,7 @@ input,
 textarea {
   color: #222222;
 }
+
+:focus:not(:focus-visible) {
+  outline: none;
+}

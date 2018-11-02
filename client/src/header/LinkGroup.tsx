@@ -13,10 +13,23 @@ const UnstyledLinkGroup: React.SFC<IProps> = ({ children, manageBackground, titl
 
   const handleClick = () => {
     manageBackground.setOpen(false)
-    handleMouseLeave()
+    hideDropdownAndBackground()
   }
 
-  const handleMouseEnter = (e: React.MouseEvent<HTMLLIElement>) => {
+  const handleBlur = (e: any) => {
+    if (!e.relatedTarget || e.relatedTarget.tabIndex === -1) {
+      hideDropdownAndBackground()
+      return
+    }
+    if (dropdownRef.current) {
+      dropdownRef.current.focus()
+      if (e.relatedTarget.tagName === 'SPAN' || e.relatedTarget.innerHTML === 'Sign In') {
+        hideDropdownAndBackground()
+      }
+    }
+  }
+
+  const showDropDownAndBackground = () => {
     const liNode = liRef.current
     const dropdownNode = dropdownRef.current
     if (liNode) {
@@ -37,15 +50,23 @@ const UnstyledLinkGroup: React.SFC<IProps> = ({ children, manageBackground, titl
       manageBackground.setCoords(coords)
     }
   }
-  const handleMouseLeave = () => {
+  const hideDropdownAndBackground = () => {
     if (liRef.current) {
       liRef.current.classList.remove('trigger-enter', 'trigger-enter-active')
     }
     manageBackground.setOpen(false)
   }
   return (
-    <li {...rest} ref={liRef} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <DropdownTitle>{title}</DropdownTitle>
+    <li
+      {...rest}
+      ref={liRef}
+      onFocus={showDropDownAndBackground}
+      onBlur={handleBlur}
+      onClick={handleClick}
+      onMouseEnter={showDropDownAndBackground}
+      onMouseLeave={hideDropdownAndBackground}
+    >
+      <DropdownTitle tabIndex={0}>{title}</DropdownTitle>
       <Dropdown ref={dropdownRef as any}>{children}</Dropdown>
     </li>
   )
