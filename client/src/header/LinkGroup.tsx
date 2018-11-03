@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import { IBackgroundCoords, Omit } from '../types'
 
 interface IProps {
-  manageBackground: { setCoords: (coords: Omit<IBackgroundCoords, 'open'>) => void; setOpen: (open: boolean) => void }
+  manageBackground: {
+    setCoords: (coords: Omit<IBackgroundCoords, 'open'>) => void
+    setOpen: (open: boolean) => void
+    navRef: React.RefObject<HTMLDivElement>
+  }
   title: string
 }
 
@@ -38,12 +42,13 @@ const UnstyledLinkGroup: React.SFC<IProps> = ({ children, manageBackground, titl
       setTimeout(() => liNode.classList.contains('trigger-enter') && liNode.classList.add('trigger-enter-active'), 150)
       manageBackground.setOpen(true)
     }
-    if (dropdownNode) {
+    if (dropdownNode && manageBackground.navRef.current) {
       const dropdownCoords = dropdownNode.getBoundingClientRect()
+      const navCoords = manageBackground.navRef.current.getBoundingClientRect()
       const coords = {
         height: dropdownCoords.height,
         left: dropdownCoords.left,
-        top: dropdownCoords.top,
+        top: dropdownCoords.top - navCoords.top,
         width: dropdownCoords.width,
       }
 

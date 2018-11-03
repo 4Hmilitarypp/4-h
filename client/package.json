@@ -6,8 +6,11 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "axios": "^0.18.0",
+    "downshift": "^3.1.4",
+    "match-sorter": "^2.3.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0-alpha.0",
+    "react-cache": "^2.0.0-alpha.1",
     "react-dom": "^16.7.0-alpha.0",
     "react-scripts": "^2.1.1",
     "react-spring": "^6.1.6",
@@ -24,6 +27,7 @@
   "devDependencies": {
     "@types/faker": "^4.1.4",
     "@types/jest": "^23.3.8",
+    "@types/match-sorter": "^2.2.0",
     "@types/node": "^10.12.2",
     "@types/reach__router": "^1.2.0",
     "@types/react": "^16.4.18",
@@ -46,12 +50,10 @@
       "src/**/*.js",
       "src/**/*.ts",
       "src/**/*.tsx",
-      "!src/registerServiceWorker.js",
-      "!src/index.js",
-      "!src/utils/colors.js",
-      "!src/utils/mixins.js",
-      "!src/utils/fakeData.js",
-      "!src/utils/api.js"
+      "!src/registerServiceWorker.ts",
+      "!src/index.ts",
+      "!src/utils/mixins.ts",
+      "!src/utils/api.ts"
     ],
     "coverageThreshold": {
       "global": {

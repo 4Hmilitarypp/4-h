@@ -16,11 +16,13 @@ const Header: React.SFC<RouteComponentProps> = () => {
     width: 100,
   })
   const [backgroundOpen, setBackgroundOpen] = React.useState(false)
-  const backgroundManagement = { setCoords: setBackgroundCoords, setOpen: setBackgroundOpen }
+  const navRef = React.useRef<HTMLDivElement>()
+  const backgroundManagement = { setCoords: setBackgroundCoords, setOpen: setBackgroundOpen, navRef }
 
   return (
     <>
       <DropdownBackground {...backgroundCoords} open={backgroundOpen} />
+      {/* Add a memo to the header / profile it with react dev tools */}
       <HeaderContainer>
         <Heading to="/">
           <Title>
@@ -29,7 +31,7 @@ const Header: React.SFC<RouteComponentProps> = () => {
           </Title>
           <Logo src={logo} />
         </Heading>
-        <Links>
+        <Links ref={navRef as any}>
           <LinkGroup title="About Us" manageBackground={backgroundManagement}>
             <StyledDropdownLink to="/about">
               <LinkTitle>About Us</LinkTitle>
@@ -86,6 +88,10 @@ const Header: React.SFC<RouteComponentProps> = () => {
           </LinkGroup>
           <LinkGroup title="Connect" manageBackground={backgroundManagement}>
             <StyledDropdownLink to="/find-a-liaison">
+              <LinkTitle>What is a Liaison?</LinkTitle>
+              <LinkDescription>Learn about how our liaisons can assist you</LinkDescription>
+            </StyledDropdownLink>
+            <StyledDropdownLink to="/find-a-liaison/#search">
               <LinkTitle>Find A Liaison</LinkTitle>
               <LinkDescription>Get connected with the liaison closest to you</LinkDescription>
             </StyledDropdownLink>
@@ -118,7 +124,9 @@ const Title = styled.div`
   padding-left: 2rem;
   font-weight: bold;
 `
-const TitleWords = styled.div``
+const TitleWords = styled.div`
+  line-height: 1.4;
+`
 const Logo = styled.img`
   height: 4.2rem;
   padding-left: 2rem;

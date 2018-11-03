@@ -1,6 +1,6 @@
-import Input from '../Input'
 import * as React from 'react'
 import { cleanup, fireEvent, render } from 'react-testing-library'
+import Input from '../Input'
 
 afterEach(cleanup)
 

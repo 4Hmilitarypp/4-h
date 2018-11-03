@@ -1,0 +1,403 @@
+[
+  {
+    "region": "Alabama",
+    "name": "Molly Gregg",
+    "phoneNumber": "+1-334-844-2263",
+    "email": "greggmh@aces.edu",
+    "abbreviation": "AL"
+  },
+  {
+    "region": "Alaska",
+    "name": "Candi Dierenfield",
+    "phoneNumber": "+1-907-474-1909",
+    "email": "cldierenfield@alaska.edu",
+    "abbreviation": "AK"
+  },
+  {
+    "region": "Arizona",
+    "name": "Kim Christman",
+    "phoneNumber": "+1-602-827-8291",
+    "email": "kchristman@email.arizona.edu",
+    "abbreviation": "AZ"
+  },
+  {
+    "region": "Arkansas",
+    "name": "Angie Freel",
+    "phoneNumber": "+1-501-671-2000",
+    "email": "afreel@uaex.edu",
+    "abbreviation": "AR"
+  },
+  {
+    "region": "California",
+    "name": "Shannon Horrillo",
+    "phoneNumber": "+1-530-750-1334",
+    "email": "sjhorrillo@ucanr.edu",
+    "abbreviation": "CA"
+  },
+  {
+    "region": "Colorado",
+    "name": "Vanessa Tranel",
+    "phoneNumber": "+1-719-251-0926",
+    "email": "vanessa.tranel@colostate.edu",
+    "abbreviation": "CO"
+  },
+  {
+    "region": "Connecticut",
+    "name": "Pam Gray",
+    "phoneNumber": "+1-869-885-2824",
+    "email": "pamela.gray@uconn.edu",
+    "abbreviation": "CT"
+  },
+  {
+    "region": "Delaware",
+    "name": "Doug Crouse",
+    "phoneNumber": "+1-302-730-4000",
+    "email": "dcrouse@udel.edu ",
+    "abbreviation": "DE"
+  },
+  {
+    "region": "Florida",
+    "name": "Paula Davis",
+    "phoneNumber": "+1-850-784-6105",
+    "email": "pmdavis@ufl.edu",
+    "abbreviation": "FL"
+  },
+  {
+    "region": "Georgia",
+    "name": "Casey Mull",
+    "phoneNumber": "+1-706-542-4444",
+    "email": "mullcd2@uga.edu",
+    "abbreviation": "GA"
+  },
+  {
+    "region": "Guam",
+    "name": "Cliff Kyota",
+    "phoneNumber": "+1-671-735-2040/4",
+    "email": "ckyota@uguam.uog.edu",
+    "abbreviation": "GU"
+  },
+  {
+    "region": "Hawaii",
+    "name": "Jeff Goodwin",
+    "phoneNumber": "+1-808-956-4106",
+    "email": "jeffg3@hawaii.edu",
+    "abbreviation": "HI"
+  },
+  {
+    "region": "Idaho",
+    "name": "James Lindstrom",
+    "phoneNumber": "+1-208-885-7276",
+    "email": "jlindstrom@uidaho.edu",
+    "abbreviation": "ID"
+  },
+  {
+    "region": "Illinois",
+    "name": "Pat McGlaughlin",
+    "phoneNumber": "+1-217-333-0910",
+    "email": "patm@illinois.edu",
+    "abbreviation": "IL"
+  },
+  {
+    "region": "Indiana",
+    "name": "Steve McKinley",
+    "phoneNumber": "+1-765-494-8435",
+    "email": "mckinles@purdue.edu ",
+    "abbreviation": "IN"
+  },
+  {
+    "region": "Iowa",
+    "name": "Jacki Luckstead",
+    "phoneNumber": "+1-319-465-3224",
+    "email": "luckstea@iastate.edu",
+    "abbreviation": "IA"
+  },
+  {
+    "region": "Kansas",
+    "name": "Wade Weber",
+    "phoneNumber": "+1-785-532-5800",
+    "email": "wweber@ksu.edu",
+    "abbreviation": "KS"
+  },
+  {
+    "region": "Kentucky",
+    "name": "Jennifer Tackett",
+    "phoneNumber": "+1-859-257-5961 x. 251",
+    "email": "jennifer.tackett@uky.edu",
+    "abbreviation": "KY"
+  },
+  {
+    "region": "Louisiana",
+    "name": "Tanya Giroir",
+    "phoneNumber": "+1-225-578-2196",
+    "email": "tagiroir@agcenter.lsu.edu",
+    "abbreviation": "LA"
+  },
+  {
+    "region": "Maine",
+    "name": "Ryder Scott",
+    "phoneNumber": "+1-207-665-2935",
+    "email": "ryder.scott@maine.edu ",
+    "abbreviation": "ME"
+  },
+  {
+    "region": "Maryland",
+    "name": "Sandy Corridon",
+    "phoneNumber": "+1-301-314-7363",
+    "email": "corridon@umd.edu",
+    "abbreviation": "MD"
+  },
+  {
+    "region": "Massachusetts",
+    "name": "Linda Horn",
+    "phoneNumber": "+1-413-577-0332",
+    "email": "lrhorn@umext.umass.edu",
+    "abbreviation": "MA"
+  },
+  {
+    "region": "Michigan",
+    "name": "Kendra Moyses",
+    "phoneNumber": "+1-517-432-7654",
+    "email": "kmoyses@anr.msu.edu",
+    "abbreviation": "MI"
+  },
+  {
+    "region": "Minnesota",
+    "name": "Amber Greeley",
+    "phoneNumber": "+1-612-624-8198",
+    "email": "runk0014@umn.edu",
+    "abbreviation": "MN"
+  },
+  {
+    "region": "Mississippi",
+    "name": "James Henderson",
+    "phoneNumber": "+1-228-546-1000",
+    "email": "jeh149@msstate.edu",
+    "abbreviation": "MS"
+  },
+  {
+    "region": "Missouri",
+    "name": "Teresa Bishop",
+    "phoneNumber": "+1-573-884-0554",
+    "email": "bishopta@missouri.edu",
+    "abbreviation": "MO"
+  },
+  {
+    "region": "Montana",
+    "name": "Todd Kesner",
+    "phoneNumber": "+1-406-994-6816",
+    "email": "tkesner@montana.edu",
+    "abbreviation": "MT"
+  },
+  {
+    "region": "Nebraska",
+    "name": "Karly Black",
+    "phoneNumber": "+1-402-852-2970",
+    "email": "karly.black@unl.edu",
+    "abbreviation": "NE"
+  },
+  {
+    "region": "Nevada",
+    "name": "Eric Killian",
+    "phoneNumber": "+1-702-257-5542",
+    "email": "killiane@unce.unr.edu",
+    "abbreviation": "NV"
+  },
+  {
+    "region": "Ohio",
+    "name": "Theresa Ferrari",
+    "phoneNumber": "+1-614-247-8164",
+    "email": "ferrari.8@osu.edu",
+    "abbreviation": "OH"
+  },
+  {
+    "region": "Oklahoma",
+    "name": "Jeff Sallee",
+    "phoneNumber": "+1-405-744-8885",
+    "email": "jeff.sallee@okstate.edu",
+    "abbreviation": "OK"
+  },
+  {
+    "region": "Oregon",
+    "name": "John Baggott",
+    "phoneNumber": "+1-541-963-1010",
+    "email": "john.baggott@oregonstate.edu",
+    "abbreviation": "OR"
+  },
+  {
+    "region": "Tennessee",
+    "name": "Justin Crowe",
+    "phoneNumber": "+1-865-974-2128",
+    "email": "jcrowe3@utk.edu",
+    "abbreviation": "TN"
+  },
+  {
+    "region": "Texas",
+    "name": "JaNelle Casson",
+    "phoneNumber": "+1-254-774-6027",
+    "email": "janelle.casson@ag.tamu.edu",
+    "abbreviation": "TX"
+  },
+  {
+    "region": "Utah",
+    "name": "Dave Francis",
+    "phoneNumber": "+1-435-760-4109",
+    "email": "dave.francis@usu.edu",
+    "abbreviation": "UT"
+  },
+  {
+    "region": "Vermont",
+    "name": "Sarah Kleinman",
+    "phoneNumber": "+1-802-656-0311",
+    "email": "sarah.kleinman@uvm.edu",
+    "abbreviation": "VT"
+  },
+  {
+    "region": "Virginia",
+    "name": "Tonya Price",
+    "phoneNumber": "+1-540-432-6029",
+    "email": "tonyaprice@vt.edu ",
+    "abbreviation": "VA"
+  },
+  {
+    "region": "Washington",
+    "name": "Gary Varella",
+    "phoneNumber": "+1-509-477-2163",
+    "email": "gvarrella@spokanecounty.org",
+    "abbreviation": "WA"
+  },
+  {
+    "region": "Wisconsin",
+    "name": "Sue Curtis",
+    "phoneNumber": "+1-608-342-1308",
+    "email": "sue.curtis@ces.uwex.edu ",
+    "abbreviation": "WI"
+  },
+  {
+    "region": "Wyoming",
+    "name": "Johnathan Despain",
+    "phoneNumber": "+1-307-766-5170",
+    "email": "jdespain@uwyo.edu",
+    "abbreviation": "WY"
+  },
+  {
+    "region": "New Hampshire",
+    "name": "Charlotte Cross",
+    "phoneNumber": "+1-603-862-2495",
+    "email": "",
+    "abbreviation": "NH"
+  },
+  {
+    "region": "New Jersey",
+    "name": "Gloria Kraft",
+    "phoneNumber": "+1-609-265-5052",
+    "email": "kraft@njaes.rutgers.edu",
+    "abbreviation": "NJ"
+  },
+  {
+    "region": "New Mexico",
+    "name": "Brittany Sonntag",
+    "phoneNumber": "+1-505-243-1386",
+    "email": "bsonntag@nmsu.edu ",
+    "abbreviation": "NM"
+  },
+  {
+    "region": "New York",
+    "name": "Stephanie Graf",
+    "phoneNumber": "+1-315-788-8450",
+    "email": "sag58@cornell.edu",
+    "abbreviation": "NY"
+  },
+  {
+    "region": "Virgin Islands",
+    "name": "Sarah D. Smith",
+    "phoneNumber": "+1-340-692-4084",
+    "email": "sdahl@uvi.edu",
+    "abbreviation": "VI"
+  },
+  {
+    "region": "West Virginia",
+    "name": "Matthew Schmuck",
+    "phoneNumber": "+1-304-406-7014",
+    "email": "matthew.schmuck@mail.wvu.edu",
+    "abbreviation": "WV"
+  },
+  {
+    "region": "Rhode Island",
+    "name": "Kristina Horan",
+    "phoneNumber": "+1-401-874-2959",
+    "email": "kstone@uri.edu",
+    "abbreviation": "RI"
+  },
+  {
+    "region": "South Carolina",
+    "name": "Pam Ardern",
+    "phoneNumber": "+1-864-650-0295",
+    "email": "pardern@clemson.edu",
+    "abbreviation": "SC"
+  },
+  {
+    "region": "South Dakota",
+    "name": "Peter Nielson",
+    "phoneNumber": "+1-605-688-4167",
+    "email": "peter.neilson@sdstate.edu",
+    "abbreviation": "SD"
+  },
+  {
+    "region": "North Carolina",
+    "name": "Harriett Edwards",
+    "phoneNumber": "+1-919-515-9548",
+    "email": "harriett_edwards@ncsu.edu ",
+    "abbreviation": "NC"
+  },
+  {
+    "region": "North Dakota",
+    "name": "Bradley Cogdill",
+    "phoneNumber": "+1-701-231-7253",
+    "email": "brad.cogdill@ndsu.edu",
+    "abbreviation": "ND"
+  },
+  {
+    "region": "Puerto Rico",
+    "name": "Judith Conde Pacheco",
+    "email": "judith.conde@upr.edu",
+    "abbreviation": "PR"
+  },
+  {
+    "region": "American Samoa",
+    "name": "Molly Asifoa-Lagai",
+    "phoneNumber": "+1-684-699-5011",
+    "email": "mlagai@yahoo.com",
+    "abbreviation": "AS"
+  },
+  {
+    "region": "District of Columbia",
+    "name": "Rebecca Bankhead",
+    "phoneNumber": "+1-202-274-7081",
+    "email": "rbankhead@udc.edu "
+  },
+  { "region": "Pennsylvania", "abbreviation": "PA" },
+  {
+    "region": "Europe Air Force and Cuba Navy supported by Florida",
+    "name": "Paula Davis",
+    "phoneNumber": "+1-850-784-6105",
+    "email": "pmdavis@ufl.edu"
+  },
+  {
+    "region": "Europe Army & Navy supported by Maryland",
+    "name": "Sandy Corridon",
+    "phoneNumber": "+1-301-314-7363",
+    "email": "corridon@umd.edu"
+  },
+  {
+    "region": "Japan & Korea – Army & Navy and Kwajalein supported by Hawaii",
+    "name": "Jeff Goodwin",
+    "phoneNumber": "+1-808-956-4106",
+    "email": "jeffg3@hawaii.edu"
+  },
+  {
+    "region": "Japan & Korea Air Force supported by Alaska",
+    "name": "Candi Dierenfield",
+    "phoneNumber": "+1-907-474-1909",
+    "email": "cldierenfield@alaska.edu"
+  }
+]

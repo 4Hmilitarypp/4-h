@@ -18,8 +18,7 @@ export const InputGroup = styled.div`
   select {
     width: 100%;
     border-radius: 5px;
-    padding: 0.7rem 1.2rem;
-    height: 3.4rem;
+    padding: 0.9rem 1.5rem;
     border: none;
     background: ${props => props.theme.lightGrey};
   }

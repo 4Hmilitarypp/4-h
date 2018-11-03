@@ -1,5 +1,5 @@
 export interface IHashProps {
-  ref: React.RefObject<HTMLElement>
+  refToFocus: React.RefObject<HTMLElement>
   hash: string
   location: any
 }
@@ -28,6 +28,14 @@ export interface IBackgroundCoords {
   open: boolean
   top: number
   width: number
+}
+
+export interface ILiaison {
+  email?: string | null
+  name?: string | null
+  phoneNumber?: string | null
+  region: string
+  abbreviation?: string | null
 }
 
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>

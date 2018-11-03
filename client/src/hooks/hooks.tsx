@@ -7,12 +7,12 @@ export const useFormInput = (initialValue: string) => {
   return { value, onChange: handleChange }
 }
 
-export const useHash = ({ ref, hash, location }: IHashProps) => {
+export const useHash = ({ refToFocus, hash, location }: IHashProps) => {
   React.useEffect(() => {
     if (location && location.hash === hash) {
-      const pastEventNode = ref.current
-      if (pastEventNode) {
-        pastEventNode.scrollIntoView()
+      const node = refToFocus.current
+      if (node) {
+        node.scrollIntoView()
       }
     }
   }, [])

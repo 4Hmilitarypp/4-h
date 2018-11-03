@@ -7,5 +7,5 @@ import restApi from './utils/api'
 // import registerServiceWorker from './registerServicesWorker'
 
 restApi.init()
-ReactDOM.render(<App />, document.getElementById('root'))
+;(ReactDOM as any).createRoot(document.getElementById('root')).render(<App />)
 // registerServiceWorker()

@@ -11,4 +11,5 @@ declare module 'react' {
   function useImperativeMethods<T>(ref: React.Ref<T>, createInstance: () => T, inputs?: ReadonlyArray<unknown>): void
   const useMutationEffect: typeof useEffect
   const useLayoutEffect: typeof useEffect
+  const Suspense: any
 }

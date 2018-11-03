@@ -1,5 +1,5 @@
 import * as axios from 'axios'
-import { IApiError, IUser } from '../types'
+import { IApiError, ILiaison, IUser } from '../types'
 
 let api: axios.AxiosInstance
 let isLoggedIn: boolean
@@ -52,6 +52,10 @@ const users = {
   update: (id: string, updates: Partial<IUser>) => requests.put(`/users/${id}`, updates),
 }
 
+const liaisons = {
+  get: (): Promise<{ liaisons: ILiaison[] }> => requests.get('/liaisons'),
+}
+
 function logout() {
   window.localStorage.removeItem('token')
   init({ token: undefined })
@@ -81,6 +85,7 @@ const restApi = {
   auth,
   init,
   users,
+  liaisons,
 }
 
 export default restApi
