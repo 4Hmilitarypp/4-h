@@ -1,3 +1,9 @@
+export interface IHashProps {
+  ref: React.RefObject<HTMLElement>
+  hash: string
+  location: any
+}
+
 export interface IUser {
   email?: string
   name: string

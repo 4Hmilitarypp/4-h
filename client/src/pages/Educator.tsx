@@ -3,12 +3,12 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { Heading, PageWrapper } from '../components/Elements'
 
-const About: React.SFC<RouteComponentProps> = () => (
+const Educator: React.SFC<RouteComponentProps> = () => (
   <PageWrapper>
-    <Heading>About</Heading>
+    <Heading>Educator</Heading>
     <Hi />
   </PageWrapper>
 )
-export default About
+export default Educator
 
 const Hi = styled.p``

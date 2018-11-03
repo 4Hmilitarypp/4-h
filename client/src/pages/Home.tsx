@@ -1,9 +1,14 @@
+import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components'
-import { RouteComponentProps } from '@reach/router'
-const Home: React.SFC<RouteComponentProps> = () => <PageWrapper>Home</PageWrapper>
+import { Heading, PageWrapper } from '../components/Elements'
+
+const Home: React.SFC<RouteComponentProps> = () => (
+  <PageWrapper>
+    <Heading>Educator</Heading>
+    <Hi />
+  </PageWrapper>
+)
 export default Home
 
-const PageWrapper = styled.div`
-  padding: 2rem;
-`
+const Hi = styled.p``

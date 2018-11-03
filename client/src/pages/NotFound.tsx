@@ -3,12 +3,12 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { Heading, PageWrapper } from '../components/Elements'
 
-const About: React.SFC<RouteComponentProps> = () => (
+const NotFound: React.SFC<RouteComponentProps> = () => (
   <PageWrapper>
-    <Heading>About</Heading>
+    <Heading>Not Found</Heading>
     <Hi />
   </PageWrapper>
 )
-export default About
+export default NotFound
 
 const Hi = styled.p``

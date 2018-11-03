@@ -1,10 +1,14 @@
 import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components'
+import { Heading, PageWrapper } from '../components/Elements'
 
-const Partners: React.SFC<RouteComponentProps> = () => <PageWrapper>Partners</PageWrapper>
+const Partners: React.SFC<RouteComponentProps> = () => (
+  <PageWrapper>
+    <Heading>Partners</Heading>
+    <Hi />
+  </PageWrapper>
+)
 export default Partners
 
-const PageWrapper = styled.div`
-  padding: 2rem;
-`
+const Hi = styled.p``

@@ -25,6 +25,18 @@ export const InputGroup = styled.div`
   }
 `
 
+export const PageWrapper = styled.div`
+  padding: 2rem;
+  max-width: 140rem;
+  margin: 0 auto;
+`
+
+export const Heading = styled.h1`
+  color: ${props => props.theme.gray};
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+`
+
 export const Button = styled.button`
   border-radius: 5px;
   color: ${props => props.theme.white};

@@ -47,11 +47,11 @@ const Header: React.SFC<RouteComponentProps> = () => {
             </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="Events" manageBackground={backgroundManagement}>
-            <StyledDropdownLink to="/past-events">
+            <StyledDropdownLink to="/events/#past-events">
               <LinkTitle>Past Events</LinkTitle>
               <LinkDescription>Check out some of the past events we have sponsored</LinkDescription>
             </StyledDropdownLink>
-            <StyledDropdownLink to="/upcoming-events">
+            <StyledDropdownLink to="/events">
               <LinkTitle>Upcoming Events</LinkTitle>
               <LinkDescription>Get involved with one of our upcoming events</LinkDescription>
             </StyledDropdownLink>
@@ -71,15 +71,15 @@ const Header: React.SFC<RouteComponentProps> = () => {
             </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="Educators" manageBackground={backgroundManagement}>
-            <StyledDropdownLink to="/webinars">
+            <StyledDropdownLink to="/educators/#webinars">
               <LinkTitle>Webinars</LinkTitle>
               <LinkDescription>Watch recorded webinars</LinkDescription>
             </StyledDropdownLink>
-            <StyledDropdownLink to="/research">
+            <StyledDropdownLink to="/educators/#research">
               <LinkTitle>Research</LinkTitle>
               <LinkDescription>Read up on some relevant research articles</LinkDescription>
             </StyledDropdownLink>
-            <StyledDropdownLink to="/resources">
+            <StyledDropdownLink to="/educators" hash="resources">
               <LinkTitle>Resources</LinkTitle>
               <LinkDescription>Find the educating resources you need</LinkDescription>
             </StyledDropdownLink>
