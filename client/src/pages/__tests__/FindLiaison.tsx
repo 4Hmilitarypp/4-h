@@ -1,13 +1,11 @@
 import * as React from 'react'
-import { cleanup, fireEvent, render } from 'react-testing-library'
+import { fireEvent, render } from 'react-testing-library'
 jest.mock('../../utils/api')
-// import restApi from '../../utils/api'
+// import api from '../../utils/api'
 import { ILiaison } from '../../types'
 import generate from '../../utils/generate'
 import staticLiaisons from '../../utils/staticLiaisons.json'
 import FindLiaison, { filterLiaisons } from '../FindLiaison'
-
-afterEach(cleanup)
 
 interface IProps {
   value: string

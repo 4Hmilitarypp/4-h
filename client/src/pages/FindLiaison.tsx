@@ -2,14 +2,14 @@ import { RouteComponentProps } from '@reach/router'
 import Downshift from 'downshift'
 import matchSorter from 'match-sorter'
 import * as React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { InputGroup, PageWrapper } from '../components/Elements'
 import Icon from '../components/Icon'
 import { useHash } from '../hooks/hooks'
 // import Input from '../components/Input'
 import { ILiaison } from '../types'
 import { elevation } from '../utils/mixins'
-// import restApi from '../utils/api'
+// import api from '../utils/api'
 import staticLiaisons from '../utils/staticLiaisons.json'
 
 export const filterLiaisons = (liaisons: ILiaison[], query: string | null): ILiaison[] => {
@@ -27,7 +27,7 @@ const FindLiaison: React.SFC<RouteComponentProps> = ({ location }) => {
   useHash({ refToFocus: findRef, hash: '#search', location })
 
   React.useEffect(() => {
-    /* restApi.liaisons
+    /* api.liaisons
       .get()
       .then(({ liaisons: restLiaisons }) => setLiaisons(restLiaisons))
       .catch((error: Error) => console.error(error)) */

@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Run tests
-RUN CI=true npm test
+RUN CI=true npm run coverage
 
 # Build the app and move the resulting build to the `/public` directory
 RUN npm run build

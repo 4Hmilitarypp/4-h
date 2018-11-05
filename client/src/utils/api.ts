@@ -1,5 +1,5 @@
 import * as axios from 'axios'
-import { IApiError, ILiaison, IUser } from '../types'
+import { IApiError, IContactUsEmail, ILiaison, IUser } from '../types'
 
 let api: axios.AxiosInstance
 let isLoggedIn: boolean
@@ -55,6 +55,9 @@ const users = {
 const liaisons = {
   get: (): Promise<{ liaisons: ILiaison[] }> => requests.get('/liaisons'),
 }
+const emails = {
+  create: (email: IContactUsEmail): Promise<{ email: IContactUsEmail }> => requests.post('/email', email),
+}
 
 function logout() {
   window.localStorage.removeItem('token')
@@ -83,9 +86,10 @@ function init({
 
 const restApi = {
   auth,
+  emails,
   init,
-  users,
   liaisons,
+  users,
 }
 
 export default restApi

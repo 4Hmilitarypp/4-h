@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { IBackgroundCoords, Omit } from '../types'
 
 interface IProps {
@@ -33,7 +33,10 @@ const UnstyledLinkGroup: React.SFC<IProps> = ({ children, manageBackground, titl
     }
   }
 
-  const showDropDownAndBackground = () => {
+  const showDropDownAndBackground = (e: React.MouseEvent<HTMLLIElement> | React.FocusEvent<HTMLLIElement>) => {
+    if (e.relatedTarget === window || !e.relatedTarget) {
+      return
+    }
     const liNode = liRef.current
     const dropdownNode = dropdownRef.current
     if (liNode) {

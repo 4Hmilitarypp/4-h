@@ -9,6 +9,7 @@ declare module 'react' {
   function useMemo<T>(create: () => T, inputs?: ReadonlyArray<unknown>): T
   function useRef<T extends unknown>(initialValue?: T): React.RefObject<T>
   function useImperativeMethods<T>(ref: React.Ref<T>, createInstance: () => T, inputs?: ReadonlyArray<unknown>): void
+  function memo(el: React.Element): any
   const useMutationEffect: typeof useEffect
   const useLayoutEffect: typeof useEffect
   const Suspense: any

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { IApiError, IUser } from '../types'
-import restApi from '../utils/api'
+import api from '../utils/api'
 
 // TODO Add a error handler that will turn errors into
 // TODO friendly errors. For example, if status is 500
@@ -22,7 +22,7 @@ export default class User extends React.Component<IProps, IState> {
 
   componentDidMount() {
     this.reset({ pending: true })
-    return restApi.auth.me().then(
+    return api.auth.me().then(
       ({ user }: { user?: IUser }) => this.reset({ user }),
       (error: IApiError) => {
         return this.reset({ error: error.message })
@@ -32,7 +32,7 @@ export default class User extends React.Component<IProps, IState> {
 
   login = ({ username, password }: { username: string; password: string }) => {
     this.reset({ pending: true })
-    return restApi.auth
+    return api.auth
       .login({ username, password })
       .then(
         ({ user }: { user: IUser }) => this.reset({ user }),
@@ -42,12 +42,12 @@ export default class User extends React.Component<IProps, IState> {
 
   logout = () => {
     this.reset({ pending: true })
-    return restApi.auth.logout().then(() => this.reset(), (error: IApiError) => this.reset({ error: error.message }))
+    return api.auth.logout().then(() => this.reset(), (error: IApiError) => this.reset({ error: error.message }))
   }
 
   register = ({ username, password }: { username: string; password: string }) => {
     this.reset({ pending: true })
-    return restApi.auth
+    return api.auth
       .register({ username, password })
       .then(
         ({ user }: { user: IUser }) => this.reset({ user }),

@@ -22,7 +22,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "coverage": "react-scripts test --env=jsdom --coverage",
-    "deploy": "npm version patch && now && now alias"
+    "deploy": "npm version patch && now && now alias",
+    "style": "stylelint"
   },
   "devDependencies": {
     "@types/faker": "^4.1.4",
@@ -36,6 +37,9 @@
     "faker": "^4.1.0",
     "jest-watch-typeahead": "^0.2.0",
     "react-testing-library": "^5.2.3",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.0",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-react": "^3.6.0",
@@ -52,7 +56,7 @@
       "src/**/*.tsx",
       "!/**/*.d.ts",
       "!src/registerServiceWorker.ts",
-      "!src/index.ts",
+      "!src/index.tsx",
       "!src/utils/mixins.ts",
       "!src/utils/api.ts",
       "!src/types.ts"
@@ -60,8 +64,8 @@
     "coverageThreshold": {
       "global": {
         "statements": 80,
-        "branches": 80,
-        "functions": 70,
+        "branches": 50,
+        "functions": 80,
         "lines": 80
       }
     }

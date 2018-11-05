@@ -1,4 +1,4 @@
-const mock = { reset: undefined, auth: undefined, liaisons: undefined }
+const mock = { reset: undefined, auth: undefined, liaisons: undefined, emails: undefined }
 const authResponse = { user: { _id: 1 } }
 function reset() {
   Object.assign(mock, {
@@ -7,6 +7,9 @@ function reset() {
       logout: jest.fn(() => Promise.resolve(authResponse)),
       me: jest.fn(() => Promise.resolve(authResponse)),
       register: jest.fn(() => Promise.resolve(authResponse)),
+    }),
+    emails: Object.assign(mock.emails || {}, {
+      create: jest.fn(() => Promise.resolve({ email: {} })),
     }),
     liaisons: Object.assign(mock.liaisons || {}, {
       get: jest.fn(() => Promise.resolve({ liaisons: {} })),

@@ -1,13 +1,12 @@
 import * as faker from 'faker'
 import * as React from 'react'
-import { cleanup, render, wait } from 'react-testing-library'
+import { render, wait } from 'react-testing-library'
 jest.mock('utils/api')
-import restApi from '../../utils/api'
+import api from '../../utils/api'
 import { IApiError } from '../../types'
 import User from '../User'
 
-beforeEach(() => (restApi as any).reset())
-afterEach(cleanup)
+beforeEach(() => (api as any).reset())
 
 async function setup() {
   let controller: any
@@ -26,7 +25,7 @@ describe('interaction', () => {
   it('should rerender with user when login is clicked', async () => {
     const { controller, children } = await setup()
     const fakeUser = { username: faker.internet.userName() }
-    const loginMock = restApi.auth.login as any
+    const loginMock = api.auth.login as any
     loginMock.mockImplementationOnce(() => Promise.resolve({ user: fakeUser }))
     const form = { username: faker.internet.userName(), password: faker.internet.password() }
 
@@ -57,7 +56,7 @@ describe('interaction', () => {
     const { controller, children } = await setup()
 
     const fakeError = { message: 'failure' }
-    const loginMock = restApi.auth.login as any
+    const loginMock = api.auth.login as any
     loginMock.mockImplementationOnce(() => Promise.reject(fakeError))
 
     controller.login({ username: 'bad', password: 'no better' }).catch((err: IApiError) => err)
@@ -85,7 +84,7 @@ describe('interaction', () => {
 
     controller.logout()
 
-    expect(restApi.auth.logout).toHaveBeenCalledTimes(1)
+    expect(api.auth.logout).toHaveBeenCalledTimes(1)
     await wait(() => expect(children).toHaveBeenCalledTimes(2))
     expect(children).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -106,7 +105,7 @@ describe('interaction', () => {
   it('should return the user if they registered successfully', async () => {
     const { controller } = await setup()
     const fakeUser = { username: faker.internet.userName() }
-    const registerMock = restApi.auth.register as any
+    const registerMock = api.auth.register as any
     registerMock.mockImplementationOnce(() => Promise.resolve({ user: fakeUser }))
     const form = { username: faker.internet.userName(), password: faker.internet.password() }
 
@@ -122,7 +121,7 @@ it('should rerender with errors when register fails', async () => {
   const { controller, children } = await setup()
 
   const fakeError = { message: 'failure' }
-  const registerMock = restApi.auth.register as any
+  const registerMock = api.auth.register as any
   registerMock.mockImplementationOnce(() => Promise.reject(fakeError))
 
   controller.register({ username: 'bad', password: 'no better' }).catch((err: IApiError) => err)
@@ -148,7 +147,7 @@ it('should rerender with errors when register fails', async () => {
 describe('lifecycle', () => {
   it('should get user on mount', async () => {
     await setup()
-    const meMock = restApi.auth.me as any
+    const meMock = api.auth.me as any
     expect(meMock).toHaveBeenCalledTimes(1)
   })
 })

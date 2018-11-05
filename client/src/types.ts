@@ -1,3 +1,5 @@
+import * as React from 'react'
+import { ThemedStyledProps } from 'styled-components/macro'
 export interface IHashProps {
   refToFocus: React.RefObject<HTMLElement>
   hash: string
@@ -36,6 +38,31 @@ export interface ILiaison {
   phoneNumber?: string | null
   region: string
   abbreviation?: string | null
+}
+
+export interface IHeadingProps
+  extends ThemedStyledProps<
+      React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>,
+      any
+    > {
+  color?: string
+  center?: boolean
+}
+
+export interface IContactUsForm {
+  currentTarget: {
+    elements: {
+      name: HTMLInputElement
+      email: HTMLInputElement
+      message: HTMLTextAreaElement
+    }
+  }
+}
+
+export interface IContactUsEmail {
+  name: string
+  email: string
+  message: string
 }
 
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>

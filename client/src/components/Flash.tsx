@@ -1,16 +1,16 @@
 import * as React from 'react'
 import { Transition } from 'react-spring'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 interface IProps {
   error?: string
   fixed?: boolean
-  isOpen: boolean
+  submitted: boolean
   successMessage?: string
   closeClicked: () => void
 }
 
-const Flash: React.SFC<IProps> = ({ successMessage: sm, error, isOpen, fixed, closeClicked }) => {
+const Flash: React.SFC<IProps> = ({ successMessage: sm, error, submitted, fixed, closeClicked }) => {
   const successMessage = sm as string
   return (
     <>
@@ -19,7 +19,7 @@ const Flash: React.SFC<IProps> = ({ successMessage: sm, error, isOpen, fixed, cl
         enter={{ opacity: 1, height: 'auto' }}
         leave={{ opacity: 0, height: 0 }}
         children={
-          isOpen && !error && successMessage.length > 0
+          submitted && !error && successMessage.length > 0
             ? ({ opacity, height }) => (
                 <ResponseSuccess
                   data-testid="create-success"

@@ -1,11 +1,11 @@
 import { Router } from '@reach/router'
 import * as React from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components/macro'
 import Footer from './Footer'
 import Header from './header/Header'
 import About from './pages/About'
 import About4HClub from './pages/About4HClub'
-import Contact from './pages/Contact'
+import ContactUs from './pages/ContactUs'
 import Educator from './pages/Educator'
 import Events from './pages/Events'
 import FindLiaison from './pages/FindLiaison'
@@ -13,8 +13,6 @@ import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import Partners from './pages/Partners'
 import Photos from './pages/Photos'
-import SignIn from './pages/SignIn'
-
 export const theme = {
   black: '#222222',
   gray: '#3d4340',
@@ -35,14 +33,13 @@ class App extends React.Component<{}, {}> {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <AppWrapper data-testid="app">
+        <div data-testid="app">
           <Router>
             <Header path="/*" />
           </Router>
           <Router primary={false}>
             <Home path="/" />
             <About path="/about" />
-            <Contact path="/contact" />
             <About path="/about" />
             <Partners path="/partners" />
             <Events path="/events" />
@@ -50,19 +47,16 @@ class App extends React.Component<{}, {}> {
             <About4HClub path="/4-h-club" />
             <Educator path="/educators" />
             <FindLiaison path="/find-a-liaison" />
-            <Contact path="/contact-us" />
-            <SignIn path="sign-in" />
+            <ContactUs path="contact-us" />
             <NotFound default={true} />
           </Router>
           <Router primary={false}>
             <Footer path="/*" />
           </Router>
-        </AppWrapper>
+        </div>
       </ThemeProvider>
     )
   }
 }
 
 export default App
-
-const AppWrapper = styled.div``

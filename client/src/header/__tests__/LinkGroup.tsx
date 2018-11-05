@@ -1,8 +1,6 @@
 import * as React from 'react'
-import { cleanup, fireEvent, render } from 'react-testing-library'
+import { fireEvent, render } from 'react-testing-library'
 import LinkGroup from '../LinkGroup'
-
-afterEach(cleanup)
 
 interface IManageBackgroundProps {
   liRef: any

@@ -1,10 +1,11 @@
 import { Link } from '@reach/router'
 import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import logo from '../assets/images/4h-logo.png'
 import DropdownBackground from './DropdownBackground'
 import LinkGroup from './LinkGroup'
+import SignInModal from './SignInModal'
 
 const DropdownLink: React.SFC = props => <Link tabIndex={0} {...props} />
 
@@ -101,7 +102,7 @@ const Header: React.SFC<RouteComponentProps> = () => {
             </StyledDropdownLink>
           </LinkGroup>
         </Links>
-        <SignIn to="sign-in">Sign In</SignIn>
+        <SignInModal>Sign In</SignInModal>
       </HeaderContainer>
     </>
   )
@@ -148,6 +149,7 @@ const StyledDropdownLink: any = styled(DropdownLink)`
   }
   &:hover {
     opacity: 0.8;
+    cursor: pointer;
   }
   &:nth-child(2n + 1) {
     ${LinkTitle} {
@@ -159,10 +161,5 @@ const LinkDescription = styled.p`
   color: ${props => props.theme.lightGray};
   font-weight: 400;
   padding-left: 1.5rem;
-  padding-top: 0rem;
-`
-const SignIn = styled(Link)`
-  font-size: 1.7rem;
-  color: ${props => props.theme.primary};
-  padding-right: 2rem;
+  padding-top: 0;
 `
