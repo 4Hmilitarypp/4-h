@@ -5,12 +5,12 @@ import styled from 'styled-components'
 interface IProps {
   error?: string
   fixed?: boolean
-  submitted: boolean
+  isOpen: boolean
   successMessage?: string
   closeClicked: () => void
 }
 
-const Flash: React.SFC<IProps> = ({ successMessage: sm, error, submitted, fixed, closeClicked }) => {
+const Flash: React.SFC<IProps> = ({ successMessage: sm, error, isOpen, fixed, closeClicked }) => {
   const successMessage = sm as string
   return (
     <>
@@ -19,7 +19,7 @@ const Flash: React.SFC<IProps> = ({ successMessage: sm, error, submitted, fixed,
         enter={{ opacity: 1, height: 'auto' }}
         leave={{ opacity: 0, height: 0 }}
         children={
-          submitted && !error && successMessage.length > 0
+          isOpen && !error && successMessage.length > 0
             ? ({ opacity, height }) => (
                 <ResponseSuccess
                   data-testid="create-success"
@@ -53,7 +53,7 @@ const Flash: React.SFC<IProps> = ({ successMessage: sm, error, submitted, fixed,
 Flash.defaultProps = {
   error: undefined,
   fixed: false,
-  successMessage: '',
+  successMessage: 'Success!',
 }
 
 export default Flash

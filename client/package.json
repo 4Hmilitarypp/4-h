@@ -13,7 +13,7 @@
     "react-cache": "^2.0.0-alpha.1",
     "react-dom": "^16.7.0-alpha.0",
     "react-scripts": "^2.1.1",
-    "react-spring": "^6.1.6",
+    "react-spring": "^5.9.2",
     "styled-components": "^4.0.2"
   },
   "scripts": {
@@ -50,10 +50,12 @@
       "src/**/*.js",
       "src/**/*.ts",
       "src/**/*.tsx",
+      "!/**/*.d.ts",
       "!src/registerServiceWorker.ts",
       "!src/index.ts",
       "!src/utils/mixins.ts",
-      "!src/utils/api.ts"
+      "!src/utils/api.ts",
+      "!src/types.ts"
     ],
     "coverageThreshold": {
       "global": {
