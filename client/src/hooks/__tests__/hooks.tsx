@@ -27,6 +27,7 @@ describe('useFlash', () => {
 describe('useHash', () => {
   it('should route when the hash is the same', async () => {
     const mockScrollIntoView = jest.fn(() => null)
+    const native = Element.prototype.scrollIntoView
     Element.prototype.scrollIntoView = mockScrollIntoView
     const TestElement = () => {
       const fakeHash = '#go'
@@ -39,5 +40,6 @@ describe('useHash', () => {
     expect(mockScrollIntoView).toHaveBeenCalledTimes(0)
     rerender(<TestElement />)
     expect(mockScrollIntoView).toHaveBeenCalledTimes(1)
+    Element.prototype.scrollIntoView = native
   })
 })
