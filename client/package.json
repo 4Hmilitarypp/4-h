@@ -1,6 +1,6 @@
 {
   "name": "4h-military-partnership",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": false,
   "proxy": "http://localhost:3333/",
   "dependencies": {
