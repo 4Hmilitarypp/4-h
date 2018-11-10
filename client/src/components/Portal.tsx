@@ -1,28 +1,49 @@
 import * as React from 'react'
 import ReactDOM from 'react-dom'
 
-const portalRoot = document.getElementById('portal')
-
-export default class Portal extends React.Component<{}, {}> {
-  el?: HTMLDivElement = undefined
-  constructor(props: object) {
-    super(props)
-    this.el = document.createElement('div')
+interface IState {
+  el?: HTMLDivElement
+  portalRoot: HTMLElement | null
+}
+export default class Portal extends React.Component<{}, IState> {
+  state = {
+    el: document.createElement('div'),
+    portalRoot: document.getElementById('portal'),
   }
-
   componentDidMount = () => {
-    if (portalRoot && this.el) {
-      portalRoot.appendChild(this.el)
+    if (this.state.portalRoot && this.state.el) {
+      this.state.portalRoot.appendChild(this.state.el)
     }
   }
 
   componentWillUnmount = () => {
-    if (portalRoot && this.el) {
-      portalRoot.removeChild(this.el)
+    if (this.state.portalRoot && this.state.el) {
+      this.state.portalRoot.removeChild(this.state.el)
     }
   }
   render() {
     const { children } = this.props
-    return this.el ? ReactDOM.createPortal(children, this.el) : null
+    return this.state.el ? ReactDOM.createPortal(children, this.state.el) : null
   }
 }
+
+/* const Portal: React.SFC = ({ children }) => {
+  const [portalRoot, setPortalRoot] = React.useState<HTMLElement | null>(null)
+  const [portal, setPortal] = React.useState<HTMLDivElement | undefined>(undefined)
+  React.useEffect(() => {
+    setPortalRoot(document.getElementById('portal'))
+    setPortal(document.createElement('div'))
+    if (portalRoot && portal) {
+      portalRoot.appendChild(portal)
+    }
+    return () => {
+      if (portalRoot && portal) {
+        portalRoot.removeChild(portal)
+      }
+    }
+  })
+
+  return portal ? ReactDOM.createPortal(children, portal) : null
+}
+
+export default Portal */

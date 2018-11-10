@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components/macro'
+import Icon from '../components/Icon'
 import Portal from './Portal'
 
 interface IProps {
@@ -13,7 +14,9 @@ const Modal: React.SFC<IProps> = ({ children, on, setOn }) => {
       {on && (
         <ModalWrapper>
           <ModalCard>
-            <CloseButton onClick={() => setOn(false)}>X</CloseButton>
+            <CloseButton onClick={() => setOn(false)}>
+              <Icon name="close" color="#ffffff" />
+            </CloseButton>
             <div>{children}</div>
           </ModalCard>
           <Background onClick={() => setOn(false)} />
@@ -57,12 +60,13 @@ const Background = styled.div`
 
 const CloseButton = styled.button`
   position: absolute;
-  top: 0.7rem;
-  right: 1rem;
+  top: 0.9rem;
+  padding: 0;
+  right: 1.2rem;
   border: none;
   background: transparent;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: ${props => props.theme.white};
+  fill: ${props => props.theme.white};
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 `

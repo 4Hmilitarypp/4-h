@@ -12,8 +12,8 @@ interface IProps {
 }
 
 const UnstyledLinkGroup: React.SFC<IProps> = ({ children, manageBackground, title, ...rest }) => {
-  const liRef = React.useRef<HTMLLIElement>()
-  const dropdownRef = React.useRef<HTMLDivElement>()
+  const liRef = React.useRef<HTMLLIElement>(null)
+  const dropdownRef = React.useRef<HTMLDivElement>(null)
 
   const handleClick = () => {
     manageBackground.setOpen(false)

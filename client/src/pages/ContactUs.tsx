@@ -5,14 +5,14 @@ import americanFlag from '../assets/images/AmericanFlag.jpg'
 import { Heading, InputGroup, SecondaryButton } from '../components/Elements'
 import Flash from '../components/Flash'
 import { useFlash } from '../hooks/hooks'
-import { IApiError, IContactUsForm } from '../types'
+import { IApiError, IForm } from '../types'
 import api from '../utils/api'
 import { elevation } from '../utils/mixins'
 
 const ContactUs: React.SFC<RouteComponentProps> = () => {
   const { submitted, setSubmitted, error, setError } = useFlash({ initialSubmitted: false })
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement> & IContactUsForm) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement> & IForm) => {
     e.preventDefault()
     const { name, email, message } = e.currentTarget.elements
     const elements = Array.from(e.currentTarget.elements)

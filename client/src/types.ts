@@ -14,12 +14,17 @@ export interface IUser {
   username: string
 }
 
+export interface ISignInForm {
+  email: string
+  password: string
+}
+
 export interface IApiError {
-  message: string
   response: {
     status: number
+    statusText: string
     data: {
-      message: string
+      message?: string
     }
   }
 }
@@ -49,12 +54,10 @@ export interface IHeadingProps
   center?: boolean
 }
 
-export interface IContactUsForm {
+export interface IForm {
   currentTarget: {
     elements: {
-      name: HTMLInputElement
-      email: HTMLInputElement
-      message: HTMLTextAreaElement
+      [key: string]: HTMLInputElement | HTMLTextAreaElement
     }
   }
 }
@@ -64,5 +67,7 @@ export interface IContactUsEmail {
   email: string
   message: string
 }
+
+export type FormInputEvent = React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
 
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>

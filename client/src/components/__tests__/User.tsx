@@ -2,8 +2,8 @@ import * as faker from 'faker'
 import * as React from 'react'
 import { render, wait } from 'react-testing-library'
 jest.mock('utils/api')
-import api from '../../utils/api'
 import { IApiError } from '../../types'
+import api from '../../utils/api'
 import User from '../User'
 
 beforeEach(() => (api as any).reset())
@@ -55,7 +55,9 @@ describe('interaction', () => {
   it('should rerender with errors when login fails', async () => {
     const { controller, children } = await setup()
 
-    const fakeError = { message: 'failure' }
+    const fakeError: IApiError = {
+      response: { data: { message: 'failure' }, status: 401, statusText: '401 Unauthorized.' },
+    }
     const loginMock = api.auth.login as any
     loginMock.mockImplementationOnce(() => Promise.reject(fakeError))
 
@@ -72,7 +74,7 @@ describe('interaction', () => {
     )
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        error: fakeError.message,
+        error: fakeError.response.data.message,
         pending: false,
         user: undefined,
       })
@@ -119,8 +121,9 @@ describe('interaction', () => {
 
 it('should rerender with errors when register fails', async () => {
   const { controller, children } = await setup()
-
-  const fakeError = { message: 'failure' }
+  const fakeError: IApiError = {
+    response: { data: { message: 'failure' }, status: 401, statusText: '401 Unauthorized.' },
+  }
   const registerMock = api.auth.register as any
   registerMock.mockImplementationOnce(() => Promise.reject(fakeError))
 
@@ -137,7 +140,7 @@ it('should rerender with errors when register fails', async () => {
   )
   expect(children).toHaveBeenLastCalledWith(
     expect.objectContaining({
-      error: fakeError.message,
+      error: fakeError.response.data.message,
       pending: false,
       user: undefined,
     })

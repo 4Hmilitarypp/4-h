@@ -44,3 +44,11 @@ describe('generate.liaisons', () => {
     )
   })
 })
+
+describe('generate.SignInForm', () => {
+  const res = generate.signInForm()
+  expect(res).toEqual({
+    email: expect.any(String),
+    password: expect.any(String),
+  })
+})

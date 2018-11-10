@@ -1,9 +1,14 @@
 import * as React from 'react'
-import { IHashProps } from '../types'
+import { FormInputEvent, IHashProps } from '../types'
 
-export const useFormInput = (initialValue: string) => {
+interface IUseFormInputReturn {
+  value: string
+  onChange: (e: FormInputEvent) => void
+}
+
+export const useFormInput = (initialValue: string): IUseFormInputReturn => {
   const [value, setValue] = React.useState<string>(initialValue)
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => setValue(e.target.value)
+  const handleChange = (e: FormInputEvent) => setValue(e.target.value)
   return { value, onChange: handleChange }
 }
 

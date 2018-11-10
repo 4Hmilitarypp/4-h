@@ -1,5 +1,5 @@
 import faker from 'faker'
-import { IContactUsEmail, ILiaison } from '../types'
+import { IContactUsEmail, ILiaison, ISignInForm } from '../types'
 
 const generate = {
   contactUsEmail: (overrides?: Partial<IContactUsEmail>): IContactUsEmail => ({
@@ -18,6 +18,7 @@ const generate = {
     const liaisons = Array.apply(null, { length }).map(() => generate.liaison())
     return liaisons
   },
+  signInForm: (): ISignInForm => ({ email: faker.internet.email(), password: faker.internet.password() }),
 }
 
 export default generate

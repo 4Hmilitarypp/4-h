@@ -5,7 +5,7 @@ import { Heading, PageWrapper } from '../components/Elements'
 import { useHash } from '../hooks/hooks'
 
 const Events: React.SFC<RouteComponentProps> = ({ location }) => {
-  const pastEventRef = React.useRef<HTMLHeadingElement>()
+  const pastEventRef = React.useRef<HTMLHeadingElement>(null)
   useHash({ refToFocus: pastEventRef, hash: '#past-events', location })
   return (
     <PageWrapper>

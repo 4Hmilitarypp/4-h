@@ -17,7 +17,7 @@ const Header: React.SFC<RouteComponentProps> = () => {
     width: 100,
   })
   const [backgroundOpen, setBackgroundOpen] = React.useState(false)
-  const navRef = React.useRef<HTMLDivElement>()
+  const navRef = React.useRef<HTMLDivElement>(null)
   const backgroundManagement = { setCoords: setBackgroundCoords, setOpen: setBackgroundOpen, navRef }
 
   return (

@@ -23,7 +23,7 @@ export const filterLiaisons = (liaisons: ILiaison[], query: string | null): ILia
 const FindLiaison: React.SFC<RouteComponentProps> = ({ location }) => {
   const [liaisons, setLiaisons] = React.useState<ILiaison[]>([])
   const [selectedLiaison, setSelectedLiaison] = React.useState<ILiaison | undefined>(undefined)
-  const findRef = React.useRef<HTMLHeadingElement>()
+  const findRef = React.useRef<HTMLHeadingElement>(null)
   useHash({ refToFocus: findRef, hash: '#search', location })
 
   React.useEffect(() => {
