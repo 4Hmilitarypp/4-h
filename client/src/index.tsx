@@ -7,5 +7,5 @@ import api from './utils/api'
 // import registerServiceWorker from './registerServicesWorker'
 
 api.init()
-;(ReactDOM as any).createRoot(document.getElementById('root')).render(<App />)
+ReactDOM.render(<App />, document.getElementById('root'))
 // registerServiceWorker()

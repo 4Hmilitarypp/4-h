@@ -18,35 +18,33 @@ const Flash: React.SFC<IProps> = ({ successMessage: sm, error, submitted, fixed,
         from={{ opacity: 0, height: 0 }}
         enter={{ opacity: 1, height: 'auto' }}
         leave={{ opacity: 0, height: 0 }}
-        children={
-          submitted && !error && successMessage.length > 0
-            ? ({ opacity, height }) => (
-                <ResponseSuccess
-                  data-testid="create-success"
-                  className={fixed ? 'fixed' : ''}
-                  style={{ opacity, height }}
-                >
-                  <Message>{successMessage}</Message>
-                </ResponseSuccess>
-              )
-            : false
+        items={(submitted && !error && successMessage.length > 0) as any}
+      >
+        {(toggle: any) =>
+          toggle &&
+          (({ opacity, height }: { opacity: number; height: number }) => (
+            <ResponseSuccess data-testid="create-success" className={fixed ? 'fixed' : ''} style={{ opacity, height }}>
+              <Message>{successMessage}</Message>
+            </ResponseSuccess>
+          ))
         }
-      />
+      </Transition>
       <Transition
         from={{ opacity: 0, height: 0 }}
         enter={{ opacity: 1, height: 'auto' }}
         leave={{ opacity: 0, height: 0 }}
-        children={
-          error
-            ? ({ opacity, height }) => (
-                <ResponseError data-testid="create-error" className={fixed ? 'fixed' : ''} style={{ opacity, height }}>
-                  <Message className="message">{error}</Message>
-                  <Close onClick={closeClicked}>X</Close>
-                </ResponseError>
-              )
-            : false
+        items={error as any}
+      >
+        {(toggle: any) =>
+          toggle &&
+          (({ opacity, height }: { opacity: number; height: number }) => (
+            <ResponseError data-testid="create-error" className={fixed ? 'fixed' : ''} style={{ opacity, height }}>
+              <Message className="message">{error}</Message>
+              <Close onClick={closeClicked}>X</Close>
+            </ResponseError>
+          ))
         }
-      />
+      </Transition>
     </>
   )
 }
@@ -93,7 +91,6 @@ const ResponseSuccess = styled(Response)`
   background: ${props => props.theme.green};
 `
 const ResponseError = styled(Response)`
-  max-width: 80rem;
   margin: 0 auto;
   background: ${props => props.theme.white};
   max-width: 60rem;
