@@ -15,7 +15,7 @@ const generate = {
     ...overrides,
   }),
   liaisons: (length: number): ILiaison[] => {
-    const liaisons = Array.apply(null, { length }).map(() => generate.liaison())
+    const liaisons = Array.from({ length }, () => generate.liaison())
     return liaisons
   },
   signInForm: (): ISignInForm => ({ email: faker.internet.email(), password: faker.internet.password() }),

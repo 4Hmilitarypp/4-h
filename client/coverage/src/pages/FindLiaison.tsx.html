@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/pages/FindLiaison.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/pages</a> FindLiaison.tsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.11% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>35/38</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">65% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>13/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">86.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>13/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">97.22% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>35/36</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { RouteComponentProps } from '@reach/router'
+import Downshift from 'downshift'
+import matchSorter from 'match-sorter'
+import * as React from 'react'
+import styled from 'styled-components/macro'
+// import api from '../utils/api'
+import staticLiaisons from '../assets/data/staticLiaisons.json'
+import { InputGroup, PageWrapper } from '../components/Elements'
+import Icon from '../components/Icon'
+import { useHash } from '../hooks/hooks'
+// import Input from '../components/Input'
+import { ILiaison } from '../types'
+import { elevation } from '../utils/mixins'
+&nbsp;
+export const filterLiaisons = (liaisons: ILiaison[], query: string | null): ILiaison[] =&gt; {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!query) <span class="cstat-no" title="statement not covered" >return liaisons.sort(<span class="fstat-no" title="function not covered" >(a</span>, b) =&gt; (<span class="cstat-no" title="statement not covered" >a.region &gt; b.region ? 1 : -1)</span>)</span>
+  const result = matchSorter(liaisons, query, {
+    keys: ['region', { minRanking: matchSorter.rankings.EQUAL, key: 'abbreviation' }],
+  })
+  return result
+}
+&nbsp;
+const FindLiaison: React.SFC&lt;RouteComponentProps&gt; = ({ location }) =&gt; {
+  const [liaisons, setLiaisons] = React.useState&lt;ILiaison[] | undefined&gt;(undefined)
+  const [selectedLiaison, setSelectedLiaison] = React.useState&lt;ILiaison | undefined&gt;(undefined)
+  /* stylelint-disable-next-line */
+  const findRef = React.useRef&lt;HTMLHeadingElement&gt;(null)
+  useHash({ refToFocus: findRef, hash: '#search', location })
+&nbsp;
+  React.useEffect(() =&gt; {
+    /* api.liaisons
+      .get()
+      .then(({ liaisons: restLiaisons }) =&gt; setLiaisons(restLiaisons))
+      .catch((error: Error) =&gt; console.error(error)) */
+    setLiaisons(staticLiaisons)
+  }, [])
+&nbsp;
+  return (
+    &lt;PageWrapper&gt;
+      &lt;Heading&gt;What Is A Liaison?&lt;/Heading&gt;
+      &lt;P&gt;
+        4-H military liaisons are the official point of contact for all 4-H military programs. A liaison serves as a
+        professional connection between various military branches and the 4-H organization.
+      &lt;/P&gt;
+      &lt;P&gt;
+        Liaisons coordinate support to 4-H clubs on and off military installations that serve military youth. They also
+        educate university staff and citizens about the unique challenges faced by military children.
+      &lt;/P&gt;
+      &lt;Heading ref={findRef as any}&gt;Find A Liaison&lt;/Heading&gt;
+      {liaisons &amp;&amp; (
+        &lt;Downshift
+          itemToString={item =&gt; (item ? item.region : <span class="branch-1 cbranch-no" title="branch not covered" >'')</span>}
+          onChange={(selection: ILiaison) =&gt; setSelectedLiaison(selection)}
+        &gt;
+          {({
+            getLabelProps,
+            getInputProps,
+            isOpen,
+            getItemProps,
+            inputValue,
+            highlightedIndex,
+            getMenuProps,
+            selectedItem,
+            getToggleButtonProps,
+            clearSelection,
+          }) =&gt; (
+            &lt;div&gt;
+              &lt;FindInputGroup&gt;
+                &lt;label {...getLabelProps({ name: 'region' })}&gt;Enter a state or US Province&lt;/label&gt;
+                &lt;div style={{ position: 'relative' }}&gt;
+                  &lt;FindInput className="input" {...getInputProps()} placeholder="Kansas" /&gt;
+                  {selectedItem ? (
+                    &lt;ControllerButton onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >clearSelection()}</span> aria-label="clear selection"&gt;
+                      &lt;Icon name="x" /&gt;
+                    &lt;/ControllerButton&gt;
+                  ) : (
+                    &lt;ControllerButton {...getToggleButtonProps()}&gt;
+                      &lt;Icon name="arrow" isOpen={isOpen} /&gt;
+                    &lt;/ControllerButton&gt;
+                  )}
+                &lt;/div&gt;
+              &lt;/FindInputGroup&gt;
+              {isOpen ? (
+                &lt;Menu {...getMenuProps({ style: { height: 250, overflowY: 'scroll' } })}&gt;
+                  {filterLiaisons(liaisons, inputValue).map((liaison: ILiaison, index) =&gt; {
+                    return (
+                      &lt;Item
+                        key={liaison.region.toLowerCase()}
+                        {...getItemProps({
+                          index,
+                          item: liaison,
+                          style: { background: index === highlightedIndex ? <span class="branch-0 cbranch-no" title="branch not covered" >'#5a2a82' </span>: '' },
+                        })}
+                      &gt;
+                        {liaison.region}
+                      &lt;/Item&gt;
+                    )
+                  })}
+                &lt;/Menu&gt;
+              ) : null}
+            &lt;/div&gt;
+          )}
+        &lt;/Downshift&gt;
+      )}
+      {selectedLiaison &amp;&amp; (
+        &lt;Liaison&gt;
+          &lt;ResultContent&gt;
+            &lt;Text&gt;
+              &lt;Name&gt;{selectedLiaison.name}&lt;/Name&gt;
+              &lt;StyledLink href={`mailto:${selectedLiaison.email}`}&gt;{selectedLiaison.email}&lt;/StyledLink&gt;
+              &lt;StyledLink href={`tel:${selectedLiaison.phoneNumber}`}&gt;{selectedLiaison.phoneNumber}&lt;/StyledLink&gt;
+            &lt;/Text&gt;
+            &lt;Flag
+              src={`http://flags.ox3.in/svg/us${
+                selectedLiaison.abbreviation ? `/${selectedLiaison.abbreviation.toLowerCase()}` : <span class="branch-1 cbranch-no" title="branch not covered" >''</span>
+              }.svg`}
+              alt={selectedLiaison.abbreviation ? `${selectedLiaison.region} flag` : <span class="branch-1 cbranch-no" title="branch not covered" >'American Flag'}</span>
+            /&gt;
+          &lt;/ResultContent&gt;
+        &lt;/Liaison&gt;
+      )}
+    &lt;/PageWrapper&gt;
+  )
+}
+export default FindLiaison
+&nbsp;
+const Heading = styled.h2`
+  color: ${props =&gt; props.theme.secondary};
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+`
+const P = styled.p`
+  padding-bottom: 1.5rem;
+  max-width: 85rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
+`
+const Menu = styled.ul`
+  ${elevation({ level: 3 })};
+  padding: 1.5rem 0;
+  max-width: 50rem;
+  margin: 0 auto;
+  background: ${props =&gt; props.theme.gray};
+`
+const FindInputGroup = styled(InputGroup)`
+  margin: 0;
+  max-width: 50rem;
+  margin: 0 auto;
+`
+const FindInput = styled.input`
+  &amp;.input {
+    background: ${props =&gt; props.theme.inputGray};
+  }
+`
+const ControllerButton = styled.button`
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+`
+const Item = styled.li`
+  padding: 0.3rem 1.5rem;
+  border-radius: 5px;
+  color: ${props =&gt; props.theme.white};
+  &amp;:hover {
+    cursor: pointer;
+  }
+`
+const Liaison = styled.div`
+  max-width: 50rem;
+  margin: 0 auto;
+`
+const ResultContent = styled.div`
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+const Text = styled.div`
+  display: inline-block;
+  line-height: 1.8;
+`
+const Name = styled.h4`
+  font-size: 2.4rem;
+  color: ${props =&gt; props.theme.gray};
+`
+const StyledLink = styled.a`
+  display: block;
+  color: ${props =&gt; props.theme.black};
+  text-decoration: underline;
+`
+const Flag = styled.img`
+  width: 23rem;
+  height: 12rem;
+  padding-left: 5rem;
+  object-fit: cover;
+`
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Nov 21 2018 18:01:21 GMT-0600 (Central Standard Time)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

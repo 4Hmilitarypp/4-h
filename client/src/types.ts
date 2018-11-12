@@ -1,5 +1,19 @@
 import * as React from 'react'
 import { ThemedStyledProps } from 'styled-components/macro'
+
+/**
+ * Api
+ */
+export interface IApiError {
+  response: {
+    status: number
+    statusText: string
+    data: {
+      message?: string
+    }
+  }
+}
+
 export interface IHashProps {
   refToFocus: React.RefObject<HTMLElement>
   hash: string
@@ -19,16 +33,6 @@ export interface ISignInForm {
   password: string
 }
 
-export interface IApiError {
-  response: {
-    status: number
-    statusText: string
-    data: {
-      message?: string
-    }
-  }
-}
-
 export interface IBackgroundCoords {
   height: number
   left: number
@@ -44,6 +48,10 @@ export interface ILiaison {
   region: string
   abbreviation?: string | null
 }
+
+/**
+ * Styles
+ */
 
 export interface IHeadingProps
   extends ThemedStyledProps<
@@ -67,6 +75,40 @@ export interface IContactUsEmail {
   email: string
   message: string
 }
+
+export interface IImage {
+  alt: string
+  url: string
+}
+
+export interface ILink {
+  title: string
+  url: string
+  linkText: string
+}
+
+export interface IPartnerSection {
+  title: string
+  featuredImages: IImage[]
+  shortDescription: string
+  slug: string
+}
+
+interface IReport {
+  title: string
+  url: string
+}
+
+export interface IPartner extends IPartnerSection {
+  longDescription: string
+  links?: ILink[]
+  images?: IImage[]
+  annualReports?: IReport[]
+}
+
+/**
+ * Types
+ */
 
 export type FormInputEvent = React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
 

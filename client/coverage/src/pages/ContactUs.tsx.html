@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/pages/ContactUs.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/pages</a> ContactUs.tsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>30/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>28/28</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Link, RouteComponentProps } from '@reach/router'
+import * as React from 'react'
+import styled from 'styled-components/macro'
+import { Heading, InputGroup, SecondaryButton } from '../components/Elements'
+import Flash from '../components/Flash'
+import { useFlash } from '../hooks/hooks'
+import { IApiError, IForm } from '../types'
+import api from '../utils/api'
+import { elevation } from '../utils/mixins'
+&nbsp;
+const ContactUs: React.SFC&lt;RouteComponentProps&gt; = () =&gt; {
+  const { submitted, setSubmitted, error, setError } = useFlash({ initialSubmitted: false })
+&nbsp;
+  const handleSubmit = (e: React.FormEvent&lt;HTMLFormElement&gt; &amp; IForm) =&gt; {
+    e.preventDefault()
+    const { name, email, message } = e.currentTarget.elements
+    const elements = Array.from(e.currentTarget.elements)
+    const shouldContinue = !elements.some((el: Partial&lt;HTMLInputElement&gt;) =&gt; !!el.required &amp;&amp; el.value === '')
+    if (shouldContinue) {
+      setSubmitted(true)
+      api.emails
+        .create({
+          email: email.value,
+          message: message.value,
+          name: name.value,
+        })
+        .then(() =&gt; setSubmitted(true))
+        .catch(({ response }: IApiError) =&gt; setError(response.data.message))
+    } else {
+      setError('All required fields not met.')
+    }
+  }
+&nbsp;
+  const flashClosedClicked = () =&gt; setError(undefined)
+&nbsp;
+  return (
+    &lt;MyPageWrapper&gt;
+      &lt;Flash
+        successMessage={submitted &amp;&amp; !error ? 'Email sent successfully' : undefined}
+        submitted={submitted}
+        error={error}
+        closeClicked={flashClosedClicked}
+      /&gt;
+      &lt;MyHeading&gt;Contact Us&lt;/MyHeading&gt;
+      &lt;Content&gt;
+        &lt;ContactInfo&gt;
+          &lt;p&gt;
+            &lt;strong&gt;Phone Number:&lt;/strong&gt; 785-532-1484
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;strong&gt;Fax:&lt;/strong&gt; 785-532-5505
+          &lt;/p&gt;
+          &lt;Location&gt;
+            &lt;p&gt;1324 Lovers Lane&lt;/p&gt;
+            &lt;p&gt;343 Justin Hall&lt;/p&gt;
+            &lt;p&gt;Manhattan, KS 66506&lt;/p&gt;
+          &lt;/Location&gt;
+          &lt;p&gt;
+            &lt;strong&gt;Office hours:&lt;/strong&gt; 8am-5pm
+          &lt;/p&gt;
+        &lt;/ContactInfo&gt;
+        &lt;Flag
+          src="https://res.cloudinary.com/four-hmpp/image/upload/v1542786300/AmericanFlag.jpg"
+          alt="American Flag"
+        /&gt;
+      &lt;/Content&gt;
+      &lt;Heading as="h2" center={true} color="secondary"&gt;
+        Send A Message
+      &lt;/Heading&gt;
+      &lt;ContactUsForm onSubmit={handleSubmit}&gt;
+        &lt;P&gt;
+          Feel free to contact us about any questions you have. You may also want to contact{' '}
+          &lt;StyledLink to="/find-a-liaison"&gt;your region's liaison&lt;/StyledLink&gt;
+        &lt;/P&gt;
+        &lt;LeftAndRight&gt;
+          &lt;InputGroup&gt;
+            &lt;label htmlFor="name"&gt;Your Name&lt;/label&gt;
+            &lt;input type="name" id="name" placeholder="Jane Smith" required={true} /&gt;
+          &lt;/InputGroup&gt;
+          &lt;InputGroup&gt;
+            &lt;label htmlFor="email"&gt;Your Email Address&lt;/label&gt;
+            &lt;input type="email" id="email" placeholder="janesmith123@example.com" required={true} /&gt;
+          &lt;/InputGroup&gt;
+        &lt;/LeftAndRight&gt;
+        &lt;InputGroup&gt;
+          &lt;label htmlFor="message"&gt;Your Message&lt;/label&gt;
+          &lt;Textarea id="message" cols={30} rows={10} placeholder="I just had a question about..." required={true} /&gt;
+        &lt;/InputGroup&gt;
+        &lt;SecondaryButton type="submit" style={{ alignSelf: 'center' }}&gt;
+          Send Message
+        &lt;/SecondaryButton&gt;
+      &lt;/ContactUsForm&gt;
+    &lt;/MyPageWrapper&gt;
+  )
+}
+export default ContactUs
+&nbsp;
+const MyPageWrapper = styled.div`
+  padding: 0 2rem;
+`
+const MyHeading = styled.h1`
+  color: ${props =&gt; props.theme.secondary};
+  text-align: center;
+  padding-bottom: 4rem;
+`
+const Textarea = styled.textarea`
+  ${elevation({ level: 3 })};
+  border-radius: 5px;
+  width: 100%;
+`
+const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+`
+const ContactInfo = styled.div``
+const Location = styled.div`
+  padding: 1rem 0;
+`
+const ContactUsForm = styled.form`
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+`
+const Flag = styled.img`
+  height: 20rem;
+  padding-left: 10rem;
+`
+const P = styled.p`
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0 2rem 3rem;
+`
+const LeftAndRight = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+const StyledLink = styled(Link)`
+  color: ${props =&gt; props.theme.secondary};
+  font-size: 1.8rem;
+  text-decoration: underline;
+  &amp;:hover {
+    opacity: 0.8;
+  }
+`
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Nov 21 2018 18:01:21 GMT-0600 (Central Standard Time)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

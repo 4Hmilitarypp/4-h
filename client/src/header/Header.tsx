@@ -2,7 +2,6 @@ import { Link } from '@reach/router'
 import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
-import logo from '../assets/images/4h-logo.png'
 import DropdownBackground from './DropdownBackground'
 import LinkGroup from './LinkGroup'
 import SignInModal from './SignInModal'
@@ -29,7 +28,7 @@ const Header: React.SFC<RouteComponentProps> = () => {
             <TitleWords>4-H Military</TitleWords>
             <TitleWords>Partnerships</TitleWords>
           </Title>
-          <Logo src={logo} />
+          <Logo src='https://res.cloudinary.com/four-hmpp/image/upload/v1542786198/logos/4h-logo.png' />
         </Heading>
         <Links ref={navRef as any}>
           <LinkGroup title="About Us" manageBackground={backgroundManagement}>

@@ -1,5 +1,5 @@
 import * as axios from 'axios'
-import { IApiError, IContactUsEmail, ILiaison, IUser } from '../types'
+import { IApiError, IContactUsEmail, ILiaison, IPartnerSection, IUser } from '../types'
 
 let api: axios.AxiosInstance
 let isLoggedIn: boolean
@@ -58,6 +58,9 @@ const liaisons = {
 const emails = {
   create: (email: IContactUsEmail): Promise<{ email: IContactUsEmail }> => requests.post('/email', email),
 }
+const partners = {
+  getSections: (): Promise<{ partnerSections: IPartnerSection[] }> => requests.get('/partnerSections'),
+}
 
 function logout() {
   window.localStorage.removeItem('token')
@@ -89,6 +92,7 @@ const restApi = {
   emails,
   init,
   liaisons,
+  partners,
   users,
 }
 

@@ -3,14 +3,14 @@ import Downshift from 'downshift'
 import matchSorter from 'match-sorter'
 import * as React from 'react'
 import styled from 'styled-components/macro'
+// import api from '../utils/api'
+import staticLiaisons from '../assets/data/staticLiaisons.json'
 import { InputGroup, PageWrapper } from '../components/Elements'
 import Icon from '../components/Icon'
 import { useHash } from '../hooks/hooks'
 // import Input from '../components/Input'
 import { ILiaison } from '../types'
 import { elevation } from '../utils/mixins'
-// import api from '../utils/api'
-import staticLiaisons from '../utils/staticLiaisons.json'
 
 export const filterLiaisons = (liaisons: ILiaison[], query: string | null): ILiaison[] => {
   if (!query) return liaisons.sort((a, b) => (a.region > b.region ? 1 : -1))
@@ -21,8 +21,9 @@ export const filterLiaisons = (liaisons: ILiaison[], query: string | null): ILia
 }
 
 const FindLiaison: React.SFC<RouteComponentProps> = ({ location }) => {
-  const [liaisons, setLiaisons] = React.useState<ILiaison[]>([])
+  const [liaisons, setLiaisons] = React.useState<ILiaison[] | undefined>(undefined)
   const [selectedLiaison, setSelectedLiaison] = React.useState<ILiaison | undefined>(undefined)
+  /* stylelint-disable-next-line */
   const findRef = React.useRef<HTMLHeadingElement>(null)
   useHash({ refToFocus: findRef, hash: '#search', location })
 
@@ -46,59 +47,61 @@ const FindLiaison: React.SFC<RouteComponentProps> = ({ location }) => {
         educate university staff and citizens about the unique challenges faced by military children.
       </P>
       <Heading ref={findRef as any}>Find A Liaison</Heading>
-      <Downshift
-        itemToString={item => (item ? item.region : '')}
-        onChange={(selection: ILiaison) => setSelectedLiaison(selection)}
-      >
-        {({
-          getLabelProps,
-          getInputProps,
-          isOpen,
-          getItemProps,
-          inputValue,
-          highlightedIndex,
-          getMenuProps,
-          selectedItem,
-          getToggleButtonProps,
-          clearSelection,
-        }) => (
-          <div>
-            <FindInputGroup>
-              <label {...getLabelProps({ name: 'region' })}>Enter a state or US Province</label>
-              <div style={{ position: 'relative' }}>
-                <FindInput className="input" {...getInputProps()} placeholder="Kansas" />
-                {selectedItem ? (
-                  <ControllerButton onClick={() => clearSelection()} aria-label="clear selection">
-                    <Icon name="x" />
-                  </ControllerButton>
-                ) : (
-                  <ControllerButton {...getToggleButtonProps()}>
-                    <Icon name="arrow" isOpen={isOpen} />
-                  </ControllerButton>
-                )}
-              </div>
-            </FindInputGroup>
-            {isOpen ? (
-              <Menu {...getMenuProps({ style: { height: 250, overflowY: 'scroll' } })}>
-                {filterLiaisons(liaisons, inputValue).map((liaison: ILiaison, index) => {
-                  return (
-                    <Item
-                      key={liaison.region.toLowerCase()}
-                      {...getItemProps({
-                        index,
-                        item: liaison,
-                        style: { background: index === highlightedIndex ? '#5a2a82' : '' },
-                      })}
-                    >
-                      {liaison.region}
-                    </Item>
-                  )
-                })}
-              </Menu>
-            ) : null}
-          </div>
-        )}
-      </Downshift>
+      {liaisons && (
+        <Downshift
+          itemToString={item => (item ? item.region : '')}
+          onChange={(selection: ILiaison) => setSelectedLiaison(selection)}
+        >
+          {({
+            getLabelProps,
+            getInputProps,
+            isOpen,
+            getItemProps,
+            inputValue,
+            highlightedIndex,
+            getMenuProps,
+            selectedItem,
+            getToggleButtonProps,
+            clearSelection,
+          }) => (
+            <div>
+              <FindInputGroup>
+                <label {...getLabelProps({ name: 'region' })}>Enter a state or US Province</label>
+                <div style={{ position: 'relative' }}>
+                  <FindInput className="input" {...getInputProps()} placeholder="Kansas" />
+                  {selectedItem ? (
+                    <ControllerButton onClick={() => clearSelection()} aria-label="clear selection">
+                      <Icon name="x" />
+                    </ControllerButton>
+                  ) : (
+                    <ControllerButton {...getToggleButtonProps()}>
+                      <Icon name="arrow" isOpen={isOpen} />
+                    </ControllerButton>
+                  )}
+                </div>
+              </FindInputGroup>
+              {isOpen ? (
+                <Menu {...getMenuProps({ style: { height: 250, overflowY: 'scroll' } })}>
+                  {filterLiaisons(liaisons, inputValue).map((liaison: ILiaison, index) => {
+                    return (
+                      <Item
+                        key={liaison.region.toLowerCase()}
+                        {...getItemProps({
+                          index,
+                          item: liaison,
+                          style: { background: index === highlightedIndex ? '#5a2a82' : '' },
+                        })}
+                      >
+                        {liaison.region}
+                      </Item>
+                    )
+                  })}
+                </Menu>
+              ) : null}
+            </div>
+          )}
+        </Downshift>
+      )}
       {selectedLiaison && (
         <Liaison>
           <ResultContent>

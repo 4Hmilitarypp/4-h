@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/header/LinkGroup.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/header</a> LinkGroup.tsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">53.85% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>21/39</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>3/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">55.26% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>21/38</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as React from 'react'
+import styled from 'styled-components/macro'
+import { IBackgroundCoords, Omit } from '../types'
+&nbsp;
+interface IProps {
+  manageBackground: {
+    setCoords: (coords: Omit&lt;IBackgroundCoords, 'open'&gt;) =&gt; void
+    setOpen: (open: boolean) =&gt; void
+    navRef: React.RefObject&lt;HTMLDivElement&gt;
+  }
+  title: string
+}
+&nbsp;
+const UnstyledLinkGroup: React.SFC&lt;IProps&gt; = ({ children, manageBackground, title, ...rest }) =&gt; {
+  const liRef = React.useRef&lt;HTMLLIElement&gt;(null)
+  const dropdownRef = React.useRef&lt;HTMLDivElement&gt;(null)
+&nbsp;
+  const handleClick = () =&gt; {
+    manageBackground.setOpen(false)
+    hideDropdownAndBackground()
+  }
+&nbsp;
+  const handleBlur = (e: any) =&gt; {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (!e.relatedTarget || <span class="branch-1 cbranch-no" title="branch not covered" >e.relatedTarget.tabIndex === -1)</span> {
+      hideDropdownAndBackground()
+      return
+    }
+<span class="cstat-no" title="statement not covered" >    if (dropdownRef.current) {</span>
+<span class="cstat-no" title="statement not covered" >      dropdownRef.current.focus()</span>
+<span class="cstat-no" title="statement not covered" >      if (e.relatedTarget.tagName === 'SPAN' || e.relatedTarget.innerHTML === 'Sign In') {</span>
+<span class="cstat-no" title="statement not covered" >        hideDropdownAndBackground()</span>
+      }
+    }
+  }
+&nbsp;
+  const showDropDownAndBackground = <span class="fstat-no" title="function not covered" >(e</span>: React.MouseEvent&lt;HTMLLIElement&gt; | React.FocusEvent&lt;HTMLLIElement&gt;) =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (e.relatedTarget === window || !e.relatedTarget) {</span>
+<span class="cstat-no" title="statement not covered" >      return</span>
+    }
+    const liNode = <span class="cstat-no" title="statement not covered" >liRef.current</span>
+    const dropdownNode = <span class="cstat-no" title="statement not covered" >dropdownRef.current</span>
+<span class="cstat-no" title="statement not covered" >    if (liNode) {</span>
+<span class="cstat-no" title="statement not covered" >      liNode.classList.add('trigger-enter')</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      setTimeout(<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >liNode.classList.contains('trigger-enter') &amp;&amp; liNode.classList.add('trigger-enter-active'),</span> 150)</span>
+<span class="cstat-no" title="statement not covered" >      manageBackground.setOpen(true)</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (dropdownNode &amp;&amp; manageBackground.navRef.current) {</span>
+      const dropdownCoords = <span class="cstat-no" title="statement not covered" >dropdownNode.getBoundingClientRect()</span>
+      const navCoords = <span class="cstat-no" title="statement not covered" >manageBackground.navRef.current.getBoundingClientRect()</span>
+      const coords = <span class="cstat-no" title="statement not covered" >{</span>
+        height: dropdownCoords.height,
+        left: dropdownCoords.left,
+        top: dropdownCoords.top - navCoords.top,
+        width: dropdownCoords.width,
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      manageBackground.setCoords(coords)</span>
+    }
+  }
+  const hideDropdownAndBackground = () =&gt; {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (liRef.current) {
+      liRef.current.classList.remove('trigger-enter', 'trigger-enter-active')
+    }
+    manageBackground.setOpen(false)
+  }
+  return (
+    &lt;li
+      {...rest}
+      ref={liRef}
+      onFocus={showDropDownAndBackground}
+      onBlur={handleBlur}
+      onClick={handleClick}
+      onMouseEnter={showDropDownAndBackground}
+      onMouseLeave={hideDropdownAndBackground}
+    &gt;
+      &lt;DropdownTitle tabIndex={0}&gt;{title}&lt;/DropdownTitle&gt;
+      &lt;Dropdown ref={dropdownRef as any}&gt;{children}&lt;/Dropdown&gt;
+    &lt;/li&gt;
+  )
+}
+&nbsp;
+const DropdownTitle = styled.span`
+  color: ${props =&gt; props.theme.secondary};
+  font-size: 1.7rem;
+  margin: 2rem 1rem;
+  &amp;:hover {
+    cursor: default;
+  }
+`
+const Dropdown = styled.div`
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  padding: 1.5rem 2rem;
+  transform: translateY(6rem);
+  border-radius: 2px;
+  transition: all 0.5s;
+  color: ${props =&gt; props.theme.gray};
+  will-change: opacity;
+  display: none;
+  p {
+    white-space: nowrap;
+  }
+`
+const LinkGroup = styled(UnstyledLinkGroup)`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+  &amp;.trigger-enter {
+    ${Dropdown} {
+      display: block;
+    }
+  }
+  &amp;.trigger-enter-active {
+    ${Dropdown} {
+      opacity: 1;
+    }
+  }
+  &amp;:hover {
+    ${DropdownTitle} {
+      opacity: 0.8;
+    }
+  }
+`
+&nbsp;
+export default LinkGroup
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Nov 21 2018 18:01:21 GMT-0600 (Central Standard Time)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

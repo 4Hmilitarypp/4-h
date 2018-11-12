@@ -1,0 +1,211 @@
+[
+  {
+    "title": "Air Force",
+    "slug": "air-force",
+    "shortDescription": "Aiming HIGH for Air Force Families The 4-H Air Force Partnership expands hands-on learning opportunities for Air Force youth, families and Youth Programs (YP) staff on installations and in the community. Since 4-H is located in every county in every state, it allows for easy access to resources, professional development and support for military 4-H Clubs and programs wherever a family is located. State Extension 4-H Military Liaisons foster partnerships between the 4-H County Educators and Air Force Youth Programs staff to create and sustain 4-H Clubs on Air Force installations and military clubs in the community; provide youth development training; and offer a variety of experiences for youth that develop critical 21st Century life skills. The 4-H/AF Partnership is dedicated to helping youth step up to the challenges of a complex and changing world by cultivating the next generation of leaders today. Air Force Child and Youth Programs offer a wide range of educational programs, instructional classes and special events in a safe and fun environment supervised by caring and well-trained staff.",
+    "longDescription": "Aiming HIGH for Air Force Families The 4-H Air Force Partnership expands hands-on learning opportunities for Air Force youth, families and Youth Programs (YP) staff on installations and in the community. Since 4-H is located in every county in every state, it allows for easy access to resources, professional development and support for military 4-H Clubs and programs wherever a family is located. State Extension 4-H Military Liaisons foster partnerships between the 4-H County Educators and Air Force Youth Programs staff to create and sustain 4-H Clubs on Air Force installations and military clubs in the community; provide youth development training; and offer a variety of experiences for youth that develop critical 21st Century life skills. The 4-H/AF Partnership is dedicated to helping youth step up to the challenges of a complex and changing world by cultivating the next generation of leaders today. Air Force Child and Youth Programs offer a wide range of educational programs, instructional classes and special events in a safe and fun environment supervised by caring and well-trained staff.",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542787787/logos/AF_CYP_Logo_Color.png",
+        "alt": "Air Force logo"
+      }
+    ],
+    "links": [
+      {
+        "title": "",
+        "url": "http://www.myairforcelife.com/Youth/InstallationYouthPrograms.aspx",
+        "linkText": "Installation Youth Programs"
+      },
+      {
+        "title": "",
+        "url": "http://4-hmilitarypartnerships.org/military-family/af-cyp/reports/reports.html",
+        "linkText": "View past reports"
+      }
+    ],
+    "images": [{ "url": "http://4-hmilitarypartnerships.org/images/4hclover.jpg", "alt": "4-H logo" }],
+    "annualReports": [
+      {
+        "title": "4-H/Air Force Aim High Report",
+        "url": "http://4-hmilitarypartnerships.org/military-family/af-cyp/2013_annual_report.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Army",
+    "slug": "army",
+    "shortDescription": "Since its inception in 1995, the 4-H partnership with Army has evolved into a model program of cooperation between Federal agencies. Through this partnership, 4-H National Headquarters and Army Child, Youth, and School Services partner to provide predictable, quality youth programs and introduce 4-H to Army installations worldwide. The partnership links resources of the Land Grant University Extension System to Army youth programs in pursuit of their common mission for positive youth development experiences for children and youth wherever they live.",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816897/logos/army-cys-logo.webp",
+        "alt": "U.S. Army, Child, Youth and School Services logo"
+      }
+    ],
+    "longDescription": "Since its inception in 1995, the 4-H partnership with Army has evolved into a model program of cooperation between Federal agencies. Through this partnership, 4-H National Headquarters and Army Child, Youth, and School Services partner to provide predictable, quality youth programs and introduce 4-H to Army installations worldwide. The partnership links resources of the Land Grant University Extension System to Army youth programs in pursuit of their common mission for positive youth development experiences for children and youth wherever they live.",
+    "links": [
+      {
+        "title": "",
+        "url": "http://www.myairforcelife.com/Youth/InstallationYouthPrograms.aspx",
+        "linkText": "Installation Youth Programs"
+      },
+      {
+        "title": "",
+        "url": "http://4-hmilitarypartnerships.org/military-family/af-cyp/reports/reports.html",
+        "linkText": "View past reports"
+      }
+    ],
+    "images": [{ "url": "http://4-hmilitarypartnerships.org/images/4hclover.jpg", "alt": "4-H logo" }],
+    "annualReports": [
+      {
+        "title": "4-H Navy Annual Report 2011-2012",
+        "url": "http://4-hmilitarypartnerships.org/military-family/navy-cyp/archive/Navy_2011_2012_annual_report.pdf"
+      },
+      {
+        "title": "4-H Navy Annual Report 2010",
+        "url": "http://4-hmilitarypartnerships.org/military-family/navy-cyp/archive/Navy_2010_annual_report.pdf"
+      },
+      {
+        "title": "4-H Navy Annual Report 2008",
+        "url": "http://4-hmilitarypartnerships.org/military-family/navy-cyp/archive/Navy_2008_annual_report.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Navy",
+    "slug": "navy",
+    "shortDescription": "In 2007, the U.S. Department of Agriculture, National Institute of Food and Agriculture, signed an agreement with the U.S. Navy Child and Youth Programs (CYP) to initiate the 4-H/Navy Youth Development Project to provide positive youth development experiences for Navy youth. This project is a collaboration of 4-H National Headquarters, 4-H faculty of Land Grant Universities, and Navy Child and Youth Programs staff.",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542786191/logos/navy-cyp-logo-with-tagline.png",
+        "alt": "Navy CYP logo"
+      }
+    ],
+    "longDescription": "In 2007, the U.S. Department of Agriculture, National Institute of Food and Agriculture, signed an agreement with the U.S. Navy Child and Youth Programs (CYP) to initiate the 4-H/Navy Youth Development Project to provide positive youth development experiences for Navy youth. This project is a collaboration of 4-H National Headquarters, 4-H faculty of Land Grant Universities, and Navy Child and Youth Programs staff.",
+    "links": [
+      {
+        "title": "",
+        "url": "http://www.myairforcelife.com/Youth/InstallationYouthPrograms.aspx",
+        "linkText": "Installation Youth Programs"
+      },
+      {
+        "title": "",
+        "url": "http://4-hmilitarypartnerships.org/military-family/af-cyp/reports/reports.html",
+        "linkText": "View past reports"
+      }
+    ],
+    "images": [{ "url": "http://4-hmilitarypartnerships.org/images/4hclover.jpg", "alt": "4-H logo" }]
+  },
+  {
+    "title": "DoD-USDA",
+    "slug": "dod-usda",
+    "shortDescription": "The Department of Defense (DoD) and the National Institute of Food and Agriculture (NIFA), U.S. Department of Agriculture (USDA) have successfully engaged in collaborations that support military children and youth experiencing the deployment of a parent or loved one. The goal of the project is to create environments and offer experiences to military children and youth to promote their growth and development, and help them cope with the stresses of deployment and reintegration.",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828830/logos/department-of-defense-logo.jpg",
+        "alt": "Department Of Defense logo"
+      },
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828832/logos/usda-logo.jpg",
+        "alt": "USDA logo"
+      }
+    ],
+    "longDescription": "The Department of Defense (DoD) and the National Institute of Food and Agriculture (NIFA), U.S. Department of Agriculture (USDA) have successfully engaged in collaborations that support military children and youth experiencing the deployment of a parent or loved one. The goal of the project is to create environments and offer experiences to military children and youth to promote their growth and development, and help them cope with the stresses of deployment and reintegration.",
+    "annualReports": [
+      {
+        "title": "2015 DoD-USDA Partnership: Child and Youth Reintegration Support Camps",
+        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/Camp15LR.pdf"
+      },
+      {
+        "title": "2015 DoD Camp Video Report",
+        "url": "https://youtu.be/fk0O2HyqKv4"
+      },
+      {
+        "title": "2014 DoD-USDA Partnership: Child and Youth Reintegration Support Camps Corporate Report",
+        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/DOD-USDA_14_Camp_LR.pdf"
+      },
+      {
+        "title": "2013 OSD/OMK Camp Corporate Report",
+        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/2013%20OSD_OMK_camp_annual_report_FINAL.pdf"
+      },
+      {
+        "title": "2013 Local/Regional Support Networks Corporate Report",
+        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/2013_LRSN_annual_report.pdf"
+      },
+      {
+        "title": "2013 Camp Report: Building Resiliency in Military Youth",
+        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/final_camp_report_2013_marek.doc"
+      },
+      {
+        "title": "2012 OSD/OMK Camp Corporate Report",
+        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/2012%20Camp%20Corp%20Report%20FINAL.pdf"
+      }
+    ],
+    "images": [{ "url": "http://4-hmilitarypartnerships.org/images/4hclover.jpg", "alt": "4-H logo" }]
+  },
+  {
+    "title": "National Guard Bureau",
+    "slug": "national-guard-bureau",
+    "shortDescription": "View resources to get connected with the National Guard Bureau.",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816694/logos/national-guard-bureau-logo.png",
+        "alt": "National Guard Bureau Logo"
+      }
+    ],
+    "longDescription": "View resources to get connected with the National Guard.",
+    "links": [
+      {
+        "title": "",
+        "url": "https://www.jointservicessupport.org/communityforces/",
+        "linkText": "Joining Community Forces"
+      },
+      {
+        "title": "",
+        "url": "http://www.whitehouse.gov/joiningforces",
+        "linkText": "Joining Community Forces (White House Link)"
+      },
+      {
+        "title": "",
+        "url": "http://www.nifa.usda.gov/newsroom/news/2014news/10291_ntl_grd_fam_mou.html",
+        "linkText": "USDA and National Guard Sign Memorandum of Understanding to Assist National Guard Families "
+      }
+    ]
+  },
+  {
+    "title": "Army National Guard",
+    "slug": "army-national-guard",
+    "shortDescription": "The army national guard is the Army's branch of the US national guard.",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/army-national-guard-logo.png",
+        "alt": "Army National Guard Logo"
+      }
+    ],
+    "longDescription": "The army national guard is the Army's branch of the US national guard.",
+    "links": [
+      {
+        "title": "",
+        "url": "http://www.cyssprogram.com/",
+        "linkText": "Army National Guard Info"
+      }
+    ]
+  },
+  {
+    "title": "Air National Guard",
+    "slug": "air-national-guard",
+    "shortDescription": "The air national guard is the Air's branch of the US national guard.",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/air-national-guard-logo.png",
+        "alt": "Air National Guard Logo"
+      }
+    ],
+    "longDescription": "The air national guard is the Air's branch of the US national guard.",
+    "links": [
+      {
+        "title": "",
+        "url": "https://www.jointservicessupport.org/FP/Youth.aspx",
+        "linkText": "Air National Guard Info"
+      }
+    ]
+  }
+]

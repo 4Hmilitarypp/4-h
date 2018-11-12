@@ -1,6 +1,8 @@
 import * as React from 'react'
-import { render, wait } from 'react-testing-library'
+import { render } from 'react-testing-library'
 import { useFlash, useHash } from '../hooks'
+
+let nativeScrollIntoView: any
 
 beforeAll(() => {
   jest.useFakeTimers()
@@ -8,7 +10,17 @@ beforeAll(() => {
 
 afterAll(() => {
   jest.useRealTimers()
+  Element.prototype.scrollIntoView = nativeScrollIntoView
 })
+
+const setup = () => {
+  const mockScrollIntoView = jest.fn(() => null)
+  nativeScrollIntoView = Element.prototype.scrollIntoView
+  Element.prototype.scrollIntoView = mockScrollIntoView
+  return {
+    mockScrollIntoView,
+  }
+}
 
 describe('useFlash', () => {
   it('should timeout after the set time', async () => {
@@ -18,7 +30,7 @@ describe('useFlash', () => {
     }
     const { getByText, rerender } = render(<TestElement />)
     expect(getByText('true')).toBeDefined()
-    rerender(<TestElement />)
+    rerender(<TestElement />) // Flush Effect
     jest.runAllTimers()
     expect(getByText('false')).toBeDefined()
   })
@@ -26,12 +38,10 @@ describe('useFlash', () => {
 
 describe('useHash', () => {
   it('should route when the hash is the same', async () => {
-    const mockScrollIntoView = jest.fn(() => null)
-    const native = Element.prototype.scrollIntoView
-    Element.prototype.scrollIntoView = mockScrollIntoView
+    const { mockScrollIntoView } = setup()
     const TestElement = () => {
       const fakeHash = '#go'
-      const fakeRef = React.useRef<HTMLDivElement>()
+      const fakeRef = React.useRef<HTMLDivElement>(null)
       const fakeLocation = { hash: fakeHash }
       useHash({ refToFocus: fakeRef, hash: fakeHash, location: fakeLocation })
       return <div ref={fakeRef as any} />
@@ -40,6 +50,5 @@ describe('useHash', () => {
     expect(mockScrollIntoView).toHaveBeenCalledTimes(0)
     rerender(<TestElement />)
     expect(mockScrollIntoView).toHaveBeenCalledTimes(1)
-    Element.prototype.scrollIntoView = native
   })
 })

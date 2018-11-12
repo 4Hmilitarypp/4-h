@@ -64,7 +64,7 @@ it('should redirect to the liaison page if successful, reset the password input,
   loginMock.mockImplementationOnce(() => Promise.resolve({ response: 'success!' }))
 
   fireEvent.submit(submitButton)
-  rerender(<SignInModal />)
+  rerender(<SignInModal />) // flush effect
 
   expect(api.auth.login).toBeCalledTimes(1)
   expect(navigate).toBeCalledTimes(1)

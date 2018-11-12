@@ -11,7 +11,8 @@ import Events from './pages/Events'
 import FindLiaison from './pages/FindLiaison'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
-import Partners from './pages/Partners'
+import Partner from './pages/Partner'
+import Partners from './pages/partners/Partners'
 import Photos from './pages/Photos'
 export const theme = {
   black: '#222222',
@@ -41,6 +42,7 @@ class App extends React.Component<{}, {}> {
             <Home path="/" />
             <About path="/about" />
             <Partners path="/partners" />
+            <Partner path="/partners/:slug" />
             <Events path="/events" />
             <Photos path="/photos" />
             <About4HClub path="/4-h-club" />

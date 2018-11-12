@@ -1,7 +1,6 @@
 import { Link, RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
-import americanFlag from '../assets/images/AmericanFlag.jpg'
 import { Heading, InputGroup, SecondaryButton } from '../components/Elements'
 import Flash from '../components/Flash'
 import { useFlash } from '../hooks/hooks'
@@ -60,7 +59,10 @@ const ContactUs: React.SFC<RouteComponentProps> = () => {
             <strong>Office hours:</strong> 8am-5pm
           </p>
         </ContactInfo>
-        <Flag src={americanFlag} alt="American Flag" />
+        <Flag
+          src="https://res.cloudinary.com/four-hmpp/image/upload/v1542786300/AmericanFlag.jpg"
+          alt="American Flag"
+        />
       </Content>
       <Heading as="h2" center={true} color="secondary">
         Send A Message

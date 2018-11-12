@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { fireEvent, render } from 'react-testing-library'
+import { render } from 'react-testing-library'
 import Flash from '../Flash'
 
 const setup = ({ submitted, successMessage }: { submitted: boolean; successMessage?: string }) => {
