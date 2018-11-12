@@ -20,7 +20,7 @@ export const useHash = ({ refToFocus, hash, location }: IHashProps) => {
         node.scrollIntoView()
       }
     }
-  }, [])
+  })
 }
 
 interface IUseFlashArgs {

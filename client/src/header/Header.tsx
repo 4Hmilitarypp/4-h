@@ -38,7 +38,7 @@ const Header: React.SFC<RouteComponentProps> = () => {
               <LinkTitle>About Us</LinkTitle>
               <LinkDescription>Learn about the 4-H Military Partnership</LinkDescription>
             </StyledDropdownLink>
-            <StyledDropdownLink to="/history">
+            <StyledDropdownLink to="/about/#history">
               <LinkTitle>History</LinkTitle>
               <LinkDescription>Learn about our history</LinkDescription>
             </StyledDropdownLink>

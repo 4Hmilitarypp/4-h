@@ -40,7 +40,6 @@ class App extends React.Component<{}, {}> {
           <Router primary={false}>
             <Home path="/" />
             <About path="/about" />
-            <About path="/about" />
             <Partners path="/partners" />
             <Events path="/events" />
             <Photos path="/photos" />
