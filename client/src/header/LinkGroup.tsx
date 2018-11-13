@@ -81,7 +81,7 @@ const UnstyledLinkGroup: React.SFC<IProps> = ({ children, manageBackground, titl
 }
 
 const DropdownTitle = styled.span`
-  color: ${props => props.theme.primary};
+  color: ${props => props.theme.secondary};
   font-size: 1.7rem;
   margin: 2rem 1rem;
   &:hover {

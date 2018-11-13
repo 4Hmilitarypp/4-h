@@ -23,7 +23,6 @@ const Header: React.SFC<RouteComponentProps> = () => {
   return (
     <>
       <DropdownBackground {...backgroundCoords} open={backgroundOpen} />
-      {/* Add a memo to the header / profile it with react dev tools */}
       <HeaderContainer>
         <Heading to="/">
           <Title>
