@@ -11,7 +11,7 @@ const Partners: React.FC<RouteComponentProps> = () => {
   /* const heroImage =
     'https://res.cloudinary.com/four-hmpp/image/upload/v1542863574/pictures-from-states/93aa0186-8b7b-5a2c-8c57-1823ef99173a.jpg' */
   const heroImage =
-    'https://res.cloudinary.com/four-hmpp/image/upload/v1542863592/pictures-from-states/a0c173db-74ca-4c72-b316-7f2916c1bebe.jpg'
+    'https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542863592/pictures-from-states/a0c173db-74ca-4c72-b316-7f2916c1bebe.jpg'
   React.useEffect(() => {
     // api.partners.getSections().then(({ partnerSections }) => setPartners(partnerSections))
     setPartners(staticPartnerSections)

@@ -25,6 +25,7 @@ export const theme = {
   lightGrey: '#828c87',
   offWhite: '#f7f8f7',
   primary: '#339966',
+  primaryText: '#0f854a',
   secondary: '#5a2a82',
   warning: '#bb0000',
   white: '#fff',
