@@ -8,7 +8,7 @@ import { IApiError, IForm } from '../types'
 import api from '../utils/api'
 import { elevation } from '../utils/mixins'
 
-const ContactUs: React.SFC<RouteComponentProps> = () => {
+const ContactUs: React.FC<RouteComponentProps> = () => {
   const { submitted, setSubmitted, error, setError } = useFlash({ initialSubmitted: false })
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement> & IForm) => {

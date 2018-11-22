@@ -27,7 +27,7 @@ export default class Portal extends React.Component<{}, IState> {
   }
 }
 
-/* const Portal: React.SFC = ({ children }) => {
+/* const Portal: React.FC = ({ children }) => {
   const [portalRoot, setPortalRoot] = React.useState<HTMLElement | null>(null)
   const [portal, setPortal] = React.useState<HTMLDivElement | undefined>(undefined)
   React.useEffect(() => {

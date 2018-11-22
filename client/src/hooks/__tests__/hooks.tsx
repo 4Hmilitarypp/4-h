@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { render } from 'react-testing-library'
+import { flushEffects, render } from 'react-testing-library'
 import { useFlash, useHash } from '../hooks'
 
 let nativeScrollIntoView: any
@@ -28,9 +28,9 @@ describe('useFlash', () => {
       const { submitted } = useFlash({ initialSubmitted: true, timeoutLength: 50 })
       return <p>{submitted ? 'true' : 'false'}</p>
     }
-    const { getByText, rerender } = render(<TestElement />)
+    const { getByText } = render(<TestElement />)
     expect(getByText('true')).toBeDefined()
-    rerender(<TestElement />) // Flush Effect
+    flushEffects() // Flush Effect to run "didMount"
     jest.runAllTimers()
     expect(getByText('false')).toBeDefined()
   })
@@ -46,9 +46,9 @@ describe('useHash', () => {
       useHash({ refToFocus: fakeRef, hash: fakeHash, location: fakeLocation })
       return <div ref={fakeRef as any} />
     }
-    const { rerender } = render(<TestElement />)
+    render(<TestElement />)
     expect(mockScrollIntoView).toHaveBeenCalledTimes(0)
-    rerender(<TestElement />)
+    flushEffects() // Flush Effect to run "didMount"
     expect(mockScrollIntoView).toHaveBeenCalledTimes(1)
   })
 })

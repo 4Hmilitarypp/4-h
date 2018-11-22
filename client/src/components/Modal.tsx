@@ -8,7 +8,7 @@ interface IProps {
   setOn: (on: boolean) => void
 }
 
-const Modal: React.SFC<IProps> = ({ children, on, setOn }) => {
+const Modal: React.FC<IProps> = ({ children, on, setOn }) => {
   return (
     <Portal>
       {on && (

@@ -7,7 +7,7 @@ interface IProps {
   value?: string
 }
 
-const TextArea: React.SFC<IProps> = props => {
+const TextArea: React.FC<IProps> = props => {
   TextArea.defaultProps = {
     readOnly: false,
     value: undefined,

@@ -1,4 +1,4 @@
-import { navigate, RouteComponentProps } from '@reach/router'
+import { navigate as reachNavigate, RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
 // import api from '../../utils/api'
@@ -14,9 +14,9 @@ interface IProps extends RouteComponentProps {
   navigate?: any
 }
 
-const Partner: React.FC<IProps> = ({ slug, navigate: propsNavigate }) => {
+const Partner: React.FC<IProps> = ({ slug, navigate }) => {
   Partner.defaultProps = {
-    navigate: propsNavigate || navigate,
+    navigate: navigate || reachNavigate,
   }
 
   const [partner, setPartner] = React.useState<IPartner | undefined>(undefined)
@@ -24,8 +24,8 @@ const Partner: React.FC<IProps> = ({ slug, navigate: propsNavigate }) => {
   React.useEffect(() => {
     // api.partners.get(partner.slug).then(({ partner: partnerResult }) => setPartner(partnerResult))
     const partnerResult = staticPartners.filter((p: IPartner) => p.slug === slug)[0]
-    if (!partnerResult && propsNavigate) {
-      propsNavigate('/404')
+    if (!partnerResult) {
+      navigate('/404')
     }
     window.scrollTo(0, 0)
     setPartner(partnerResult)
@@ -36,7 +36,7 @@ const Partner: React.FC<IProps> = ({ slug, navigate: propsNavigate }) => {
       {partner && (
         <PartnerWrapper>
           <HeaderWrapper>
-            <BackButton onClick={() => propsNavigate('/partners')}>
+            <BackButton onClick={() => navigate('/partners')}>
               <BackIcon name="back" circleColor="#339966" arrowColor="#fff" />
               <BackText>Back To Partners</BackText>
             </BackButton>

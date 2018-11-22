@@ -10,7 +10,7 @@ interface IProps {
   initialOpen?: boolean
 }
 
-const SignInModal: React.SFC<IProps> = ({ children, initialOpen = false }) => {
+const SignInModal: React.FC<IProps> = ({ children, initialOpen = false }) => {
   const [on, setOn] = React.useState<boolean>(initialOpen)
   const [error, setError] = React.useState<string | undefined>(undefined)
   const [password, setPassword] = React.useState<string>('')
@@ -37,13 +37,13 @@ const SignInModal: React.SFC<IProps> = ({ children, initialOpen = false }) => {
           password: submittedPassword.value,
         })
         .then(() => {
+          setPassword('')
           setOn(false)
-          resetPassword()
           navigate('/liaisons')
         })
         .catch(({ response }: IApiError) => {
+          setPassword('')
           setError(response.data.message || response.statusText)
-          resetPassword()
         })
     } else {
       setError('All required fields not met.')
@@ -53,10 +53,6 @@ const SignInModal: React.SFC<IProps> = ({ children, initialOpen = false }) => {
   const handlePasswordChange = (e: FormInputEvent) => {
     e.preventDefault()
     setPassword(e.target.value)
-  }
-
-  const resetPassword = () => {
-    setPassword('')
   }
 
   return (

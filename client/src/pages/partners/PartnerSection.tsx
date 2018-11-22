@@ -9,7 +9,7 @@ interface IProps extends RouteComponentProps {
   index: number
 }
 
-const PartnerSection: React.SFC<IProps> = ({ partner, index }) => {
+const PartnerSection: React.FC<IProps> = ({ partner, index }) => {
   return (
     <PartnerWrapper index={index}>
       <Content index={index}>

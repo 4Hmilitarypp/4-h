@@ -3,7 +3,7 @@ import * as React from 'react'
 import styled from 'styled-components/macro'
 import { Heading, PageWrapper } from '../components/Elements'
 
-const Educator: React.SFC<RouteComponentProps> = () => (
+const Educator: React.FC<RouteComponentProps> = () => (
   <PageWrapper>
     <Heading>Educator</Heading>
     <Hi />

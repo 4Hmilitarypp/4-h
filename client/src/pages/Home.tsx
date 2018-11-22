@@ -3,7 +3,7 @@ import * as React from 'react'
 import styled from 'styled-components/macro'
 import { Heading, PageWrapper } from '../components/Elements'
 
-const Home: React.SFC<RouteComponentProps> = () => (
+const Home: React.FC<RouteComponentProps> = () => (
   <PageWrapper>
     <Heading>Home</Heading>
     <Hi />

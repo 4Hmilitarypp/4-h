@@ -3,7 +3,7 @@ import * as React from 'react'
 import styled from 'styled-components/macro'
 import { Heading, PageWrapper } from '../components/Elements'
 
-const NotFound: React.SFC<RouteComponentProps> = () => (
+const NotFound: React.FC<RouteComponentProps> = () => (
   <PageWrapper>
     <Heading>Not Found</Heading>
     <Hi />

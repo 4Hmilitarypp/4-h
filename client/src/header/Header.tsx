@@ -6,9 +6,9 @@ import DropdownBackground from './DropdownBackground'
 import LinkGroup from './LinkGroup'
 import SignInModal from './SignInModal'
 
-const DropdownLink: React.SFC = props => <Link tabIndex={0} {...props} />
+const DropdownLink: React.FC = props => <Link tabIndex={0} {...props} />
 
-const Header: React.SFC<RouteComponentProps> = () => {
+const Header: React.FC<RouteComponentProps> = () => {
   const [backgroundCoords, setBackgroundCoords] = React.useState({
     height: 100,
     left: 0,

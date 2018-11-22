@@ -9,7 +9,7 @@ interface IProps {
   id?: string
 }
 
-const Input: React.SFC<IProps> = ({ readOnly, ...rest }) => {
+const Input: React.FC<IProps> = ({ readOnly, ...rest }) => {
   const formInputProps = useFormInput(rest.value || '')
 
   return <input {...rest} {...formInputProps} onClick={ev => !readOnly && ev.stopPropagation()} readOnly={readOnly} />

@@ -2,7 +2,7 @@ import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
 
-const Footer: React.SFC<RouteComponentProps> = () => (
+const Footer: React.FC<RouteComponentProps> = () => (
   <FooterContainer>
     <Text>Created by Alex Wendte</Text>
   </FooterContainer>

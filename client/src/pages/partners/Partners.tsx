@@ -7,7 +7,7 @@ import { Heading } from '../../components/Elements'
 import { IPartnerSection } from '../../types'
 import PartnerSection from './PartnerSection'
 
-const Partners: React.SFC<RouteComponentProps> = () => {
+const Partners: React.FC<RouteComponentProps> = () => {
   const [partners, setPartners] = React.useState<IPartnerSection[] | undefined>(undefined)
 
   React.useEffect(() => {

@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 import { Heading, PageWrapper } from '../components/Elements'
 import { useHash } from '../hooks/hooks'
 
-const Events: React.SFC<RouteComponentProps> = ({ location }) => {
+const Events: React.FC<RouteComponentProps> = ({ location }) => {
   const pastEventRef = React.useRef<HTMLHeadingElement>(null)
   useHash({ refToFocus: pastEventRef, hash: '#past-events', location })
   return (

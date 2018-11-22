@@ -11,7 +11,7 @@ interface IProps {
   title: string
 }
 
-const UnstyledLinkGroup: React.SFC<IProps> = ({ children, manageBackground, title, ...rest }) => {
+const UnstyledLinkGroup: React.FC<IProps> = ({ children, manageBackground, title, ...rest }) => {
   const liRef = React.useRef<HTMLLIElement>(null)
   const dropdownRef = React.useRef<HTMLDivElement>(null)
 

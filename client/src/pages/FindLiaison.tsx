@@ -20,7 +20,7 @@ export const filterLiaisons = (liaisons: ILiaison[], query: string | null): ILia
   return result
 }
 
-const FindLiaison: React.SFC<RouteComponentProps> = ({ location }) => {
+const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
   const [liaisons, setLiaisons] = React.useState<ILiaison[] | undefined>(undefined)
   const [selectedLiaison, setSelectedLiaison] = React.useState<ILiaison | undefined>(undefined)
   /* stylelint-disable-next-line */

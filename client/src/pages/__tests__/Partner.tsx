@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { fireEvent, render } from 'react-testing-library'
+import { fireEvent, flushEffects, render } from 'react-testing-library'
 import Partner from '../Partner'
 
 let nativeScrollTo: any
@@ -23,7 +23,7 @@ const setup = (propOverrides?: IProps) => {
   window.scrollTo = mockScrollTo
 
   const utils = render(<Partner {...props} />)
-  utils.rerender(<Partner />) // Flush Effect to render with partnerResult
+  flushEffects()
   return {
     ...utils,
     mockScrollTo,

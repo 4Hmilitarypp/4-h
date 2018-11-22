@@ -4,7 +4,7 @@ jest.mock('@reach/router', () => ({
 }))
 import { navigate } from '@reach/router'
 import * as React from 'react'
-import { fireEvent, getByTestId, render, waitForElement } from 'react-testing-library'
+import { fireEvent, flushEffects, getByTestId, render, waitForElement } from 'react-testing-library'
 import api from '../../utils/api'
 import generate from '../../utils/generate'
 import SignInModal from '../SignInModal'
@@ -56,7 +56,7 @@ it('should submit the form with the correct values', async () => {
 })
 
 it('should redirect to the liaison page if successful, reset the password input, and close the modal', async () => {
-  const { emailInput, passwordInput, submitButton, queryByLabelText, rerender } = await setup()
+  const { emailInput, passwordInput, submitButton, queryByLabelText } = await setup()
   const fakeForm = generate.signInForm()
   emailInput.value = fakeForm.email
   passwordInput.value = fakeForm.password
@@ -64,12 +64,12 @@ it('should redirect to the liaison page if successful, reset the password input,
   loginMock.mockImplementationOnce(() => Promise.resolve({ response: 'success!' }))
 
   fireEvent.submit(submitButton)
-  rerender(<SignInModal />) // flush effect
 
   expect(api.auth.login).toBeCalledTimes(1)
   expect(navigate).toBeCalledTimes(1)
-  expect(passwordInput.value).toBe('')
+  flushEffects() // Flush Effects for setOn
   await waitForElement(() => !queryByLabelText(/Email/i))
+  expect(passwordInput.value).toBe('')
   expect(navigate).toBeCalledWith('/liaisons')
 })
 

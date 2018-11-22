@@ -10,7 +10,7 @@ interface IProps {
   closeClicked: () => void
 }
 
-const Flash: React.SFC<IProps> = ({ successMessage: sm, error, submitted, fixed, closeClicked }) => {
+const Flash: React.FC<IProps> = ({ successMessage: sm, error, submitted, fixed, closeClicked }) => {
   const successMessage = sm as string
   return (
     <>

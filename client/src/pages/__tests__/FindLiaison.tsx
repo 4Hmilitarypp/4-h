@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { fireEvent, render, waitForElement } from 'react-testing-library'
+import { fireEvent, flushEffects, render } from 'react-testing-library'
 jest.mock('../../utils/api')
 // import api from '../../utils/api'
 import staticLiaisons from '../../assets/data/staticLiaisons.json'
@@ -15,7 +15,7 @@ const setup = (propOverrides?: IProps) => {
   const props = Object.assign({}, propOverrides)
 
   const utils = render(<FindLiaison {...props} />)
-  utils.rerender(<FindLiaison />)
+  flushEffects() // Flush Effect to run "didMount"
   const input = utils.getByLabelText(/Enter a state or US Province/i)
   return {
     input,
