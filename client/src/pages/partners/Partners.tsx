@@ -40,7 +40,7 @@ const Partners: React.FC<RouteComponentProps> = () => {
 export default Partners
 
 const Wrapper = styled.div`
-  padding: 2rem 0;
+  padding-bottom: 2rem;
 `
 const Hero = styled.div`
   width: 100%;
