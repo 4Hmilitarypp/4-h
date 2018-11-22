@@ -39,6 +39,7 @@ const Title = styled.h2`
 `
 const FeaturedImage = styled.img`
   height: 20rem;
+  margin: 1rem;
   padding: 2rem;
   object-fit: contain;
   background: ${props => props.theme.white};

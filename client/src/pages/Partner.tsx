@@ -121,10 +121,11 @@ const HeroImages = styled.div`
   justify-content: center;
 `
 const FeaturedImage = styled.img`
-  height: 30rem;
+  height: 20rem;
   margin: 0 auto;
   display: block;
-  padding: 2rem 0;
+  margin: 1rem;
+  padding: 2rem;
   object-fit: contain;
   &:nth-child(2) {
     padding-left: 2rem;
@@ -149,11 +150,6 @@ const Link = styled.a`
     opacity: 0.8;
   }
 `
-/* const Clover = styled.img`
-  height: 1.8rem;
-  width: 1.8rem;
-  margin-right: 1.5rem;
-` */
 const ExternalLinks = styled.ul`
   padding-left: 4rem;
 `
@@ -167,6 +163,7 @@ const ImageGallery = styled.div`
 `
 const Img = styled.img`
   height: 30rem;
+  margin: 1rem;
 `
 const SubHeading = styled.h2`
   color: ${props => props.theme.secondary};

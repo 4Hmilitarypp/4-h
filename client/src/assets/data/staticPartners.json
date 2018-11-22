@@ -7,6 +7,10 @@
     "featuredImages": [
       {
         "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542787787/logos/AF_CYP_Logo_Color.png",
+        "alt": "Air Force CYP logo"
+      },
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542862535/logos/air-force-logo.jpg",
         "alt": "Air Force logo"
       }
     ],
