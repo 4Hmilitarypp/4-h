@@ -211,5 +211,42 @@
         "linkText": "Air National Guard Info"
       }
     ]
+  },
+  {
+    "title": "Reserves",
+    "slug": "reserves",
+    "shortDescription": "The Army, Navy, and Air Force reserves",
+    "longDescription": "The Army, Navy, and Air Force reserves",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911570/logos/army-reserve-logo.png",
+        "alt": "Army Reserve Logo"
+      },
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911657/logos/navy-reserve-logo.png",
+        "alt": "Navy Reserve Logo"
+      },
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911753/logos/air-force-reserve.png",
+        "alt": "Air Force Reserve Logo"
+      }
+    ],
+    "links": [
+      {
+        "title": "",
+        "url": "http://www.cyssprogram.com/",
+        "linkText": "Army Reserve Child, Youth & School Services"
+      },
+      {
+        "title": "",
+        "url": "https://www.arfp.org/",
+        "linkText": "Army Reserve Family Programs"
+      },
+      {
+        "title": "",
+        "url": "https://www.navy.com/advisors/navy-family.html",
+        "linkText": "Navy Reserve Family Programs"
+      }
+    ]
   }
 ]

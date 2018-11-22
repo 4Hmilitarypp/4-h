@@ -19,10 +19,9 @@ const PartnerSection: React.FC<IProps> = ({ partner, index }) => {
           <Description>{trimToLength(300, partner.shortDescription)}</Description>
           <LearnMore to={partner.slug}>Learn More</LearnMore>
         </Text>
-        <FeaturedImage src={partner.featuredImages[0].url} alt={partner.featuredImages[0].alt} />
-        {partner.featuredImages[1] && (
-          <FeaturedImage src={partner.featuredImages[1].url} alt={partner.featuredImages[1].alt} />
-        )}
+        {partner.featuredImages.map(image => (
+          <FeaturedImage key={image.url} src={image.url} alt={image.alt} />
+        ))}
       </Content>
     </PartnerWrapper>
   )
@@ -39,8 +38,9 @@ const Title = styled.h2`
 `
 const FeaturedImage = styled.img`
   height: 20rem;
+  display: block;
   margin: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   object-fit: contain;
   background: ${props => props.theme.white};
   border-radius: 5px;

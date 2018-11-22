@@ -24,16 +24,13 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
   React.useEffect(() => {
     // api.partners.get(partner.slug).then(({ partner: partnerResult }) => setPartner(partnerResult))
     const partnerResult = staticPartners.filter((p: IPartner) => p.slug === slug)[0]
-    if (!partnerResult) {
-      navigate('/404')
-    }
     window.scrollTo(0, 0)
     setPartner(partnerResult)
   }, [])
 
   return (
     <PageWrapper>
-      {partner && (
+      {partner ? (
         <PartnerWrapper>
           <HeaderWrapper>
             <BackButton onClick={() => navigate('/partners')}>
@@ -46,10 +43,9 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
           <Hero>
             <Description>{trimToLength(400, partner.longDescription)}</Description>
             <HeroImages>
-              <FeaturedImage src={partner.featuredImages[0].url} alt={partner.featuredImages[0].alt} />
-              {partner.featuredImages[1] && (
-                <FeaturedImage src={partner.featuredImages[1].url} alt={partner.featuredImages[1].alt} />
-              )}
+              {partner.featuredImages.map(image => (
+                <FeaturedImage key={image.url} src={image.url} alt={image.alt} />
+              ))}
             </HeroImages>
           </Hero>
           {partner.images && (
@@ -95,6 +91,8 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
             </Section>
           )}
         </PartnerWrapper>
+      ) : (
+        <h1>Partner Not Found</h1>
       )}
     </PageWrapper>
   )
@@ -122,14 +120,9 @@ const HeroImages = styled.div`
 `
 const FeaturedImage = styled.img`
   height: 20rem;
-  margin: 0 auto;
   display: block;
   margin: 1rem;
-  padding: 2rem;
   object-fit: contain;
-  &:nth-child(2) {
-    padding-left: 2rem;
-  }
 `
 const Description = styled.p`
   padding-right: 3rem;

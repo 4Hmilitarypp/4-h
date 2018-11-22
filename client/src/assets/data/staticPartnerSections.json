@@ -83,5 +83,24 @@
         "alt": "Air National Guard Logo"
       }
     ]
+  },
+  {
+    "title": "Reserves",
+    "slug": "reserves",
+    "shortDescription": "The Army, Navy, and Air Force reserves",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911570/logos/army-reserve-logo.png",
+        "alt": "Army Reserve Logo"
+      },
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911657/logos/navy-reserve-logo.png",
+        "alt": "Navy Reserve Logo"
+      },
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911753/logos/air-force-reserve.png",
+        "alt": "Air Force Reserve Logo"
+      }
+    ]
   }
 ]

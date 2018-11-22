@@ -36,11 +36,14 @@ it('should render and immediately scroll to 0, 0', () => {
   expect(mockScrollTo).toHaveBeenCalledWith(0, 0)
 })
 
-it('should navigate to 404 if the slug does not exist', () => {
-  const mockNavigate = jest.fn()
-  setup({ navigate: mockNavigate, slug: 'non-existing-partner' })
-  expect(mockNavigate).toHaveBeenCalledTimes(1)
-  expect(mockNavigate).toHaveBeenCalledWith('/404')
+it('should not display partner not found if slug exists', () => {
+  const { queryByText } = setup({ slug: 'army' })
+  expect(queryByText(/Partner Not Found/i)).toBeNull()
+})
+
+it('should show partner not found if the slug does not exist', () => {
+  const { getByText } = setup({ slug: 'non-existing-partner' })
+  expect(getByText(/Partner Not Found/i)).toBeDefined()
 })
 
 it('should navigate to /partners if the back button is pressed', () => {
