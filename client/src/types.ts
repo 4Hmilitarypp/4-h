@@ -42,11 +42,12 @@ export interface IBackgroundCoords {
 }
 
 export interface ILiaison {
+  abbreviation?: string | null
   email?: string | null
+  image: string
   name?: string | null
   phoneNumber?: string | null
   region: string
-  abbreviation?: string | null
 }
 
 /**

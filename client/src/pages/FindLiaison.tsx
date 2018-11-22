@@ -61,23 +61,30 @@ const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
             highlightedIndex,
             getMenuProps,
             selectedItem,
-            getToggleButtonProps,
             clearSelection,
+            openMenu,
+            closeMenu,
           }) => (
             <div>
               <FindInputGroup>
                 <label {...getLabelProps({ name: 'region' })}>Enter a state or US Province</label>
                 <div style={{ position: 'relative' }}>
                   <FindInput className="input" {...getInputProps()} placeholder="Kansas" />
-                  {selectedItem ? (
-                    <ControllerButton onClick={() => clearSelection()} aria-label="clear selection">
-                      <Icon name="x" />
-                    </ControllerButton>
-                  ) : (
-                    <ControllerButton {...getToggleButtonProps()}>
-                      <Icon name="arrow" isOpen={isOpen} />
-                    </ControllerButton>
-                  )}
+                  <ControllerButton
+                    onClick={() => {
+                      if (!isOpen) {
+                        openMenu()
+                      } else {
+                        closeMenu()
+                      }
+                      if (selectedItem) {
+                        clearSelection()
+                        openMenu()
+                      }
+                    }}
+                  >
+                    <Icon name="arrow" isOpen={isOpen} />
+                  </ControllerButton>
                 </div>
               </FindInputGroup>
               {isOpen ? (
@@ -110,12 +117,7 @@ const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
               <StyledLink href={`mailto:${selectedLiaison.email}`}>{selectedLiaison.email}</StyledLink>
               <StyledLink href={`tel:${selectedLiaison.phoneNumber}`}>{selectedLiaison.phoneNumber}</StyledLink>
             </Text>
-            <Flag
-              src={`http://flags.ox3.in/svg/us${
-                selectedLiaison.abbreviation ? `/${selectedLiaison.abbreviation.toLowerCase()}` : ''
-              }.svg`}
-              alt={selectedLiaison.abbreviation ? `${selectedLiaison.region} flag` : 'American Flag'}
-            />
+            <SchoolLogo src={selectedLiaison.image} alt={`${selectedLiaison.region} land grant university logo`} />
           </ResultContent>
         </Liaison>
       )}
@@ -144,7 +146,6 @@ const Menu = styled.ul`
   background: ${props => props.theme.gray};
 `
 const FindInputGroup = styled(InputGroup)`
-  margin: 0;
   max-width: 50rem;
   margin: 0 auto;
 `
@@ -198,9 +199,9 @@ const StyledLink = styled.a`
   color: ${props => props.theme.black};
   text-decoration: underline;
 `
-const Flag = styled.img`
-  width: 23rem;
-  height: 12rem;
-  padding-left: 5rem;
-  object-fit: cover;
+const SchoolLogo = styled.img`
+  height: 20rem;
+  max-width: 40rem;
+  padding-left: 6rem;
+  object-fit: contain;
 `

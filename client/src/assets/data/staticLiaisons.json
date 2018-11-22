@@ -1,6 +1,7 @@
 [
   {
     "region": "Alabama",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361622/logos/lgus/alabama.png",
     "name": "Molly Gregg",
     "phoneNumber": "+1-334-844-2263",
     "email": "greggmh@aces.edu",
@@ -8,6 +9,7 @@
   },
   {
     "region": "Alaska",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361622/logos/lgus/alaska.jpg",
     "name": "Candi Dierenfield",
     "phoneNumber": "+1-907-474-1909",
     "email": "cldierenfield@alaska.edu",
@@ -15,6 +17,7 @@
   },
   {
     "region": "Arizona",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361622/logos/lgus/arizona.png",
     "name": "Kim Christman",
     "phoneNumber": "+1-602-827-8291",
     "email": "kchristman@email.arizona.edu",
@@ -22,6 +25,7 @@
   },
   {
     "region": "Arkansas",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361622/logos/lgus/arkansas.png",
     "name": "Angie Freel",
     "phoneNumber": "+1-501-671-2000",
     "email": "afreel@uaex.edu",
@@ -29,6 +33,7 @@
   },
   {
     "region": "California",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361623/logos/lgus/california.png",
     "name": "Shannon Horrillo",
     "phoneNumber": "+1-530-750-1334",
     "email": "sjhorrillo@ucanr.edu",
@@ -36,6 +41,7 @@
   },
   {
     "region": "Colorado",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361624/logos/lgus/colorado.png",
     "name": "Vanessa Tranel",
     "phoneNumber": "+1-719-251-0926",
     "email": "vanessa.tranel@colostate.edu",
@@ -43,6 +49,7 @@
   },
   {
     "region": "Connecticut",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361624/logos/lgus/connecticut.jpg",
     "name": "Pam Gray",
     "phoneNumber": "+1-869-885-2824",
     "email": "pamela.gray@uconn.edu",
@@ -50,6 +57,7 @@
   },
   {
     "region": "Delaware",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543376781/logos/lgus/delaware.png",
     "name": "Doug Crouse",
     "phoneNumber": "+1-302-730-4000",
     "email": "dcrouse@udel.edu ",
@@ -57,6 +65,7 @@
   },
   {
     "region": "Florida",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361625/logos/lgus/florida.png",
     "name": "Paula Davis",
     "phoneNumber": "+1-850-784-6105",
     "email": "pmdavis@ufl.edu",
@@ -64,6 +73,7 @@
   },
   {
     "region": "Georgia",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543376712/logos/lgus/georgia.png",
     "name": "Casey Mull",
     "phoneNumber": "+1-706-542-4444",
     "email": "mullcd2@uga.edu",
@@ -71,6 +81,7 @@
   },
   {
     "region": "Guam",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361626/logos/lgus/guam.png",
     "name": "Cliff Kyota",
     "phoneNumber": "+1-671-735-2040/4",
     "email": "ckyota@uguam.uog.edu",
@@ -78,6 +89,7 @@
   },
   {
     "region": "Hawaii",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361627/logos/lgus/hawaii.png",
     "name": "Jeff Goodwin",
     "phoneNumber": "+1-808-956-4106",
     "email": "jeffg3@hawaii.edu",
@@ -85,6 +97,7 @@
   },
   {
     "region": "Idaho",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543376617/logos/lgus/idaho.png",
     "name": "James Lindstrom",
     "phoneNumber": "+1-208-885-7276",
     "email": "jlindstrom@uidaho.edu",
@@ -92,6 +105,7 @@
   },
   {
     "region": "Illinois",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361627/logos/lgus/illinois.jpg",
     "name": "Pat McGlaughlin",
     "phoneNumber": "+1-217-333-0910",
     "email": "patm@illinois.edu",
@@ -99,6 +113,7 @@
   },
   {
     "region": "Indiana",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543376485/logos/lgus/indiana.png",
     "name": "Steve McKinley",
     "phoneNumber": "+1-765-494-8435",
     "email": "mckinles@purdue.edu ",
@@ -106,6 +121,7 @@
   },
   {
     "region": "Iowa",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361628/logos/lgus/iowa.png",
     "name": "Jacki Luckstead",
     "phoneNumber": "+1-319-465-3224",
     "email": "luckstea@iastate.edu",
@@ -113,6 +129,7 @@
   },
   {
     "region": "Kansas",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361629/logos/lgus/kansas.png",
     "name": "Wade Weber",
     "phoneNumber": "+1-785-532-5800",
     "email": "wweber@ksu.edu",
@@ -120,6 +137,7 @@
   },
   {
     "region": "Kentucky",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361629/logos/lgus/kentucky.png",
     "name": "Jennifer Tackett",
     "phoneNumber": "+1-859-257-5961 x. 251",
     "email": "jennifer.tackett@uky.edu",
@@ -127,6 +145,7 @@
   },
   {
     "region": "Louisiana",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543362406/logos/lgus/louisiana.png",
     "name": "Tanya Giroir",
     "phoneNumber": "+1-225-578-2196",
     "email": "tagiroir@agcenter.lsu.edu",
@@ -134,6 +153,7 @@
   },
   {
     "region": "Maine",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361630/logos/lgus/maine.png",
     "name": "Ryder Scott",
     "phoneNumber": "+1-207-665-2935",
     "email": "ryder.scott@maine.edu ",
@@ -141,6 +161,7 @@
   },
   {
     "region": "Maryland",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361630/logos/lgus/maryland.png",
     "name": "Sandy Corridon",
     "phoneNumber": "+1-301-314-7363",
     "email": "corridon@umd.edu",
@@ -148,6 +169,7 @@
   },
   {
     "region": "Massachusetts",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361630/logos/lgus/massachusetts.png",
     "name": "Linda Horn",
     "phoneNumber": "+1-413-577-0332",
     "email": "lrhorn@umext.umass.edu",
@@ -155,6 +177,7 @@
   },
   {
     "region": "Michigan",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361631/logos/lgus/michigan.png",
     "name": "Kendra Moyses",
     "phoneNumber": "+1-517-432-7654",
     "email": "kmoyses@anr.msu.edu",
@@ -162,6 +185,7 @@
   },
   {
     "region": "Minnesota",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361632/logos/lgus/minnesota.png",
     "name": "Amber Greeley",
     "phoneNumber": "+1-612-624-8198",
     "email": "runk0014@umn.edu",
@@ -169,6 +193,7 @@
   },
   {
     "region": "Mississippi",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361632/logos/lgus/mississippi.png",
     "name": "James Henderson",
     "phoneNumber": "+1-228-546-1000",
     "email": "jeh149@msstate.edu",
@@ -176,6 +201,7 @@
   },
   {
     "region": "Missouri",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361632/logos/lgus/missouri.png",
     "name": "Teresa Bishop",
     "phoneNumber": "+1-573-884-0554",
     "email": "bishopta@missouri.edu",
@@ -183,6 +209,7 @@
   },
   {
     "region": "Montana",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361633/logos/lgus/montana.png",
     "name": "Todd Kesner",
     "phoneNumber": "+1-406-994-6816",
     "email": "tkesner@montana.edu",
@@ -190,6 +217,7 @@
   },
   {
     "region": "Nebraska",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361633/logos/lgus/nebraska.png",
     "name": "Karly Black",
     "phoneNumber": "+1-402-852-2970",
     "email": "karly.black@unl.edu",
@@ -197,6 +225,7 @@
   },
   {
     "region": "Nevada",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361634/logos/lgus/nevada.png",
     "name": "Eric Killian",
     "phoneNumber": "+1-702-257-5542",
     "email": "killiane@unce.unr.edu",
@@ -204,6 +233,7 @@
   },
   {
     "region": "Ohio",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361637/logos/lgus/ohio.png",
     "name": "Theresa Ferrari",
     "phoneNumber": "+1-614-247-8164",
     "email": "ferrari.8@osu.edu",
@@ -211,6 +241,7 @@
   },
   {
     "region": "Oklahoma",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361638/logos/lgus/oklahoma.png",
     "name": "Jeff Sallee",
     "phoneNumber": "+1-405-744-8885",
     "email": "jeff.sallee@okstate.edu",
@@ -218,6 +249,7 @@
   },
   {
     "region": "Oregon",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543362232/logos/lgus/oregon.png",
     "name": "John Baggott",
     "phoneNumber": "+1-541-963-1010",
     "email": "john.baggott@oregonstate.edu",
@@ -225,6 +257,7 @@
   },
   {
     "region": "Tennessee",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361641/logos/lgus/tennessee.png",
     "name": "Justin Crowe",
     "phoneNumber": "+1-865-974-2128",
     "email": "jcrowe3@utk.edu",
@@ -232,6 +265,7 @@
   },
   {
     "region": "Texas",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361641/logos/lgus/texas.png",
     "name": "JaNelle Casson",
     "phoneNumber": "+1-254-774-6027",
     "email": "janelle.casson@ag.tamu.edu",
@@ -239,6 +273,7 @@
   },
   {
     "region": "Utah",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361642/logos/lgus/utah.png",
     "name": "Dave Francis",
     "phoneNumber": "+1-435-760-4109",
     "email": "dave.francis@usu.edu",
@@ -246,6 +281,7 @@
   },
   {
     "region": "Vermont",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361642/logos/lgus/vermont.png",
     "name": "Sarah Kleinman",
     "phoneNumber": "+1-802-656-0311",
     "email": "sarah.kleinman@uvm.edu",
@@ -253,6 +289,7 @@
   },
   {
     "region": "Virginia",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361642/logos/lgus/virginia.png",
     "name": "Tonya Price",
     "phoneNumber": "+1-540-432-6029",
     "email": "tonyaprice@vt.edu ",
@@ -260,6 +297,7 @@
   },
   {
     "region": "Washington",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361643/logos/lgus/washington.png",
     "name": "Gary Varella",
     "phoneNumber": "+1-509-477-2163",
     "email": "gvarrella@spokanecounty.org",
@@ -267,6 +305,7 @@
   },
   {
     "region": "Wisconsin",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361644/logos/lgus/wisonsin.png",
     "name": "Sue Curtis",
     "phoneNumber": "+1-608-342-1308",
     "email": "sue.curtis@ces.uwex.edu ",
@@ -274,6 +313,7 @@
   },
   {
     "region": "Wyoming",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361646/logos/lgus/wyoming.png",
     "name": "Johnathan Despain",
     "phoneNumber": "+1-307-766-5170",
     "email": "jdespain@uwyo.edu",
@@ -281,6 +321,7 @@
   },
   {
     "region": "New Hampshire",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361634/logos/lgus/new-hampshire.png",
     "name": "Charlotte Cross",
     "phoneNumber": "+1-603-862-2495",
     "email": "",
@@ -288,6 +329,7 @@
   },
   {
     "region": "New Jersey",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361635/logos/lgus/new-jersey.png",
     "name": "Gloria Kraft",
     "phoneNumber": "+1-609-265-5052",
     "email": "kraft@njaes.rutgers.edu",
@@ -295,6 +337,7 @@
   },
   {
     "region": "New Mexico",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361635/logos/lgus/new-mexico.png",
     "name": "Brittany Sonntag",
     "phoneNumber": "+1-505-243-1386",
     "email": "bsonntag@nmsu.edu ",
@@ -302,6 +345,7 @@
   },
   {
     "region": "New York",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361636/logos/lgus/new-york.png",
     "name": "Stephanie Graf",
     "phoneNumber": "+1-315-788-8450",
     "email": "sag58@cornell.edu",
@@ -309,6 +353,7 @@
   },
   {
     "region": "Virgin Islands",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361643/logos/lgus/virgin-islands.png",
     "name": "Sarah D. Smith",
     "phoneNumber": "+1-340-692-4084",
     "email": "sdahl@uvi.edu",
@@ -316,6 +361,7 @@
   },
   {
     "region": "West Virginia",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361644/logos/lgus/west-virginia.png",
     "name": "Matthew Schmuck",
     "phoneNumber": "+1-304-406-7014",
     "email": "matthew.schmuck@mail.wvu.edu",
@@ -323,6 +369,7 @@
   },
   {
     "region": "Rhode Island",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361639/logos/lgus/rhode-island.png",
     "name": "Kristina Horan",
     "phoneNumber": "+1-401-874-2959",
     "email": "kstone@uri.edu",
@@ -330,6 +377,7 @@
   },
   {
     "region": "South Carolina",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361640/logos/lgus/south-carolina.png",
     "name": "Pam Ardern",
     "phoneNumber": "+1-864-650-0295",
     "email": "pardern@clemson.edu",
@@ -337,6 +385,7 @@
   },
   {
     "region": "South Dakota",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361640/logos/lgus/south-dekota.png",
     "name": "Peter Nielson",
     "phoneNumber": "+1-605-688-4167",
     "email": "peter.neilson@sdstate.edu",
@@ -344,6 +393,7 @@
   },
   {
     "region": "North Carolina",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361636/logos/lgus/north-carolina.jpg",
     "name": "Harriett Edwards",
     "phoneNumber": "+1-919-515-9548",
     "email": "harriett_edwards@ncsu.edu ",
@@ -351,6 +401,7 @@
   },
   {
     "region": "North Dakota",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361637/logos/lgus/north-dakota.png",
     "name": "Bradley Cogdill",
     "phoneNumber": "+1-701-231-7253",
     "email": "brad.cogdill@ndsu.edu",
@@ -358,12 +409,14 @@
   },
   {
     "region": "Puerto Rico",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361639/logos/lgus/puerto-rico.png",
     "name": "Judith Conde Pacheco",
     "email": "judith.conde@upr.edu",
     "abbreviation": "PR"
   },
   {
     "region": "American Samoa",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361622/logos/lgus/american-samoa.jpg",
     "name": "Molly Asifoa-Lagai",
     "phoneNumber": "+1-684-699-5011",
     "email": "mlagai@yahoo.com",
@@ -371,31 +424,41 @@
   },
   {
     "region": "District of Columbia",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361625/logos/lgus/district-of-columbia.png",
     "name": "Rebecca Bankhead",
     "phoneNumber": "+1-202-274-7081",
     "email": "rbankhead@udc.edu "
   },
-  { "region": "Pennsylvania", "abbreviation": "PA" },
+  {
+    "region": "Pennsylvania",
+    "abbreviation": "PA",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361638/logos/lgus/pennsylvania.png"
+  },
+
   {
     "region": "Europe Air Force and Cuba Navy supported by Florida",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361625/logos/lgus/florida.png",
     "name": "Paula Davis",
     "phoneNumber": "+1-850-784-6105",
     "email": "pmdavis@ufl.edu"
   },
   {
     "region": "Europe Army & Navy supported by Maryland",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361630/logos/lgus/maryland.png",
     "name": "Sandy Corridon",
     "phoneNumber": "+1-301-314-7363",
     "email": "corridon@umd.edu"
   },
   {
     "region": "Japan & Korea – Army & Navy and Kwajalein supported by Hawaii",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361627/logos/lgus/hawaii.png",
     "name": "Jeff Goodwin",
     "phoneNumber": "+1-808-956-4106",
     "email": "jeffg3@hawaii.edu"
   },
   {
     "region": "Japan & Korea Air Force supported by Alaska",
+    "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543361622/logos/lgus/alaska.jpg",
     "name": "Candi Dierenfield",
     "phoneNumber": "+1-907-474-1909",
     "email": "cldierenfield@alaska.edu"

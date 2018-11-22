@@ -5,6 +5,7 @@ describe('generate.liaison', () => {
     const res = generate.liaison()
     expect(res).toEqual({
       email: expect.any(String),
+      image: expect.any(String),
       name: expect.any(String),
       phoneNumber: expect.any(String),
       region: expect.any(String),
@@ -15,6 +16,7 @@ describe('generate.liaison', () => {
     const res = generate.liaison({ region: testRegion })
     expect(res).toEqual({
       email: expect.any(String),
+      image: expect.any(String),
       name: expect.any(String),
       phoneNumber: expect.any(String),
       region: testRegion,
@@ -30,12 +32,14 @@ describe('generate.liaisons', () => {
       expect.arrayContaining([
         {
           email: expect.any(String),
+          image: expect.any(String),
           name: expect.any(String),
           phoneNumber: expect.any(String),
           region: expect.any(String),
         },
         {
           email: expect.any(String),
+          image: expect.any(String),
           name: expect.any(String),
           phoneNumber: expect.any(String),
           region: expect.any(String),

@@ -9,6 +9,7 @@ const generate = {
   }),
   liaison: (overrides?: Partial<ILiaison>): ILiaison => ({
     email: faker.internet.email(),
+    image: faker.random.image(),
     name: `${faker.name.firstName()} ${faker.name.lastName()}`,
     phoneNumber: `+1-${faker.phone.phoneNumberFormat(0)}`,
     region: faker.address.state(),
