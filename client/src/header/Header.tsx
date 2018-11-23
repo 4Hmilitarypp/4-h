@@ -28,7 +28,7 @@ const Header: React.FC<RouteComponentProps> = () => {
             <TitleWords>4-H Military</TitleWords>
             <TitleWords>Partnerships</TitleWords>
           </Title>
-          <Logo src='https://res.cloudinary.com/four-hmpp/image/upload/v1542786198/logos/4h-logo.png' />
+          <Logo src="https://res.cloudinary.com/four-hmpp/image/upload/v1542786198/logos/4h-logo.png" />
         </Heading>
         <Links ref={navRef as any}>
           <LinkGroup title="About Us" manageBackground={backgroundManagement}>
@@ -65,6 +65,10 @@ const Header: React.FC<RouteComponentProps> = () => {
             <StyledDropdownLink to="/4-h-club">
               <LinkTitle>About</LinkTitle>
               <LinkDescription>Learn about 4-H club in general</LinkDescription>
+            </StyledDropdownLink>
+            <StyledDropdownLink to="4-h-club/get-involved">
+              <LinkTitle>Get Involved</LinkTitle>
+              <LinkDescription>Learn how to join 4-H or make an impact through becoming a volunteer</LinkDescription>
             </StyledDropdownLink>
             <StyledDropdownLink as="a" href="https://4-h.org">
               <LinkTitle>4-H Website</LinkTitle>

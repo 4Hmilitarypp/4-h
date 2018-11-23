@@ -9,6 +9,7 @@ import ContactUs from './pages/ContactUs'
 import Educator from './pages/Educator'
 import Events from './pages/Events'
 import FindLiaison from './pages/FindLiaison'
+import GetInvolved4HClub from './pages/GetInvolved4HClub'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import Partner from './pages/Partner'
@@ -47,6 +48,7 @@ class App extends React.Component<{}, {}> {
             <Events path="/events" />
             <Photos path="/photos" />
             <About4HClub path="/4-h-club" />
+            <GetInvolved4HClub path="/4-h-club/get-involved" />
             <Educator path="/educators" />
             <FindLiaison path="/find-a-liaison" />
             <ContactUs path="contact-us" />

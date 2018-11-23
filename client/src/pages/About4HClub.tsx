@@ -48,8 +48,9 @@ const About4HClub: React.FC<RouteComponentProps> = () => (
         </P>
         <P>
           Each year, states provide an annual report regarding how the partnership between 4-H and military youth
-          programs has moved forward. More about how your state is supporting 4-H Military Clubs can be found in each{' '}
+          programs has moved forward. More about how your state is supporting 4-H Military Clubs can be found in each
           <A href="http://4-hmilitarypartnerships.org/military-family/4h-clubs/reports/reports.html">
+            {' '}
             State's Corporate Report.
           </A>
         </P>
@@ -156,7 +157,7 @@ const About4HClub: React.FC<RouteComponentProps> = () => (
           </P>
           <P>
             <b> 17,048 </b>geographically dispersed youth of Active Duty and
-            <A href="/partners/army-national-guard"> National Guard</A> and<A href="/partners/reserves"> Reserve</A>{' '}
+            <A href="/partners/army-national-guard"> National Guard</A> and<A href="/partners/reserves"> Reserve </A>
             service members engaged in 4-H related activities in 2013.
           </P>
         </div>
