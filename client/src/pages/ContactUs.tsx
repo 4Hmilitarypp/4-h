@@ -104,7 +104,7 @@ const MyHeading = styled.h1`
   padding-bottom: 4rem;
 `
 const Textarea = styled.textarea`
-  ${elevation({ level: 3 })};
+  ${elevation(3)};
   border-radius: 5px;
   width: 100%;
 `

@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">92.11% </span>
+        <span class="strong">81.4% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>35/38</span>
+        <span class='fraction'>35/43</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">65% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>13/20</span>
+        <span class='fraction'>9/18</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">86.67% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>13/15</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">97.22% </span>
+        <span class="strong">85.37% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>35/36</span>
+        <span class='fraction'>35/41</span>
       </div>
     </div>
   </div>
@@ -249,7 +249,8 @@
 204
 205
 206
-207</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+207
+208</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -302,6 +303,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -321,6 +323,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -332,14 +342,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -395,7 +398,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -518,23 +520,30 @@ const FindLiaison: React.FC&lt;RouteComponentProps&gt; = ({ location }) =&gt; {
             highlightedIndex,
             getMenuProps,
             selectedItem,
-            getToggleButtonProps,
             clearSelection,
+            openMenu,
+            closeMenu,
           }) =&gt; (
             &lt;div&gt;
               &lt;FindInputGroup&gt;
                 &lt;label {...getLabelProps({ name: 'region' })}&gt;Enter a state or US Province&lt;/label&gt;
                 &lt;div style={{ position: 'relative' }}&gt;
                   &lt;FindInput className="input" {...getInputProps()} placeholder="Kansas" /&gt;
-                  {selectedItem ? (
-                    &lt;ControllerButton onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >clearSelection()}</span> aria-label="clear selection"&gt;
-                      &lt;Icon name="x" /&gt;
-                    &lt;/ControllerButton&gt;
-                  ) : (
-                    &lt;ControllerButton {...getToggleButtonProps()}&gt;
-                      &lt;Icon name="arrow" isOpen={isOpen} /&gt;
-                    &lt;/ControllerButton&gt;
-                  )}
+                  &lt;ControllerButton
+                    onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >                      if (!isOpen) {</span>
+<span class="cstat-no" title="statement not covered" >                        openMenu()</span>
+                      } else {
+<span class="cstat-no" title="statement not covered" >                        closeMenu()</span>
+                      }
+<span class="cstat-no" title="statement not covered" >                      if (selectedItem) {</span>
+<span class="cstat-no" title="statement not covered" >                        clearSelection()</span>
+<span class="cstat-no" title="statement not covered" >                        openMenu()</span>
+                      }
+                    }}
+                  &gt;
+                    &lt;Icon name="arrow" isOpen={isOpen} /&gt;
+                  &lt;/ControllerButton&gt;
                 &lt;/div&gt;
               &lt;/FindInputGroup&gt;
               {isOpen ? (
@@ -567,12 +576,7 @@ const FindLiaison: React.FC&lt;RouteComponentProps&gt; = ({ location }) =&gt; {
               &lt;StyledLink href={`mailto:${selectedLiaison.email}`}&gt;{selectedLiaison.email}&lt;/StyledLink&gt;
               &lt;StyledLink href={`tel:${selectedLiaison.phoneNumber}`}&gt;{selectedLiaison.phoneNumber}&lt;/StyledLink&gt;
             &lt;/Text&gt;
-            &lt;Flag
-              src={`http://flags.ox3.in/svg/us${
-                selectedLiaison.abbreviation ? `/${selectedLiaison.abbreviation.toLowerCase()}` : <span class="branch-1 cbranch-no" title="branch not covered" >''</span>
-              }.svg`}
-              alt={selectedLiaison.abbreviation ? `${selectedLiaison.region} flag` : <span class="branch-1 cbranch-no" title="branch not covered" >'American Flag'}</span>
-            /&gt;
+            &lt;SchoolLogo src={selectedLiaison.image} alt={`${selectedLiaison.region} land grant university logo`} /&gt;
           &lt;/ResultContent&gt;
         &lt;/Liaison&gt;
       )}
@@ -594,14 +598,13 @@ const P = styled.p`
   font-size: 1.8rem;
 `
 const Menu = styled.ul`
-  ${elevation({ level: 3 })};
+  ${elevation(3)};
   padding: 1.5rem 0;
   max-width: 50rem;
   margin: 0 auto;
   background: ${props =&gt; props.theme.gray};
 `
 const FindInputGroup = styled(InputGroup)`
-  margin: 0;
   max-width: 50rem;
   margin: 0 auto;
 `
@@ -655,11 +658,11 @@ const StyledLink = styled.a`
   color: ${props =&gt; props.theme.black};
   text-decoration: underline;
 `
-const Flag = styled.img`
-  width: 23rem;
-  height: 12rem;
-  padding-left: 5rem;
-  object-fit: cover;
+const SchoolLogo = styled.img`
+  height: 20rem;
+  max-width: 40rem;
+  padding-left: 6rem;
+  object-fit: contain;
 `
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -667,7 +670,7 @@ const Flag = styled.img`
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Nov 23 2018 13:47:33 GMT-0600 (Central Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Nov 28 2018 23:17:32 GMT-0600 (Central Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

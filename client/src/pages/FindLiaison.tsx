@@ -139,7 +139,7 @@ const P = styled.p`
   font-size: 1.8rem;
 `
 const Menu = styled.ul`
-  ${elevation({ level: 3 })};
+  ${elevation(3)};
   padding: 1.5rem 0;
   max-width: 50rem;
   margin: 0 auto;

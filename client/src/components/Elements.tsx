@@ -48,7 +48,7 @@ export const Button = styled.button`
   padding: 1rem 1.5rem;
   font-weight: 600;
   font-size: 1.8rem;
-  ${elevation({ level: 3 })};
+  ${elevation(3)};
   &:hover {
     transform: translateY(-1px);
     ${transition({ prop: 'all', time: 0.15, name: 'easeInQuart' })};

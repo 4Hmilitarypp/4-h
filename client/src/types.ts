@@ -78,8 +78,8 @@ export interface IContactUsEmail {
 }
 
 export interface IImage {
-  alt: string
   url: string
+  alt?: string
 }
 
 export interface ILink {
@@ -98,13 +98,13 @@ export interface IPartnerSection {
 interface IReport {
   title: string
   url: string
+  image: string
 }
-
 export interface IPartner extends IPartnerSection {
   longDescription: string
-  links?: ILink[]
   images?: IImage[]
   annualReports?: IReport[]
+  videoReports?: IReport[]
 }
 
 /**

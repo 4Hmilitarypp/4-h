@@ -17,7 +17,7 @@ export function transition({ name, time = 0.2, prop = 'all' }: { name: string; t
   }
 }
 
-export function elevation({ level }: { level: number }) {
+export function elevation(level: number) {
   switch (level) {
     case 1:
       return 'box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, .7)'

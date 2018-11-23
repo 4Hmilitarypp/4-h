@@ -3,34 +3,65 @@
     "title": "Air Force",
     "slug": "air-force",
     "shortDescription": "Aiming HIGH for Air Force Families The 4-H Air Force Partnership expands hands-on learning opportunities for Air Force youth, families and Youth Programs (YP) staff on installations and in the community. Since 4-H is located in every county in every state, it allows for easy access to resources, professional development and support for military 4-H Clubs and programs wherever a family is located. State Extension 4-H Military Liaisons foster partnerships between the 4-H County Educators and Air Force Youth Programs staff to create and sustain 4-H Clubs on Air Force installations and military clubs in the community; provide youth development training; and offer a variety of experiences for youth that develop critical 21st Century life skills. The 4-H/AF Partnership is dedicated to helping youth step up to the challenges of a complex and changing world by cultivating the next generation of leaders today. Air Force Child and Youth Programs offer a wide range of educational programs, instructional classes and special events in a safe and fun environment supervised by caring and well-trained staff.",
-    "longDescription": "Aiming HIGH for Air Force Families The 4-H Air Force Partnership expands hands-on learning opportunities for Air Force youth, families and Youth Programs (YP) staff on installations and in the community. Since 4-H is located in every county in every state, it allows for easy access to resources, professional development and support for military 4-H Clubs and programs wherever a family is located. State Extension 4-H Military Liaisons foster partnerships between the 4-H County Educators and Air Force Youth Programs staff to create and sustain 4-H Clubs on Air Force installations and military clubs in the community; provide youth development training; and offer a variety of experiences for youth that develop critical 21st Century life skills. The 4-H/AF Partnership is dedicated to helping youth step up to the challenges of a complex and changing world by cultivating the next generation of leaders today. Air Force Child and Youth Programs offer a wide range of educational programs, instructional classes and special events in a safe and fun environment supervised by caring and well-trained staff.",
+    "longDescription": "<h3>AIMing HIGH for Air Force Families</h3> <p>The 4-H Air Force Partnership expands hands-on learning opportunities for Air Force youth, families and Youth Programs (YP) staff on installations and in the community. Since 4-H is located in every county in every state, it allows for easy access to resources, professional development and support for military 4-H Clubs and programs wherever a family is located. State Extension 4-H Military Liaisons foster partnerships between the 4-H County Educators and Air Force Youth Programs staff to create and sustain 4-H Clubs on Air Force installations and military clubs in the community; provide youth development training; and offer a variety of experiences for youth that develop critical 21st Century life skills. The 4-H/AF Partnership is dedicated to helping youth step up to the challenges of a complex and changing world by cultivating the next generation of leaders today.</p> <p>Air Force Child and Youth Programs offer a wide range of educational programs, instructional classes and special events in a safe and fun environment supervised by caring and well-trained staff. The Air Force core program areas include: character & leadership development; the arts; youth sports, fitness, and recreation; health & life skills; and education & career development. 4-H programs and materials complement the Air Force core program areas and offer a variety of additional topics that meet the diverse interests of youth. The 4-H Air Force Partnership expands opportunities for military youth, families and staff in a collaborative effort that combines resources and utilizes the knowledge, expertise and assets of each partner.   4-H and Air Force Child and Youth Programs want to empower youth to reach their full potential, working and learning in partnership with caring adults in order to be catalysts for positive change.</p> <h3>Air Force Outreach</h3> <p>4-H staff work with Air National Guard and Air Force Reserve to offer camps to youth in Air Guard and Reserve service members. These camps are provided to communities where the youth live. The camps focus on the development of resilience with military connected youth and families through skill development in 1) making positive choices, 2) effective communication, 3) building connections/relationships, and 4) contributing to the health, growth, and well-being of self, family, community, nation, and the world.</p> <p>In 2014, <b>1,724</b> youth, <b>443</b> Adult Family Campers, and <b>248</b> Military Families attended camps in <b>21</b> different states. Camps included: day camps, residential camps, and camps where the adult member of the family participated alongside the youth.</p><p>For more details on Air Force Child and Youth Programs, please visit:<a href='http://www.myairforcelife.com/Youth/InstallationYouthPrograms.aspx'> http://www.myairforcelife.com/Youth/InstallationYouthPrograms.aspx</a></p>",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542787787/logos/partners/AF_CYP_Logo_Color.png",
-        "alt": "Air Force CYP logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542787787/logos/partners/AF_CYP_Logo_Color.png"
       },
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542862535/logos/partners/air-force-logo.jpg",
-        "alt": "Air Force logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542862535/logos/partners/air-force-logo.jpg"
       }
     ],
-    "links": [
-      {
-        "title": "",
-        "url": "http://www.myairforcelife.com/Youth/InstallationYouthPrograms.aspx",
-        "linkText": "Installation Youth Programs"
-      },
-      {
-        "title": "",
-        "url": "http://4-hmilitarypartnerships.org/military-family/af-cyp/reports/reports.html",
-        "linkText": "View past reports"
-      }
-    ],
-    "images": [{ "url": "http://4-hmilitarypartnerships.org/images/4hclover.jpg", "alt": "4-H logo" }],
     "annualReports": [
       {
-        "title": "4-H/Air Force Aim High Report",
-        "url": "http://4-hmilitarypartnerships.org/military-family/af-cyp/2013_annual_report.pdf"
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963639/report-covers/air-force/2013_Aim_High_Report_Cover.jpg",
+        "title": "Air Force Aim High Report 2013",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542966892/reports/air-force/2013_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963638/report-covers/air-force/2012_annual_report_cover.jpg",
+        "title": "Air Force Aim High Report 2012",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542963944/reports/air-force/2012_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963637/report-covers/air-force/2011_annual_report_cover.jpg",
+        "title": "Air Force Aim High Report 2011",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542963945/reports/air-force/2011_AF_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963636/report-covers/air-force/2010_annual_report_cover.jpg",
+        "title": "Air Force Aim High Report 2010",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542963905/reports/air-force/2010_AF_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963636/report-covers/air-force/2009_annual_report_cover.jpg",
+        "title": "Air Force Aim High Report 2009",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542963907/reports/air-force/2009_AF_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963635/report-covers/air-force/2008_annual_report_cover.jpg",
+        "title": "Air Force Aim High Report 2008",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542963904/reports/air-force/2008_AF_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963635/report-covers/air-force/2007_annual_report_cover.jpg",
+        "title": "Air Force Aim High Report 2007 Update",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542963895/reports/air-force/2007_AF_annual_report_updated.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963635/report-covers/air-force/2007_annual_report_cover.jpg",
+        "title": "Air Force Aim High Report 2007",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542963909/reports/air-force/2007_AF_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963635/report-covers/air-force/2006_annual_report_cover.jpg",
+        "title": "Air Force Aim High Report 2006",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542963902/reports/air-force/2006_AF_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542963635/report-covers/air-force/2005_annual_report_cover.jpg",
+        "title": "Air Force Aim High Report 2005",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542963903/reports/air-force/2005_AF_annual_report.pdf"
       }
     ]
   },
@@ -40,36 +71,40 @@
     "shortDescription": "Since its inception in 1995, the 4-H partnership with Army has evolved into a model program of cooperation between Federal agencies. Through this partnership, 4-H National Headquarters and Army Child, Youth, and School Services partner to provide predictable, quality youth programs and introduce 4-H to Army installations worldwide. The partnership links resources of the Land Grant University Extension System to Army youth programs in pursuit of their common mission for positive youth development experiences for children and youth wherever they live.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816897/logos/partners/army-cys-logo.webp",
-        "alt": "U.S. Army, Child, Youth and School Services logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816897/logos/partners/army-cys-logo.webp"
       }
     ],
-    "longDescription": "Since its inception in 1995, the 4-H partnership with Army has evolved into a model program of cooperation between Federal agencies. Through this partnership, 4-H National Headquarters and Army Child, Youth, and School Services partner to provide predictable, quality youth programs and introduce 4-H to Army installations worldwide. The partnership links resources of the Land Grant University Extension System to Army youth programs in pursuit of their common mission for positive youth development experiences for children and youth wherever they live.",
-    "links": [
-      {
-        "title": "",
-        "url": "http://www.myairforcelife.com/Youth/InstallationYouthPrograms.aspx",
-        "linkText": "Installation Youth Programs"
-      },
-      {
-        "title": "",
-        "url": "http://4-hmilitarypartnerships.org/military-family/af-cyp/reports/reports.html",
-        "linkText": "View past reports"
-      }
-    ],
-    "images": [{ "url": "http://4-hmilitarypartnerships.org/images/4hclover.jpg", "alt": "4-H logo" }],
+    "longDescription": "<p>Since its inception in 1995, the 4-H partnership with Army has evolved into a model program of cooperation between Federal agencies. Through this partnership, 4-H National Headquarters and Army Child, Youth, and School Services partner to provide predictable, quality youth programs and introduce 4-H to Army installations worldwide. The partnership links resources of the Land Grant University Extension System to Army youth programs in pursuit of their common mission for positive youth development experiences for children and youth wherever they live.</p> <p>Recognizing the skills and knowledge that 4-H is known for, Army CYS Services has partnered with 4-H professionals from around the nation to develop a variety of youth and professional development curricula to be used by Army staff and youth. Programs such as <a href='http://4-hmilitarypartnerships.org/military-family/army-cys-project/ufc.html'>Up for the Challenge: Lifetime Fitness, Healthy Decisions</a> (a fitness, nutrition and health curriculum developed by the University of Maryland) meet the needs of military and civilian youth and are available in the resources section for military and extension staff.</p> <p>In 2013, there were<b> 23,208 </b>youth supported in<b> 332 </b>4-H clubs.</p> <p><a href='https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542944356/reports/army-reintegration-report10-13.pdf'>Reintegration Report - October 2013</a></p>",
     "annualReports": [
       {
-        "title": "4-H Navy Annual Report 2011-2012",
-        "url": "http://4-hmilitarypartnerships.org/military-family/navy-cyp/archive/Navy_2011_2012_annual_report.pdf"
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542943962/report-covers/army/2010_Army_Report_cover.jpg",
+        "title": "Army Annual Report 2010",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542944083/reports/army/2010_Army_annual_report.pdf"
       },
       {
-        "title": "4-H Navy Annual Report 2010",
-        "url": "http://4-hmilitarypartnerships.org/military-family/navy-cyp/archive/Navy_2010_annual_report.pdf"
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542943962/report-covers/army/2009_Army_Report_Cover.jpg",
+        "title": "Army Annual Report 2009",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542944080/reports/army/2009_Army_annual_report.pdf"
       },
       {
-        "title": "4-H Navy Annual Report 2008",
-        "url": "http://4-hmilitarypartnerships.org/military-family/navy-cyp/archive/Navy_2008_annual_report.pdf"
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542943961/report-covers/army/2008_Army_Report_Cover.jpg",
+        "title": "Army Annual Report 2008",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542944085/reports/army/2008_Army_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542943962/report-covers/army/2007_Army_Report_Cover.jpg",
+        "title": "Army Annual Report 2007",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542944080/reports/army/2007_Army_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542943962/report-covers/army/2005_Army_Report_Cover.jpg",
+        "title": "Army Annual Report 2005",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542944075/reports/army/2005_Army_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542943961/report-covers/army/2004_Army_Report_Cover.jpg",
+        "title": "Army Annual Report 2004",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542944073/reports/army/2004_Army_annual_report.pdf"
       }
     ]
   },
@@ -79,24 +114,27 @@
     "shortDescription": "In 2007, the U.S. Department of Agriculture, National Institute of Food and Agriculture, signed an agreement with the U.S. Navy Child and Youth Programs (CYP) to initiate the 4-H/Navy Youth Development Project to provide positive youth development experiences for Navy youth. This project is a collaboration of 4-H National Headquarters, 4-H faculty of Land Grant Universities, and Navy Child and Youth Programs staff.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542786191/logos/partners/navy-cyp-logo-with-tagline.png",
-        "alt": "Navy CYP logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542786191/logos/partners/navy-cyp-logo-with-tagline.png"
       }
     ],
-    "longDescription": "In 2007, the U.S. Department of Agriculture, National Institute of Food and Agriculture, signed an agreement with the U.S. Navy Child and Youth Programs (CYP) to initiate the 4-H/Navy Youth Development Project to provide positive youth development experiences for Navy youth. This project is a collaboration of 4-H National Headquarters, 4-H faculty of Land Grant Universities, and Navy Child and Youth Programs staff.",
-    "links": [
+    "longDescription": "<p>In 2007, the U.S. Department of Agriculture, National Institute of Food and Agriculture, signed an agreement with the U.S. Navy Child and Youth Programs (CYP) to initiate the 4-H/Navy Youth Development Project to provide positive youth development experiences for Navy youth. This project is a collaboration of 4-H National Headquarters, 4-H faculty of Land Grant Universities, and Navy Child and Youth Programs staff.</p><p>This partnership links resources of the Land Grant University System in the development of a common mission of positive youth development experiences. To assist Child and Youth Program staff in the development of these clubs worldwide, 4-H program staff support bases through on-site training, technical assistance, and local programming. Through the partnership, every installation CYP works with 4-H staff to offer project choices based on the interests of the local community and to establish and charter at least one multi-project 4-H community club. The 4-H programs and activities at the Navy Child and Youth Programs further enhance and support Navy CYP core programs of Character & Leadership, The Arts, Health & Life Skills, Sports, Fitness & Recreation, Education & Career, and Technology. This partnership provides Navy CYP access to services and materials that assist in providing stability and predictability to Navy children and youth as they move from installation to installation and further develops the strong CYP programs and activities. Further information about the 4-H Military Partnerships can be found under 4-H Military Partnerships.</p><p>For more details on Navy Child and Youth Programs, please visit: <a href='https://www.navycyp.org'>https://www.navycyp.org</a>.</p><p>Find us on Facebook: <a href='https://www.facebook.com/navycyp'>https://www.facebook.com/navycyp</a>.</p><p>To receive the National 4-H Newsletter, click <a href='https://4-h.org/newsletters/'>here</a>.</p><p>Follow us on Twitter: <a href='https://twitter.com/NavyCYP'>@NavyCYP</a></p><p>To learn more about Professional Development and Volunteer Development opportunities in youth development and 4-H programming, click <a href='http://www.4-h.org/resource-library/professional-development-learning/'>here</a>.</p><p>If you have a question or would like more information about the 4-H Navy Partnership, click <a href='/contact-us'>here</a>.</p>",
+    "annualReports": [
       {
-        "title": "",
-        "url": "http://www.myairforcelife.com/Youth/InstallationYouthPrograms.aspx",
-        "linkText": "Installation Youth Programs"
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543442751/report-covers/navy/annual_report_cover_2011_and_2012.jpg",
+        "title": "4-H Navy Annual Report 2011-2012",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543442938/reports/navy/Navy_2011_2012_annual_report-compressed.pdf"
       },
       {
-        "title": "",
-        "url": "http://4-hmilitarypartnerships.org/military-family/af-cyp/reports/reports.html",
-        "linkText": "View past reports"
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543442751/report-covers/navy/annual_report_cover_2010.jpg",
+        "title": "4-H Navy Annual Report 2010",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543442719/reports/navy/Navy_2010_annual_report.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543442751/report-covers/navy/annual_report_cover_2008.jpg",
+        "title": "4-H Navy Annual Report 2008",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543442714/reports/navy/Navy_2008_annual_report.pdf"
       }
-    ],
-    "images": [{ "url": "http://4-hmilitarypartnerships.org/images/4hclover.jpg", "alt": "4-H logo" }]
+    ]
   },
   {
     "title": "DoD-USDA",
@@ -104,46 +142,58 @@
     "shortDescription": "The Department of Defense (DoD) and the National Institute of Food and Agriculture (NIFA), U.S. Department of Agriculture (USDA) have successfully engaged in collaborations that support military children and youth experiencing the deployment of a parent or loved one. The goal of the project is to create environments and offer experiences to military children and youth to promote their growth and development, and help them cope with the stresses of deployment and reintegration.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828830/logos/partners/department-of-defense-logo.jpg",
-        "alt": "Department Of Defense logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828830/logos/partners/department-of-defense-logo.jpg"
       },
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828832/logos/partners/usda-logo.jpg",
-        "alt": "USDA logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828832/logos/partners/usda-logo.jpg"
       }
     ],
-    "longDescription": "The Department of Defense (DoD) and the National Institute of Food and Agriculture (NIFA), U.S. Department of Agriculture (USDA) have successfully engaged in collaborations that support military children and youth experiencing the deployment of a parent or loved one. The goal of the project is to create environments and offer experiences to military children and youth to promote their growth and development, and help them cope with the stresses of deployment and reintegration.",
+    "longDescription": "<p>The Department of Defense (DoD) and the National Institute of Food and Agriculture (NIFA), U.S. Department of Agriculture (USDA) have successfully engaged in collaborations that support military children and youth experiencing the deployment of a parent or loved one. The goal of the project is to create environments and offer experiences to military children and youth to promote their growth and development, and help them cope with the stresses of deployment and reintegration.</p><p>Land Grant Universities have accomplished this goal by providing a variety of camping opportunities to military-connected youth in their states. Camping experiences are recognized as valuable in helping children and youth develop life skills and mature socially, emotionally, cognitively, and physically. See the 2014 Corporate Report below. Youth and Family camp opportunities are available below.</p><p>Local/Regional Support Networks have been established in several states to build and develop networks of local community organizations, agencies, businesses, etc., to deliver connections and support for youth from military families where they live.</p>",
     "annualReports": [
       {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542958823/report-covers/dod-usda/DoD-USDA-Camp15LR-cover-1.jpg",
         "title": "2015 DoD-USDA Partnership: Child and Youth Reintegration Support Camps",
-        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/Camp15LR.pdf"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542958431/reports/dod-usda/DoD-USDA-Camp15LR.pdf"
+      },
+
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542958819/report-covers/dod-usda/DOD-USDA_14_Camp_LR-cover-1.jpg",
+        "title": "2014 DoD-USDA Partnership: Child and Youth Reintegration Support Camps Corporate Report",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542958420/reports/dod-usda/DOD-USDA_14_Camp_LR.pdf"
       },
       {
-        "title": "2015 DoD Camp Video Report",
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542958841/report-covers/dod-usda/OSD-OMK-camp-corporate-report-2013-cover-1.jpg",
+        "title": "2013 OSD/OMK Camp Corporate Report",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542958449/reports/dod-usda/OSD-OMK-camp-corporate-report-2013.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542958828/report-covers/dod-usda/LocalRegional_Support_Networks-annual-report-2013-cover-1.jpg",
+        "title": "2013 Local/Regional Support Networks Corporate Report",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542958437/reports/dod-usda/LocalRegional_Support_Networks-annual-report-2013.pdf"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543444789/report-covers/dod-usda/2013_Camp_Report-Building_Resiliency_in_Military_Youth-cover-1.jpg",
+        "title": "2013 Camp Report: Building Resiliency in Military Youth",
+        "url": "https://res.cloudinary.com/four-hmpp/raw/upload/f_auto,q_auto/v1542958427/reports/dod-usda/final_camp_report_2013_marek.doc"
+      },
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto,h_660/v1542958837/report-covers/dod-usda/OSD-OMK-camp-corporate-report-2012-cover-1.jpg",
+        "title": "2012 OSD/OMK Camp Corporate Report",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542958445/reports/dod-usda/OSD-OMK-camp-corporate-report-2012.pdf"
+      }
+    ],
+    "videoReports": [
+      {
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543446085/report-covers/dod-usda/2016-video-report-cover-edited.jpg",
+        "title": "2016 DoD Camp Video Report",
         "url": "https://youtu.be/fk0O2HyqKv4"
       },
       {
-        "title": "2014 DoD-USDA Partnership: Child and Youth Reintegration Support Camps Corporate Report",
-        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/DOD-USDA_14_Camp_LR.pdf"
-      },
-      {
-        "title": "2013 OSD/OMK Camp Corporate Report",
-        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/2013%20OSD_OMK_camp_annual_report_FINAL.pdf"
-      },
-      {
-        "title": "2013 Local/Regional Support Networks Corporate Report",
-        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/2013_LRSN_annual_report.pdf"
-      },
-      {
-        "title": "2013 Camp Report: Building Resiliency in Military Youth",
-        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/final_camp_report_2013_marek.doc"
-      },
-      {
-        "title": "2012 OSD/OMK Camp Corporate Report",
-        "url": "http://4-hmilitarypartnerships.org/military-family/dod_usda/2012%20Camp%20Corp%20Report%20FINAL.pdf"
+        "image": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1543446085/report-covers/dod-usda/2015-video-report-cover-edited.jpg",
+        "title": "2015 DoD Deployment Support Camp Video Report",
+        "url": "https://youtu.be/qV2OxG7_dGo"
       }
-    ],
-    "images": [{ "url": "http://4-hmilitarypartnerships.org/images/4hclover.jpg", "alt": "4-H logo" }]
+    ]
   },
   {
     "title": "National Guard Bureau",
@@ -151,28 +201,10 @@
     "shortDescription": "View resources to get connected with the National Guard Bureau.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816694/logos/partners/national-guard-bureau-logo.png",
-        "alt": "National Guard Bureau Logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816694/logos/partners/national-guard-bureau-logo.png"
       }
     ],
-    "longDescription": "View resources to get connected with the National Guard.",
-    "links": [
-      {
-        "title": "",
-        "url": "https://www.jointservicessupport.org/communityforces/",
-        "linkText": "Joining Community Forces"
-      },
-      {
-        "title": "",
-        "url": "http://www.whitehouse.gov/joiningforces",
-        "linkText": "Joining Community Forces (White House Link)"
-      },
-      {
-        "title": "",
-        "url": "http://www.nifa.usda.gov/newsroom/news/2014news/10291_ntl_grd_fam_mou.html",
-        "linkText": "USDA and National Guard Sign Memorandum of Understanding to Assist National Guard Families "
-      }
-    ]
+    "longDescription": "<p>View resources to get connected with the National Guard.</p><p><a href='https://www.jointservicessupport.org/communityforces/' >Joining Community Forces</a></p><p><a href='http://www.whitehouse.gov/joiningforces' >Joining Community Forces (White House Link)</a></p><p><a href='http://www.nifa.usda.gov/newsroom/news/2014news/10291_ntl_grd_fam_mou.html' >USDA and National Guard Sign Memorandum of Understanding to Assist National Guard Families</a></p>"
   },
   {
     "title": "Army National Guard",
@@ -180,18 +212,10 @@
     "shortDescription": "The army national guard is the Army's branch of the US national guard.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/army-national-guard-logo.png",
-        "alt": "Army National Guard Logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/army-national-guard-logo.png"
       }
     ],
-    "longDescription": "The army national guard is the Army's branch of the US national guard.",
-    "links": [
-      {
-        "title": "",
-        "url": "http://www.cyssprogram.com/",
-        "linkText": "Army National Guard Info"
-      }
-    ]
+    "longDescription": "<p>The army national guard is the Army's branch of the US national guard.</p><p><a href='http://www.cyssprogram.com/'>Army National Guard Info</a></p>"
   },
   {
     "title": "Air National Guard",
@@ -199,54 +223,42 @@
     "shortDescription": "The air national guard is the Air's branch of the US national guard.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/air-national-guard-logo.png",
-        "alt": "Air National Guard Logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/air-national-guard-logo.png"
       }
     ],
-    "longDescription": "The air national guard is the Air's branch of the US national guard.",
-    "links": [
-      {
-        "title": "",
-        "url": "https://www.jointservicessupport.org/FP/Youth.aspx",
-        "linkText": "Air National Guard Info"
-      }
-    ]
+    "longDescription": "<p>The air national guard is the Air's branch of the US national guard.</p><p><a href='https://www.jointservicessupport.org/FP/Youth.aspx'>Air National Guard Info</a></p>"
   },
   {
-    "title": "Reserves",
-    "slug": "reserves",
-    "shortDescription": "The Army, Navy, and Air Force reserves",
-    "longDescription": "The Army, Navy, and Air Force reserves",
+    "title": "Army Reserves",
+    "slug": "army-reserves",
+    "shortDescription": "The army reserves.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911570/logos/partners/army-reserve-logo.png",
-        "alt": "Army Reserve Logo"
-      },
-      {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911657/logos/partners/navy-reserve-logo.png",
-        "alt": "Navy Reserve Logo"
-      },
-      {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911753/logos/partners/air-force-reserve.png",
-        "alt": "Air Force Reserve Logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911570/logos/partners/army-reserve-logo.png"
       }
     ],
-    "links": [
+    "longDescription": "<p>The army reserves.</p><p><a href='https://www.jointservicessupport.org/FP/Youth.aspx'>Air National Guard Info</a></p>"
+  },
+  {
+    "title": "Navy Reserves",
+    "slug": "navy-reserves",
+    "shortDescription": "The navy reserves.",
+    "featuredImages": [
       {
-        "title": "",
-        "url": "http://www.cyssprogram.com/",
-        "linkText": "Army Reserve Child, Youth & School Services"
-      },
-      {
-        "title": "",
-        "url": "https://www.arfp.org/",
-        "linkText": "Army Reserve Family Programs"
-      },
-      {
-        "title": "",
-        "url": "https://www.navy.com/advisors/navy-family.html",
-        "linkText": "Navy Reserve Family Programs"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911657/logos/partners/navy-reserve-logo.png"
       }
-    ]
+    ],
+    "longDescription": "<p>The army reserves.</p><p><a href='http://www.cyssprogram.com/'>Army Reserve Child, Youth & School Services</a></p><p><a href='https://www.arfp.org/'>Army Reserve Family Programs</a></p>"
+  },
+  {
+    "title": "Air Force Reserves",
+    "slug": "air-force-reserves",
+    "shortDescription": "The air force reserves.",
+    "featuredImages": [
+      {
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911753/logos/partners/air-force-reserve.png"
+      }
+    ],
+    "longDescription": "<p>The air force reserves.</p><p><a href='https://www.navy.com/advisors/navy-family.html'>Navy Reserve Family Programs</a></p>"
   }
 ]

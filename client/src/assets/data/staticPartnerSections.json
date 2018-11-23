@@ -9,8 +9,7 @@
         "alt": "Air Force CYP logo"
       },
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542862535/logos/partners/air-force-logo.jpg",
-        "alt": "Air Force logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542862535/logos/partners/air-force-logo.jpg"
       }
     ]
   },
@@ -57,8 +56,7 @@
     "shortDescription": "View resources to get connected with the National Guard Bureau.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816694/logos/partners/national-guard-bureau-logo.png",
-        "alt": "National Guard Bureau Logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816694/logos/partners/national-guard-bureau-logo.png"
       }
     ]
   },
@@ -68,8 +66,7 @@
     "shortDescription": "The army national guard is the Army's branch of the US national guard.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/army-national-guard-logo.png",
-        "alt": "Army National Guard Logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/army-national-guard-logo.png"
       }
     ]
   },
@@ -79,27 +76,37 @@
     "shortDescription": "The air national guard is the Air's branch of the US national guard.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/air-national-guard-logo.png",
-        "alt": "Air National Guard Logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/air-national-guard-logo.png"
       }
     ]
   },
   {
-    "title": "Reserves",
-    "slug": "reserves",
-    "shortDescription": "The Army, Navy, and Air Force reserves",
+    "title": "Army Reserves",
+    "slug": "army-reserves",
+    "shortDescription": "The army reserves.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911570/logos/partners/army-reserve-logo.png",
-        "alt": "Army Reserve Logo"
-      },
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911570/logos/partners/army-reserve-logo.png"
+      }
+    ]
+  },
+  {
+    "title": "Navy Reserves",
+    "slug": "navy-reserves",
+    "shortDescription": "The navy reserves.",
+    "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911657/logos/partners/navy-reserve-logo.png",
-        "alt": "Navy Reserve Logo"
-      },
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911657/logos/partners/navy-reserve-logo.png"
+      }
+    ]
+  },
+  {
+    "title": "Air Force Reserves",
+    "slug": "air-force-reserves",
+    "shortDescription": "The air force reserves.",
+    "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911753/logos/partners/air-force-reserve.png",
-        "alt": "Air Force Reserve Logo"
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911753/logos/partners/air-force-reserve.png"
       }
     ]
   }

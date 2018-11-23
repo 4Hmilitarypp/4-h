@@ -1,4 +1,8 @@
 import { navigate as reachNavigate, RouteComponentProps } from '@reach/router'
+// @ts-ignore
+import Parser from 'html-react-parser'
+// @ts-ignore
+import domToReact from 'html-react-parser/lib/dom-to-react'
 import * as React from 'react'
 import styled from 'styled-components/macro'
 // import api from '../../utils/api'
@@ -6,8 +10,7 @@ import staticPartners from '../assets/data/staticPartners.json'
 import { Heading, PageWrapper } from '../components/Elements'
 import Icon from '../components/Icon'
 import { IPartner } from '../types'
-import { elevation } from '../utils/mixins'
-import { trimToLength } from '../utils/string'
+import { elevation, transition } from '../utils/mixins'
 
 interface IProps extends RouteComponentProps {
   slug?: string
@@ -28,6 +31,16 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
     setPartner(partnerResult)
   }, [])
 
+  const parserOptions = {
+    replace: ({ attribs, children }: any) => {
+      if (!attribs) return
+      if (children[0].parent.name === 'p') return <P>{domToReact(children, parserOptions)}</P>
+      else if (children[0].parent.name === 'a') {
+        return <A href={children[0].parent.attribs.href}>{children[0].data}</A>
+      } else return domToReact(children, parserOptions)
+    },
+  }
+
   return (
     <PageWrapper>
       {partner ? (
@@ -38,13 +51,13 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
               <BackText>Back To Partners</BackText>
             </BackButton>
             <Heading center={true}>{partner.title}</Heading>
-            <div style={{ width: 200 }} />
+            <div style={{ width: 209 }} />
           </HeaderWrapper>
           <Hero>
-            <Description>{trimToLength(400, partner.longDescription)}</Description>
+            <Description>{Parser(partner.longDescription, parserOptions)}</Description>
             <HeroImages>
               {partner.featuredImages.map(image => (
-                <FeaturedImage key={image.url} src={image.url} alt={image.alt} />
+                <FeaturedImage key={image.url} src={image.url} alt={image.alt || `${partner.title} Logo`} />
               ))}
             </HeroImages>
           </Hero>
@@ -63,31 +76,29 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
               <SubHeading>Annual Reports</SubHeading>
               <Reports>
                 {partner.annualReports.map(report => (
-                  <li key={report.url}>
-                    <Link href={report.url}>
-                      <ListIcon name="back" arrowColor="#5a2a82" backgroundColor="#fff" />
-                      {report.title}
-                    </Link>
-                  </li>
+                  <ReportItem key={report.url}>
+                    <ReportCard href={report.url} target="_blank">
+                      <ReportCover src={report.image} alt={`${report.title} cover`} />
+                      <ReportTitle>{report.title}</ReportTitle>
+                    </ReportCard>
+                  </ReportItem>
                 ))}
               </Reports>
             </Section>
           )}
-          {partner.links && (
+          {partner.videoReports && (
             <Section>
-              <SubHeading>External Links</SubHeading>
-              <ExternalLinks>
-                {partner.links.map(link => (
-                  <LinkBlock key={link.url}>
-                    <p>
-                      {link.title}
-                      <Link href={link.url}>
-                        <ListIcon name="back" arrowColor="#5a2a82" backgroundColor="#fff" /> {link.linkText}
-                      </Link>
-                    </p>
-                  </LinkBlock>
+              <SubHeading>Video Reports</SubHeading>
+              <Reports>
+                {partner.videoReports.map(report => (
+                  <ReportItem key={report.url}>
+                    <VideoReportCard href={report.url} target="_blank">
+                      <VideoReportCover src={report.image} alt={`${report.title} cover`} />
+                      <ReportTitle>{report.title}</ReportTitle>
+                    </VideoReportCard>
+                  </ReportItem>
                 ))}
-              </ExternalLinks>
+              </Reports>
             </Section>
           )}
         </PartnerWrapper>
@@ -100,13 +111,14 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
 export default Partner
 
 const PartnerWrapper = styled.div`
-  ${elevation({ level: 4 })};
+  ${elevation(4)};
   margin: 2rem;
+  padding-bottom: 2rem;
 `
 const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 0 4rem;
+  padding: 0 3rem;
 `
 const Hero = styled.section`
   display: flex;
@@ -117,6 +129,7 @@ const Hero = styled.section`
 const HeroImages = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `
 const FeaturedImage = styled.img`
   height: 20rem;
@@ -124,30 +137,60 @@ const FeaturedImage = styled.img`
   margin: 1rem;
   object-fit: contain;
 `
-const Description = styled.p`
+const Description = styled.div`
   padding-right: 3rem;
+  padding-top: 2rem;
 `
 const Section = styled.section`
   padding: 2rem 0;
 `
 const Reports = styled.ul`
-  padding-left: 4rem;
-`
-
-const Link = styled.a`
-  font-weight: bold;
-  color: ${props => props.theme.secondary};
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+const ReportItem = styled.li`
+  margin: 3rem 2rem;
+`
+const ReportCard = styled.a`
+  ${elevation(4)};
+  padding: 3.5rem 2rem 2rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  border-radius: 5px;
+  width: 32.5rem;
+  text-align: center;
+  backface-visibility: hidden;
+  ${transition({ name: 'easeOutCubic', time: 0.3 })};
   &:hover {
-    opacity: 0.8;
+    transform: rotate(1deg) translateX(-10px) translateY(-10px);
+    ${transition({ name: 'easeInCubic' })};
   }
 `
-const ExternalLinks = styled.ul`
-  padding-left: 4rem;
+const ReportCover: any = styled.div`
+  height: 33rem;
+  width: 25rem;
+  background-image: url(${(props: any) => props.src.replace("'", '')});
+  background-size: cover;
+  box-shadow: inset 0 0 4px 2px rgba(0, 0, 0, 0.2);
 `
-const LinkBlock = styled.li`
-  list-style: none;
+
+const VideoReportCard = styled(ReportCard)`
+  width: 39rem;
+  padding: 3rem 2rem 2rem;
+`
+const VideoReportCover = styled(ReportCover)`
+  height: 25rem;
+  width: 33rem;
+`
+
+const ReportTitle = styled.span`
+  color: ${props => props.theme.primaryText};
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding-top: 2rem;
 `
 const ImageGallery = styled.div`
   display: flex;
@@ -164,7 +207,6 @@ const SubHeading = styled.h2`
   padding-bottom: 2rem;
   text-align: center;
 `
-
 const BackButton = styled.button`
   align-items: center;
   background: none;
@@ -172,8 +214,8 @@ const BackButton = styled.button`
   border-radius: 5px;
   display: flex;
   transition: transform 0.2s ease-in;
-  padding: 0;
-
+  padding: 0 1rem;
+  margin: 1rem 0;
   &:hover {
     cursor: pointer;
     transform: translateY(-2px);
@@ -183,17 +225,24 @@ const BackIcon = styled(Icon)`
   height: 3.2rem;
   width: 3.2rem;
 `
-
 const BackText = styled.span`
   color: ${props => props.theme.primary};
   font-size: 1.8rem;
   font-weight: 600;
   margin-left: 1rem;
 `
-
-const ListIcon = styled(Icon)`
-  height: 2rem;
-  width: 2rem;
-  transform: rotateY(180deg);
-  margin-right: 1rem;
+const A = styled.a`
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: ${props => props.theme.primaryText};
+  &:hover {
+    opacity: 0.8;
+  }
+`
+const P = styled.p`
+  padding-bottom: 1.5rem;
+  font-size: 1.8rem;
+  &:last-child {
+    padding-bottom: 0;
+  }
 `
