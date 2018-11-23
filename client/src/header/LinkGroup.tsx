@@ -21,27 +21,29 @@ const UnstyledLinkGroup: React.FC<IProps> = ({ children, manageBackground, title
   }
 
   const handleBlur = (e: any) => {
-    if (!e.relatedTarget || e.relatedTarget.tabIndex === -1) {
+    const { currentTarget, target, relatedTarget }: { [key: string]: HTMLElement } = e
+    if (!relatedTarget) {
+      hideDropdownAndBackground()
+      return
+    }
+    if (
+      relatedTarget.parentNode !== currentTarget.parentNode &&
+      relatedTarget.parentNode !== target.nextElementSibling &&
+      relatedTarget.parentNode !== target.parentNode
+    ) {
       hideDropdownAndBackground()
       return
     }
     if (dropdownRef.current) {
       dropdownRef.current.focus()
-      if (e.relatedTarget.tagName === 'SPAN' || e.relatedTarget.innerHTML === 'Sign In') {
-        hideDropdownAndBackground()
-      }
     }
   }
 
   const showDropDownAndBackground = (e: React.MouseEvent<HTMLLIElement> | React.FocusEvent<HTMLLIElement>) => {
-    if (e.relatedTarget === window || !e.relatedTarget) {
-      return
-    }
     const liNode = liRef.current
     const dropdownNode = dropdownRef.current
     if (liNode) {
       liNode.classList.add('trigger-enter')
-
       setTimeout(() => liNode.classList.contains('trigger-enter') && liNode.classList.add('trigger-enter-active'), 150)
       manageBackground.setOpen(true)
     }
@@ -83,7 +85,8 @@ const UnstyledLinkGroup: React.FC<IProps> = ({ children, manageBackground, title
 const DropdownTitle = styled.span`
   color: ${props => props.theme.secondary};
   font-size: 1.7rem;
-  margin: 2rem 1rem;
+  margin: 2rem 0.5rem;
+  padding: 0 0.5rem;
   &:hover {
     cursor: default;
   }
@@ -92,7 +95,7 @@ const Dropdown = styled.div`
   opacity: 0;
   position: absolute;
   overflow: hidden;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem;
   transform: translateY(6rem);
   border-radius: 2px;
   transition: all 0.5s;

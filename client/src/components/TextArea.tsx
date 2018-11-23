@@ -1,5 +1,5 @@
-import { useFormInput } from '../hooks/hooks'
 import * as React from 'react'
+import { useFormInput } from '../hooks/hooks'
 
 interface IProps {
   id?: string
@@ -15,7 +15,7 @@ const TextArea: React.FC<IProps> = props => {
 
   const value = useFormInput(props.value || '')
 
-  return <textarea {...props} {...value} onClick={ev => ev.stopPropagation()} />
+  return <textarea {...props} {...value} />
 }
 
 export default TextArea

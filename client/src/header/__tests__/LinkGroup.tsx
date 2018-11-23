@@ -9,7 +9,7 @@ interface IManageBackgroundProps {
   setOpen: any
 }
 
-const setup = (propOverrides?: IProps) => {
+const setup = (propOverrides?: {}) => {
   const props = Object.assign({}, propOverrides)
 
   const manageBackground: IManageBackgroundProps = {
@@ -39,11 +39,11 @@ it('should hide the dropdown on mouseLeave', () => {
   fireEvent.mouseLeave(liNode)
   expect(manageBackground.setOpen).toHaveBeenCalledWith(false)
 })
-/* it('should show dropdown when LinkGroup on focus', () => {
+it('should show dropdown when LinkGroup on focus', () => {
   const { manageBackground, liNode } = setup()
   fireEvent.focus(liNode)
   expect(manageBackground.setOpen).toHaveBeenCalledWith(true)
-}) */
+})
 it('should hide the dropdown on blur', () => {
   const { manageBackground, liNode } = setup()
   fireEvent.blur(liNode)

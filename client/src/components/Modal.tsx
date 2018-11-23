@@ -14,12 +14,12 @@ const Modal: React.FC<IProps> = ({ children, on, setOn }) => {
       {on && (
         <ModalWrapper>
           <ModalCard>
-            <CloseButton onClick={() => setOn(false)}>
+            <CloseButton onClick={() => setOn(false)} data-testid="close-button">
               <Icon name="close" color="#ffffff" />
             </CloseButton>
             <div>{children}</div>
           </ModalCard>
-          <Background onClick={() => setOn(false)} />
+          <Background onClick={() => setOn(false)} data-testid="background" />
         </ModalWrapper>
       )}
     </Portal>

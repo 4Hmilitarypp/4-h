@@ -23,7 +23,7 @@ const Header: React.FC<RouteComponentProps> = () => {
     <>
       <DropdownBackground {...backgroundCoords} open={backgroundOpen} />
       <HeaderContainer>
-        <Heading to="/">
+        <Heading to="/" data-testid="main-logo">
           <Title>
             <TitleWords>4-H Military</TitleWords>
             <TitleWords>Partnerships</TitleWords>
@@ -122,9 +122,9 @@ const Heading = styled(Link)`
   color: ${props => props.theme.primary};
   display: flex;
   justify-content: center;
+  padding: 0.5rem;
 `
 const Title = styled.div`
-  padding-left: 2rem;
   font-weight: bold;
 `
 const TitleWords = styled.div`
@@ -146,6 +146,7 @@ const LinkTitle = styled.p`
 `
 const StyledDropdownLink: any = styled(DropdownLink)`
   display: block;
+  padding: 0.5rem;
   &:not(:first-child) {
     padding-top: 1rem;
   }
