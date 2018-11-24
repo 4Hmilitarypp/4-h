@@ -1,7 +1,7 @@
 import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
-import { Heading, PageWrapper } from '../components/Elements'
+import { A, Heading, P, PageWrapper, Section, SubHeading } from '../components/Elements'
 
 const About4HClub: React.FC<RouteComponentProps> = () => (
   <OverflowHidden>
@@ -185,35 +185,9 @@ const TitleImage = styled.img`
   height: 60rem;
   object-fit: cover;
 `
-const SubHeading = styled.h3`
-  color: ${props => props.theme.secondary};
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  text-align: center;
-  font-size: 2.7rem;
-`
-const Section = styled.section`
-  max-width: 85rem;
-  margin: 0 auto;
-`
-const P = styled.p`
-  padding-bottom: 1.5rem;
-  font-size: 1.8rem;
-  &:last-child {
-    padding-bottom: 0;
-  }
-`
 const Links = styled.ul`
   padding: 2rem 0 0;
   list-style: unset;
-`
-const A = styled.a`
-  font-weight: bold;
-  font-size: 1.8rem;
-  color: ${props => props.theme.primaryText};
-  &:hover {
-    opacity: 0.8;
-  }
 `
 const LinkSource = styled.span`
   padding-left: 1.5rem;

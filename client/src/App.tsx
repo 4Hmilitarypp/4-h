@@ -5,6 +5,7 @@ import Footer from './Footer'
 import Header from './header/Header'
 import About from './pages/About'
 import About4HClub from './pages/About4HClub'
+import AnnualReports from './pages/AnnualReports'
 import ContactUs from './pages/ContactUs'
 import Educator from './pages/Educator'
 import Events from './pages/Events'
@@ -43,6 +44,7 @@ class App extends React.Component<{}, {}> {
           <Router primary={false}>
             <Home path="/" />
             <About path="/about" />
+            <AnnualReports path="/about/annual-reports" />
             <Partners path="/partners" />
             <Partner path="/partners/:slug" />
             <Events path="/events" />

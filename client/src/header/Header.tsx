@@ -40,6 +40,10 @@ const Header: React.FC<RouteComponentProps> = () => {
               <LinkTitle>History</LinkTitle>
               <LinkDescription>Learn about our history</LinkDescription>
             </StyledDropdownLink>
+            <StyledDropdownLink to="/about/annual-reports">
+              <LinkTitle>Annual Reports</LinkTitle>
+              <LinkDescription>View the past 4-H Military Partnership annual reports</LinkDescription>
+            </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="Partners" manageBackground={backgroundManagement}>
             <StyledDropdownLink to="/partners">
