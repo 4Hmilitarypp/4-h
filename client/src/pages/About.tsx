@@ -61,7 +61,7 @@ const About: React.FC<RouteComponentProps> = () => {
               <Link to="/educators/resources">View curriculum resources</Link>
             </Li>
             <Li>
-              <Link to="/find-a-liaison/">Your 4-H Office</Link>
+              <Link to="/find-a-liaison/">Locate your 4-H office</Link>
             </Li>
             <Li>
               <Link to="/partners">Information about our partners</Link>
@@ -73,9 +73,6 @@ const About: React.FC<RouteComponentProps> = () => {
               <SignInModal>
                 <Link as="span">Sign in as a Liaison</Link>
               </SignInModal>
-            </Li>
-            <Li>
-              <Link to="/educators/resources">View corporate reports</Link>
             </Li>
             <Li>
               <Link to="/educators/resources">View curriculum resources</Link>
