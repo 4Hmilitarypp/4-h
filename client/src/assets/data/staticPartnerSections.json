@@ -5,11 +5,11 @@
     "shortDescription": "Aiming HIGH for Air Force Families The 4-H Air Force Partnership expands hands-on learning opportunities for Air Force youth, families and Youth Programs (YP) staff on installations and in the community. Since 4-H is located in every county in every state, it allows for easy access to resources, professional development and support for military 4-H Clubs and programs wherever a family is located. State Extension 4-H Military Liaisons foster partnerships between the 4-H County Educators and Air Force Youth Programs staff to create and sustain 4-H Clubs on Air Force installations and military clubs in the community; provide youth development training; and offer a variety of experiences for youth that develop critical 21st Century life skills. The 4-H/AF Partnership is dedicated to helping youth step up to the challenges of a complex and changing world by cultivating the next generation of leaders today. Air Force Child and Youth Programs offer a wide range of educational programs, instructional classes and special events in a safe and fun environment supervised by caring and well-trained staff.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542787787/logos/AF_CYP_Logo_Color.png",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542787787/logos/partners/AF_CYP_Logo_Color.png",
         "alt": "Air Force CYP logo"
       },
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542862535/logos/air-force-logo.jpg",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542862535/logos/partners/air-force-logo.jpg",
         "alt": "Air Force logo"
       }
     ]
@@ -20,7 +20,7 @@
     "shortDescription": "Since its inception in 1995, the 4-H partnership with Army has evolved into a model program of cooperation between Federal agencies. Through this partnership, 4-H National Headquarters and Army Child, Youth, and School Services partner to provide predictable, quality youth programs and introduce 4-H to Army installations worldwide. The partnership links resources of the Land Grant University Extension System to Army youth programs in pursuit of their common mission for positive youth development experiences for children and youth wherever they live.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816897/logos/army-cys-logo.webp",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816897/logos/partners/army-cys-logo.webp",
         "alt": "U.S. Army, Child, Youth and School Services logo"
       }
     ]
@@ -31,7 +31,7 @@
     "shortDescription": "In 2007, the U.S. Department of Agriculture, National Institute of Food and Agriculture, signed an agreement with the U.S. Navy Child and Youth Programs (CYP) to initiate the 4-H/Navy Youth Development Project to provide positive youth development experiences for Navy youth. This project is a collaboration of 4-H National Headquarters, 4-H faculty of Land Grant Universities, and Navy Child and Youth Programs staff.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542786191/logos/navy-cyp-logo-with-tagline.png",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542786191/logos/partners/navy-cyp-logo-with-tagline.png",
         "alt": "Navy CYP logo"
       }
     ]
@@ -42,11 +42,11 @@
     "shortDescription": "The Department of Defense (DoD) and the National Institute of Food and Agriculture (NIFA), U.S. Department of Agriculture (USDA) have successfully engaged in collaborations that support military children and youth experiencing the deployment of a parent or loved one. The goal of the project is to create environments and offer experiences to military children and youth to promote their growth and development, and help them cope with the stresses of deployment and reintegration.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828830/logos/department-of-defense-logo.jpg",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828830/logos/partners/department-of-defense-logo.jpg",
         "alt": "Department Of Defense logo"
       },
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828832/logos/usda-logo.jpg",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542828832/logos/partners/usda-logo.jpg",
         "alt": "USDA logo"
       }
     ]
@@ -57,7 +57,7 @@
     "shortDescription": "View resources to get connected with the National Guard Bureau.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816694/logos/national-guard-bureau-logo.png",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816694/logos/partners/national-guard-bureau-logo.png",
         "alt": "National Guard Bureau Logo"
       }
     ]
@@ -68,7 +68,7 @@
     "shortDescription": "The army national guard is the Army's branch of the US national guard.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/army-national-guard-logo.png",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/army-national-guard-logo.png",
         "alt": "Army National Guard Logo"
       }
     ]
@@ -79,7 +79,7 @@
     "shortDescription": "The air national guard is the Air's branch of the US national guard.",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/air-national-guard-logo.png",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542816338/logos/partners/air-national-guard-logo.png",
         "alt": "Air National Guard Logo"
       }
     ]
@@ -90,15 +90,15 @@
     "shortDescription": "The Army, Navy, and Air Force reserves",
     "featuredImages": [
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911570/logos/army-reserve-logo.png",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911570/logos/partners/army-reserve-logo.png",
         "alt": "Army Reserve Logo"
       },
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911657/logos/navy-reserve-logo.png",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911657/logos/partners/navy-reserve-logo.png",
         "alt": "Navy Reserve Logo"
       },
       {
-        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911753/logos/air-force-reserve.png",
+        "url": "https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542911753/logos/partners/air-force-reserve.png",
         "alt": "Air Force Reserve Logo"
       }
     ]
