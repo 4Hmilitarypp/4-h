@@ -2,9 +2,10 @@ import { Link } from '@reach/router'
 import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
+import { Button } from '../components/Elements'
+import SignInModal from '../components/SignInModal'
 import DropdownBackground from './DropdownBackground'
 import LinkGroup from './LinkGroup'
-import SignInModal from './SignInModal'
 
 const DropdownLink: React.FC = props => <Link tabIndex={0} {...props} />
 
@@ -108,7 +109,9 @@ const Header: React.FC<RouteComponentProps> = () => {
             </StyledDropdownLink>
           </LinkGroup>
         </Links>
-        <SignInModal>Sign In</SignInModal>
+        <SignInModal>
+          <Button>Sign In</Button>
+        </SignInModal>
       </HeaderContainer>
     </>
   )

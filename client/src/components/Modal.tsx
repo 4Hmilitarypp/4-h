@@ -29,7 +29,7 @@ const Modal: React.FC<IProps> = ({ children, on, setOn }) => {
 export default Modal
 
 const ModalWrapper = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

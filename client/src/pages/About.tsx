@@ -2,6 +2,7 @@ import { Link as UnstyledLink, RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
 import { A, Heading, P, PageWrapper, Section, SubHeading } from '../components/Elements'
+import SignInModal from '../components/SignInModal'
 import { useHash } from '../hooks/hooks'
 
 const About: React.FC<RouteComponentProps> = () => {
@@ -69,7 +70,9 @@ const About: React.FC<RouteComponentProps> = () => {
           <LinksHeading>For extension 4-H military liaisons</LinksHeading>
           <Links>
             <Li>
-              <Link to="/find-a-liaison/">Sign into the Liaison Intranet</Link>
+              <SignInModal>
+                <Link as="span">Sign in as a Liaison</Link>
+              </SignInModal>
             </Li>
             <Li>
               <Link to="/educators/resources">View corporate reports</Link>
