@@ -1,0 +1,79 @@
+{
+  "name": "4h-military-partnership-cms",
+  "version": "0.7.1",
+  "private": false,
+  "proxy": "http://localhost:3333/",
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "axios": "^0.18.0",
+    "downshift": "^3.1.4",
+    "match-sorter": "^2.3.0",
+    "react": "^16.7.0-alpha.0",
+    "react-cache": "^2.0.0-alpha.1",
+    "react-dom": "^16.7.0-alpha.0",
+    "react-scripts": "^2.1.1",
+    "react-spring": "^6.1.8",
+    "styled-components": "^4.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --coverage",
+    "deploy": "now && now alias"
+  },
+  "devDependencies": {
+    "@types/faker": "^4.1.4",
+    "@types/jest": "^23.3.8",
+    "@types/match-sorter": "^2.2.0",
+    "@types/node": "^10.12.10",
+    "@types/reach__router": "^1.2.0",
+    "@types/react": "^16.7.6",
+    "@types/react-dom": "^16.0.9",
+    "@types/styled-components": "^4.1.1",
+    "faker": "^4.1.0",
+    "jest-watch-typeahead": "^0.2.0",
+    "react-testing-library": "^5.3.0",
+    "stylelint": "^9.8.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.16.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.6"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json",
+      "html"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "!/**/*.d.ts",
+      "!src/registerServiceWorker.ts",
+      "!src/index.tsx",
+      "!src/utils/mixins.ts",
+      "!src/utils/api.ts",
+      "!src/types.ts",
+      "!src/components/Icon.tsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 95,
+        "branches": 75,
+        "functions": 95,
+        "lines": 95
+      }
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
