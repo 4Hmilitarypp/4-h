@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { fireEvent, flushEffects, render } from 'react-testing-library'
-jest.mock('../../utils/api')
+jest.mock('../../../utils/api')
 // import api from '../../utils/api'
-import staticLiaisons from '../../assets/data/staticLiaisons.json'
-import { ILiaison } from '../../types'
-import generate from '../../utils/generate'
+import staticLiaisons from '../../../assets/data/staticLiaisons.json'
+import { ILiaison } from '../../../types'
+import generate from '../../../utils/generate'
 import FindLiaison, { filterLiaisons } from '../FindLiaison'
 
 interface IProps {
@@ -32,6 +32,33 @@ describe('integration', () => {
     const kansasItem = getByText(kansasLiaison.region)
     fireEvent.click(kansasItem)
     expect(getByText(kansasLiaison.name as string)).toBeDefined()
+  })
+})
+
+describe('controller button', () => {
+  it('should open menu if button is clicked and menu is closed and vice versa', () => {
+    const { getByTestId, queryByText } = setup()
+    const controllerButton = getByTestId('controller-button')
+    expect(queryByText(/colorado/i)).toBeNull()
+
+    fireEvent.click(controllerButton)
+    expect(queryByText(/colorado/i)).toBeDefined()
+    fireEvent.click(controllerButton)
+    expect(queryByText(/colorado/i)).toBeNull()
+  })
+  it('should clear the selection and open the menu if the button is clicked and there is an item selected', () => {
+    const { getByTestId, getByText, getByLabelText, queryByText } = setup()
+    const controllerButton = getByTestId('controller-button')
+    const input = getByLabelText(/Enter a state or US Province/i) as HTMLInputElement
+
+    fireEvent.click(controllerButton)
+    expect(queryByText(/california/i)).toBeDefined()
+    fireEvent.click(getByText(/colorado/i))
+    expect(queryByText(/california/i)).toBeNull()
+    expect(input.value).toMatch(/colorado/i)
+    fireEvent.click(controllerButton)
+    expect(input.value).toBe('')
+    expect(queryByText(/california/i)).toBeDefined()
   })
 })
 

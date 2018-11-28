@@ -8,6 +8,7 @@
     "axios": "^0.18.0",
     "downshift": "^3.1.4",
     "html-react-parser": "^0.4.7",
+    "lodash": "^4.17.11",
     "match-sorter": "^2.3.0",
     "react": "^16.7.0-alpha.0",
     "react-cache": "^2.0.0-alpha.1",
@@ -26,7 +27,9 @@
   },
   "devDependencies": {
     "@types/faker": "^4.1.4",
+    "@types/googlemaps": "^3.30.16",
     "@types/jest": "^23.3.8",
+    "@types/lodash": "^4.14.118",
     "@types/match-sorter": "^2.2.0",
     "@types/node": "^10.12.10",
     "@types/reach__router": "^1.2.0",
@@ -60,12 +63,13 @@
       "!src/utils/mixins.ts",
       "!src/utils/api.ts",
       "!src/types.ts",
-      "!src/components/Icon.tsx"
+      "!src/components/Icon.tsx",
+      "!src/pages/findLiaison/LiaisonMap.tsx"
     ],
     "coverageThreshold": {
       "global": {
         "statements": 95,
-        "branches": 75,
+        "branches": 80,
         "functions": 95,
         "lines": 95
       }

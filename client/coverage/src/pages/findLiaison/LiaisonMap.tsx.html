@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/pages/findLiaison/LiaisonMap.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/pages/findLiaison</a> LiaisonMap.tsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60.71% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>17/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">57.14% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60.71% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>17/28</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as React from 'react'
+import styled from 'styled-components/macro'
+&nbsp;
+interface IProps {
+  setSelectedState: (s: string) =&gt; void
+}
+&nbsp;
+const LiaisonMap: React.FC&lt;IProps&gt; = ({ setSelectedState }) =&gt; {
+  React.useEffect(() =&gt; {
+    loadGoogleMaps()
+  }, [])
+&nbsp;
+  const createGoogleScript = () =&gt; {
+    const googleScript = document.createElement('script')
+    googleScript.src = `https://maps.googleapis.com/maps/api/js?key=${
+      process.env.REACT_APP_GOOGLE_KEY
+    }&amp;callback=initMap`
+    googleScript.async = true
+    googleScript.defer = true
+    googleScript.type = 'text/javascript'
+    document.body.appendChild(googleScript)
+  }
+&nbsp;
+  const initMap = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    const map: google.maps.Map = <span class="cstat-no" title="statement not covered" >new (window as any).google.maps.Map(document.getElementById('map'), {</span>
+      center: { lat: 37.8382828927639, lng: -98.67535077253888 },
+      styles: mapStyles,
+      zoom: 4.3,
+    })
+    const geocoder = <span class="cstat-no" title="statement not covered" >new google.maps.Geocoder()</span>
+<span class="cstat-no" title="statement not covered" >    map.addListener('click', <span class="fstat-no" title="function not covered" >e </span>=&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      geocoder.geocode({ location: e.latLng }, <span class="fstat-no" title="function not covered" >(r</span>esults, status) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        if (status === google.maps.GeocoderStatus.OK) {</span>
+<span class="cstat-no" title="statement not covered" >          if (results[0] &amp;&amp; results[results.length - 2]) {</span>
+            const stateObject = <span class="cstat-no" title="statement not covered" >results[results.length - 2]</span>
+            const stateAbbr = <span class="cstat-no" title="statement not covered" >stateObject.address_components[0].short_name</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            map.fitBounds(stateObject.geometry.bounds)</span>
+<span class="cstat-no" title="statement not covered" >            map.panTo(stateObject.geometry.location)</span>
+<span class="cstat-no" title="statement not covered" >            setSelectedState(stateAbbr)</span>
+          }
+        }
+      })
+    })
+  }
+&nbsp;
+  const loadGoogleMaps = () =&gt; {
+    createGoogleScript()
+    ;(window as any).initMap = initMap
+  }
+&nbsp;
+  return &lt;Map id="map" /&gt;
+}
+&nbsp;
+export default LiaisonMap
+&nbsp;
+const Map = styled.div`
+  margin: 6rem 0;
+  height: 50rem;
+  width: 100%;
+`
+&nbsp;
+const mapStyles = [
+  {
+    featureType: 'road',
+    stylers: [
+      {
+        visibility: 'off',
+      },
+    ],
+  },
+]
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 29 2018 01:29:33 GMT-0600 (Central Standard Time)
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>

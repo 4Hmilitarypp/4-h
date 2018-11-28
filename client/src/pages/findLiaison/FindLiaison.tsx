@@ -1,19 +1,19 @@
 import { RouteComponentProps } from '@reach/router'
 import Downshift from 'downshift'
+import { find, map, sortBy } from 'lodash'
 import matchSorter from 'match-sorter'
 import * as React from 'react'
 import styled from 'styled-components/macro'
-// import api from '../utils/api'
-import staticLiaisons from '../assets/data/staticLiaisons.json'
-import { InputGroup, PageWrapper } from '../components/Elements'
-import Icon from '../components/Icon'
-import { useHash } from '../hooks/hooks'
-// import Input from '../components/Input'
-import { ILiaison } from '../types'
-import { elevation } from '../utils/mixins'
+import staticLiaisons from '../../assets/data/staticLiaisons.json'
+import { InputGroup, PageWrapper } from '../../components/Elements'
+import Icon from '../../components/Icon'
+import { useHash } from '../../hooks/hooks'
+import { ILiaison } from '../../types'
+import { elevation } from '../../utils/mixins'
+import LiaisonMap from './LiaisonMap'
 
 export const filterLiaisons = (liaisons: ILiaison[], query: string | null): ILiaison[] => {
-  if (!query) return liaisons.sort((a, b) => (a.region > b.region ? 1 : -1))
+  if (!query) return liaisons
   const result = matchSorter(liaisons, query, {
     keys: ['region', { minRanking: matchSorter.rankings.EQUAL, key: 'abbreviation' }],
   })
@@ -23,17 +23,20 @@ export const filterLiaisons = (liaisons: ILiaison[], query: string | null): ILia
 const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
   const [liaisons, setLiaisons] = React.useState<ILiaison[] | undefined>(undefined)
   const [selectedLiaison, setSelectedLiaison] = React.useState<ILiaison | undefined>(undefined)
-  /* stylelint-disable-next-line */
   const findRef = React.useRef<HTMLHeadingElement>(null)
   useHash({ refToFocus: findRef, hash: '#search', location })
 
   React.useEffect(() => {
-    /* api.liaisons
-      .get()
-      .then(({ liaisons: restLiaisons }) => setLiaisons(restLiaisons))
-      .catch((error: Error) => console.error(error)) */
-    setLiaisons(staticLiaisons)
+    const sortedLiaisons = sortBy(staticLiaisons, ['region'])
+    setLiaisons(sortedLiaisons)
   }, [])
+
+  const setSelectedState = (stateAbbr: string) => {
+    if (liaisons) {
+      const liaison = find(liaisons, l => l.abbreviation === stateAbbr)
+      setSelectedLiaison(liaison)
+    }
+  }
 
   return (
     <PageWrapper>
@@ -82,6 +85,7 @@ const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
                         openMenu()
                       }
                     }}
+                    data-testid="controller-button"
                   >
                     <Icon name="arrow" isOpen={isOpen} />
                   </ControllerButton>
@@ -89,7 +93,7 @@ const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
               </FindInputGroup>
               {isOpen ? (
                 <Menu {...getMenuProps({ style: { height: 250, overflowY: 'scroll' } })}>
-                  {filterLiaisons(liaisons, inputValue).map((liaison: ILiaison, index) => {
+                  {map(filterLiaisons(liaisons, inputValue), (liaison, index) => {
                     return (
                       <Item
                         key={liaison.region.toLowerCase()}
@@ -121,6 +125,7 @@ const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
           </ResultContent>
         </Liaison>
       )}
+      {liaisons && <LiaisonMap setSelectedState={setSelectedState} />}
     </PageWrapper>
   )
 }
