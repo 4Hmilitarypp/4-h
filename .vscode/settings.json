@@ -1,3 +1,6 @@
 {
-  "eslint.enable": false
+	"search.exclude": {
+		"/backend/server/dist/**": true
+	},
+	"eslint.enable": false
 }

@@ -1,0 +1,6 @@
+{
+  "eslint.enable": false,
+  "search.exclude": {
+    "**/dist/**/*": true
+  }
+}
