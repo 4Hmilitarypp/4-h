@@ -6,7 +6,11 @@ import Header from './header/Header'
 import About from './pages/About'
 import About4HClub from './pages/About4HClub'
 import ContactUs from './pages/ContactUs'
-import Educator from './pages/Educator'
+import Educator from './pages/educator/Educator'
+import EducatorHome from './pages/educator/EducatorHome'
+import Research from './pages/educator/Research'
+import Resources from './pages/educator/Resources'
+import Webinars from './pages/educator/Webinars'
 import Events from './pages/Events'
 import FindLiaison from './pages/findLiaison/FindLiaison'
 import GetInvolved4HClub from './pages/GetInvolved4HClub'
@@ -49,7 +53,12 @@ class App extends React.Component<{}, {}> {
             <Photos path="/photos" />
             <About4HClub path="/4-h-club" />
             <GetInvolved4HClub path="/4-h-club/get-involved" />
-            <Educator path="/educators" />
+            <Educator path="/educators">
+              <EducatorHome path="/" />
+              <Webinars path="/webinars" />
+              <Research path="/research" />
+              <Resources path="/resources" />
+            </Educator>
             <FindLiaison path="/find-a-liaison" />
             <ContactUs path="contact-us" />
             <NotFound default={true} />

@@ -76,15 +76,19 @@ const Header: React.FC<RouteComponentProps> = () => {
             </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="Educators" manageBackground={backgroundManagement}>
-            <StyledDropdownLink to="/educators/#webinars">
+            <StyledDropdownLink to="/educators">
+              <LinkTitle>General Info</LinkTitle>
+              <LinkDescription>Learn about your role as an educator</LinkDescription>
+            </StyledDropdownLink>
+            <StyledDropdownLink to="/educators/webinars">
               <LinkTitle>Webinars</LinkTitle>
               <LinkDescription>Watch recorded webinars</LinkDescription>
             </StyledDropdownLink>
-            <StyledDropdownLink to="/educators/#research">
+            <StyledDropdownLink to="/educators/research">
               <LinkTitle>Research</LinkTitle>
               <LinkDescription>Read up on some relevant research articles</LinkDescription>
             </StyledDropdownLink>
-            <StyledDropdownLink to="/educators" hash="resources">
+            <StyledDropdownLink to="/educators/resources">
               <LinkTitle>Resources</LinkTitle>
               <LinkDescription>Find the educating resources you need</LinkDescription>
             </StyledDropdownLink>
