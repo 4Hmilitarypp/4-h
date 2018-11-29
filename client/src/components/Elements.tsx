@@ -1,3 +1,4 @@
+import { Link as UnstyledLink } from '@reach/router'
 import styled from 'styled-components/macro'
 import { IHeadingProps } from '../types'
 import { elevation, transition } from '../utils/mixins'
@@ -59,4 +60,39 @@ export const Button = styled.button`
 
 export const SecondaryButton = styled(Button)`
   background: ${props => props.theme.secondary};
+`
+
+export const SubHeading = styled.h2`
+  color: ${props => props.theme.secondary};
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 2.7rem;
+`
+export const Section = styled.section`
+  max-width: 85rem;
+  margin: 0 auto;
+`
+export const A = styled.a`
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: ${props => props.theme.primaryText};
+  &:hover {
+    opacity: 0.8;
+  }
+`
+export const Link = styled(UnstyledLink)`
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: ${props => props.theme.primaryText};
+  &:hover {
+    opacity: 0.8;
+  }
+`
+export const P = styled.p`
+  padding-bottom: 1.5rem;
+  font-size: 1.8rem;
+  &:last-child {
+    padding-bottom: 0;
+  }
 `
