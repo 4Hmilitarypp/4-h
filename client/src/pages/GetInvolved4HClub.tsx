@@ -1,12 +1,12 @@
 import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
-import { Heading, PageWrapper } from '../components/Elements'
+import { A, Heading, P, PageWrapper, SubHeading } from '../components/Elements'
 
 const About4HClub: React.FC<RouteComponentProps> = () => (
   <MyPageWrapper>
     <MyHeading center={true}>Getting Involved with 4-H Club</MyHeading>
-    <Section>
+    <ImageSection>
       <Text>
         <SubHeading>Join 4-H</SubHeading>
         <P>
@@ -38,8 +38,8 @@ const About4HClub: React.FC<RouteComponentProps> = () => (
         </P>
       </Text>
       <SectionImage src="https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542863544/pictures-from-states/NSA_Annapolis.jpg" />
-    </Section>
-    <Section>
+    </ImageSection>
+    <ImageSection>
       <SectionImage src="https://res.cloudinary.com/four-hmpp/image/upload/f_auto,q_auto/v1542863550/pictures-from-states/NSA_Annapolis1.jpg" />
       <Text>
         <SubHeading>Become a 4-H Volunteer</SubHeading>
@@ -54,7 +54,7 @@ const About4HClub: React.FC<RouteComponentProps> = () => (
           learn about how to apply and receive training to be a 4-H volunteer.
         </P>
       </Text>
-    </Section>
+    </ImageSection>
   </MyPageWrapper>
 )
 export default About4HClub
@@ -65,7 +65,7 @@ const MyPageWrapper = styled(PageWrapper)`
 const MyHeading = styled(Heading)`
   padding-bottom: 4rem;
 `
-const Section = styled.section`
+const ImageSection = styled.section`
   display: flex;
   justify-content: center;
   padding: 3rem 0;
@@ -77,25 +77,4 @@ const SectionImage = styled.img`
 `
 const Text = styled.div`
   margin: 0 2rem;
-`
-const SubHeading = styled.h3`
-  color: ${props => props.theme.secondary};
-  padding-bottom: 1rem;
-  text-align: center;
-  font-size: 2.7rem;
-`
-const P = styled.p`
-  padding-bottom: 1.5rem;
-  font-size: 1.8rem;
-  &:last-child {
-    padding-bottom: 0;
-  }
-`
-const A = styled.a`
-  font-weight: bold;
-  font-size: 1.8rem;
-  color: ${props => props.theme.primaryText};
-  &:hover {
-    opacity: 0.8;
-  }
 `

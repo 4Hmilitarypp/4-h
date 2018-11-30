@@ -1,13 +1,11 @@
 import { navigate as reachNavigate, RouteComponentProps } from '@reach/router'
 // @ts-ignore
 import Parser from 'html-react-parser'
-// @ts-ignore
-import domToReact from 'html-react-parser/lib/dom-to-react'
 import * as React from 'react'
 import styled from 'styled-components/macro'
 // import api from '../../utils/api'
 import staticPartners from '../assets/data/staticPartners.json'
-import { Heading, PageWrapper } from '../components/Elements'
+import { DynamicSection, Heading, PageWrapper, SubHeading } from '../components/Elements'
 import Icon from '../components/Icon'
 import { IPartner } from '../types'
 import { elevation, transition } from '../utils/mixins'
@@ -31,16 +29,6 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
     setPartner(partnerResult)
   }, [])
 
-  const parserOptions = {
-    replace: ({ attribs, children }: any) => {
-      if (!attribs) return
-      if (children[0].parent.name === 'p') return <P>{domToReact(children, parserOptions)}</P>
-      else if (children[0].parent.name === 'a') {
-        return <A href={children[0].parent.attribs.href}>{children[0].data}</A>
-      } else return domToReact(children, parserOptions)
-    },
-  }
-
   return (
     <PageWrapper>
       {partner ? (
@@ -54,7 +42,7 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
             <div style={{ width: 209 }} />
           </HeaderWrapper>
           <Hero>
-            <Description>{Parser(partner.longDescription, parserOptions)}</Description>
+            <Description>{Parser(partner.longDescription)}</Description>
             <HeroImages>
               {partner.featuredImages.map(image => (
                 <FeaturedImage key={image.url} src={image.url} alt={image.alt || `${partner.title} Logo`} />
@@ -62,17 +50,17 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
             </HeroImages>
           </Hero>
           {partner.images && (
-            <Section>
+            <ListWrapper>
               <SubHeading>Image Gallery</SubHeading>
               <ImageGallery>
                 {partner.images.map(image => (
                   <Img key={image.url} src={image.url} alt={image.alt} />
                 ))}
               </ImageGallery>
-            </Section>
+            </ListWrapper>
           )}
           {partner.annualReports && (
-            <Section>
+            <ListWrapper>
               <SubHeading>Annual Reports</SubHeading>
               <Reports>
                 {partner.annualReports.map(report => (
@@ -84,10 +72,10 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
                   </ReportItem>
                 ))}
               </Reports>
-            </Section>
+            </ListWrapper>
           )}
           {partner.videoReports && (
-            <Section>
+            <ListWrapper>
               <SubHeading>Video Reports</SubHeading>
               <Reports>
                 {partner.videoReports.map(report => (
@@ -99,7 +87,7 @@ const Partner: React.FC<IProps> = ({ slug, navigate }) => {
                   </ReportItem>
                 ))}
               </Reports>
-            </Section>
+            </ListWrapper>
           )}
         </PartnerWrapper>
       ) : (
@@ -137,11 +125,11 @@ const FeaturedImage = styled.img`
   margin: 1rem;
   object-fit: contain;
 `
-const Description = styled.div`
+const Description = styled(DynamicSection)`
   padding-right: 3rem;
   padding-top: 2rem;
 `
-const Section = styled.section`
+const ListWrapper = styled.section`
   padding: 2rem 0;
 `
 const Reports = styled.ul`
@@ -201,12 +189,6 @@ const Img = styled.img`
   height: 30rem;
   margin: 1rem;
 `
-const SubHeading = styled.h2`
-  color: ${props => props.theme.secondary};
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  text-align: center;
-`
 const BackButton = styled.button`
   align-items: center;
   background: none;
@@ -230,19 +212,4 @@ const BackText = styled.span`
   font-size: 1.8rem;
   font-weight: 600;
   margin-left: 1rem;
-`
-const A = styled.a`
-  font-weight: bold;
-  font-size: 1.8rem;
-  color: ${props => props.theme.primaryText};
-  &:hover {
-    opacity: 0.8;
-  }
-`
-const P = styled.p`
-  padding-bottom: 1.5rem;
-  font-size: 1.8rem;
-  &:last-child {
-    padding-bottom: 0;
-  }
 `

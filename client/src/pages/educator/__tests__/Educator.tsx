@@ -1,20 +1,21 @@
 import * as React from 'react'
 import { render } from 'react-testing-library'
-import EducatorHome from '../EducatorHome'
+import Educator from '../Educator'
 
 interface IProps {
-  value: string
+  children: any
 }
 
 const setup = (propOverrides?: IProps) => {
   const props = Object.assign({}, propOverrides)
 
-  const utils = render(<EducatorHome {...props} />)
+  const utils = render(<Educator {...props} />)
   return {
     ...utils,
   }
 }
 
-it('should render', () => {
-  setup()
+it('should render the children given', () => {
+  const { getByText } = setup({ children: <h1>Hello</h1> })
+  expect(getByText(/Hello/i)).toBeDefined()
 })

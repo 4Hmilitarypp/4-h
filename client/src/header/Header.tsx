@@ -28,7 +28,7 @@ const Header: React.FC<RouteComponentProps> = () => {
             <TitleWords>4-H Military</TitleWords>
             <TitleWords>Partnerships</TitleWords>
           </Title>
-          <Logo src="https://res.cloudinary.com/four-hmpp/image/upload/v1542786198/logos/4h-logo.png" />
+          <Logo src="https://res.cloudinary.com/four-hmpp/image/upload/v1542786198/logos/4h-logo.png" alt="4-H Logo" />
         </Heading>
         <Links ref={navRef as any}>
           <LinkGroup title="About Us" manageBackground={backgroundManagement}>
@@ -131,8 +131,9 @@ const Heading = styled(Link)`
 const Title = styled.div`
   font-weight: bold;
 `
-const TitleWords = styled.div`
+const TitleWords = styled.span`
   line-height: 1.4;
+  display: block;
 `
 const Logo = styled.img`
   height: 4.2rem;

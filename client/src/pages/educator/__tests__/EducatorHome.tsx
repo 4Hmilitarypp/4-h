@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { render } from 'react-testing-library'
-import Webinars from '../Webinars'
+import EducatorHome from '../EducatorHome'
 
 interface IProps {
   value: string
@@ -9,7 +9,7 @@ interface IProps {
 const setup = (propOverrides?: IProps) => {
   const props = Object.assign({}, propOverrides)
 
-  const utils = render(<Webinars {...props} />)
+  const utils = render(<EducatorHome {...props} />)
   return {
     ...utils,
   }

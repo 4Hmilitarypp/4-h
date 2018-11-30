@@ -13,6 +13,7 @@ const Icon = ({ name, color, circleColor, arrowColor, height, isOpen, className,
     case 'delete':
       return (
         <svg
+          className={className}
           role="button"
           tabIndex={0}
           aria-labelledby="delete-icon-title"
@@ -35,6 +36,7 @@ const Icon = ({ name, color, circleColor, arrowColor, height, isOpen, className,
     case 'arrow':
       return (
         <svg
+          className={className}
           viewBox="0 0 20 20"
           preserveAspectRatio="none"
           width={16}
@@ -50,6 +52,7 @@ const Icon = ({ name, color, circleColor, arrowColor, height, isOpen, className,
     case 'x':
       return (
         <svg
+          className={className}
           viewBox="0 0 20 20"
           preserveAspectRatio="none"
           width={12}
@@ -63,13 +66,13 @@ const Icon = ({ name, color, circleColor, arrowColor, height, isOpen, className,
       )
     case 'close-circle':
       return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
           <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm1.41-1.41A8 8 0 1 0 15.66 4.34 8 8 0 0 0 4.34 15.66zm9.9-8.49L11.41 10l2.83 2.83-1.41 1.41L10 11.41l-2.83 2.83-1.41-1.41L8.59 10 5.76 7.17l1.41-1.41L10 8.59l2.83-2.83 1.41 1.41z" />
         </svg>
       )
     case 'close':
       return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
           <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
         </svg>
       )

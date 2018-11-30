@@ -25,7 +25,7 @@ export default class User extends React.Component<IProps, IState> {
     return api.auth.me().then(
       ({ user }: { user?: IUser }) => this.reset({ user }),
       ({ response }: IApiError) => {
-        return this.reset({ error: response.data.message })
+        return this.reset({ error: response.data.message || response.statusText })
       }
     )
   }
@@ -36,7 +36,7 @@ export default class User extends React.Component<IProps, IState> {
       .login({ username, password })
       .then(
         ({ user }: { user: IUser }) => this.reset({ user }),
-        ({ response }: IApiError) => this.reset({ error: response.data.message })
+        ({ response }: IApiError) => this.reset({ error: response.data.message || response.statusText })
       )
   }
 
@@ -44,7 +44,10 @@ export default class User extends React.Component<IProps, IState> {
     this.reset({ pending: true })
     return api.auth
       .logout()
-      .then(() => this.reset(), ({ response }: IApiError) => this.reset({ error: response.data.message }))
+      .then(
+        () => this.reset(),
+        ({ response }: IApiError) => this.reset({ error: response.data.message || response.statusText })
+      )
   }
 
   register = ({ username, password }: { username: string; password: string }) => {
@@ -53,7 +56,7 @@ export default class User extends React.Component<IProps, IState> {
       .register({ username, password })
       .then(
         ({ user }: { user: IUser }) => this.reset({ user }),
-        ({ response }: IApiError) => this.reset({ error: response.data.message })
+        ({ response }: IApiError) => this.reset({ error: response.data.message || response.statusText })
       )
   }
 

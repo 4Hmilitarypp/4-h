@@ -107,9 +107,9 @@ const Error = styled.h4`
   text-align: center;
   margin: -1rem;
 `
-
 const MyButton = styled(SecondaryButton)`
   padding: 1rem 2.5rem;
+  font-size: 1.8rem;
   margin-top: 1rem;
   align-self: center;
 `

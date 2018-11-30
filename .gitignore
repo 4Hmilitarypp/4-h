@@ -3,6 +3,9 @@
 # dependencies
 node_modules
 
+# code coverage
+client/coverage
+
 # production
 build
 

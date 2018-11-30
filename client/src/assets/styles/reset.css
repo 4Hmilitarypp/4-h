@@ -155,13 +155,19 @@ h3 {
 h4 {
   font-size: 1.8rem;
   font-weight: 600;
+  font-family: Raleway;
 }
 h5 {
   font-size: 1.5rem;
   font-weight: 600;
+  font-family: Raleway;
 }
 h6 {
   font-size: 1.35rem;
+  font-family: Raleway;
+}
+button {
+  font-size: 1.6rem;
 }
 body,
 input,
