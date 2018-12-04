@@ -107,7 +107,7 @@ describe('interaction', () => {
     const { controller, children } = await setup()
 
     const fakeError: IApiError = {
-      response: { data: { message: 'failure' }, status: 500, statusText: 'Internal Server Error.' },
+      response: { data: {}, status: 500, statusText: 'Internal Server Error.' },
     }
     const logoutMock = api.auth.logout as any
     logoutMock.mockImplementationOnce(() => Promise.reject(fakeError))
@@ -125,7 +125,7 @@ describe('interaction', () => {
     )
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        error: fakeError.response.data.message,
+        error: fakeError.response.statusText,
         pending: false,
         user: undefined,
       })
