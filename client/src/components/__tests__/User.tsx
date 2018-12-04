@@ -103,6 +103,34 @@ describe('interaction', () => {
       })
     )
   })
+  it('should rerender with errors when logout fails', async () => {
+    const { controller, children } = await setup()
+
+    const fakeError: IApiError = {
+      response: { data: { message: 'failure' }, status: 500, statusText: 'Internal Server Error.' },
+    }
+    const logoutMock = api.auth.logout as any
+    logoutMock.mockImplementationOnce(() => Promise.reject(fakeError))
+
+    controller.logout().catch((err: IApiError) => err)
+
+    expect(logoutMock).toHaveBeenCalledTimes(1)
+    await wait(() => expect(children).toHaveBeenCalledTimes(2))
+    expect(children).toHaveBeenCalledWith(
+      expect.objectContaining({
+        error: undefined,
+        pending: true,
+        user: undefined,
+      })
+    )
+    expect(children).toHaveBeenLastCalledWith(
+      expect.objectContaining({
+        error: fakeError.response.data.message,
+        pending: false,
+        user: undefined,
+      })
+    )
+  })
 
   it('should return the user if they registered successfully', async () => {
     const { controller } = await setup()
@@ -152,5 +180,32 @@ describe('lifecycle', () => {
     await setup()
     const meMock = api.auth.me as any
     expect(meMock).toHaveBeenCalledTimes(1)
+  })
+  it('should rerender with errors when mount fails', async () => {
+    const fakeError: IApiError = {
+      response: { data: { message: 'failure' }, status: 500, statusText: 'Internal Server Error.' },
+    }
+    const meMock = api.auth.me as any
+    meMock.mockImplementationOnce(() => Promise.reject(fakeError))
+    const children = jest.fn(() => null)
+
+    render(<User>{children}</User>)
+
+    expect(meMock).toHaveBeenCalledTimes(1)
+    await wait(() => expect(children).toHaveBeenCalledTimes(3))
+    expect(children).toHaveBeenCalledWith(
+      expect.objectContaining({
+        error: undefined,
+        pending: true,
+        user: undefined,
+      })
+    )
+    expect(children).toHaveBeenLastCalledWith(
+      expect.objectContaining({
+        error: fakeError.response.data.message,
+        pending: false,
+        user: undefined,
+      })
+    )
   })
 })

@@ -81,7 +81,7 @@ export const A = styled.a`
     opacity: 0.8;
   }
 `
-export const Link = styled(UnstyledLink)`
+export const Link = styled(props => <UnstyledLink {...props} />)`
   font-weight: 500;
   font-size: 1.8rem;
   color: ${props => props.theme.primaryText};
