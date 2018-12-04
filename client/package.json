@@ -64,7 +64,9 @@
       "!src/utils/api.ts",
       "!src/types.ts",
       "!src/components/Icon.tsx",
-      "!src/pages/findLiaison/LiaisonMap.tsx"
+      "!src/pages/findLiaison/LiaisonMap.tsx",
+      "!src/components/Elements.tsx",
+      "!src/components/Icons.tsx"
     ],
     "coverageThreshold": {
       "global": {
