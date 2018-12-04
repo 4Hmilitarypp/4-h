@@ -147,14 +147,6 @@ const Section = styled.section`
 const Reports = styled.ul`
   padding-left: 4rem;
 `
-
-const Link = styled.a`
-  font-weight: 500;
-  color: ${props => props.theme.secondary};
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`
 const ReportItem = styled.li`
   margin: 3rem 2rem;
 `
