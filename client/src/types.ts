@@ -59,8 +59,8 @@ export interface IHeadingProps
       React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>,
       any
     > {
-  color?: string
   center?: boolean
+  color?: string
 }
 
 export interface IForm {
@@ -72,39 +72,46 @@ export interface IForm {
 }
 
 export interface IContactUsEmail {
-  name: string
   email: string
   message: string
+  name: string
 }
 
 export interface IImage {
-  url: string
   alt?: string
+  url: string
 }
 
 export interface ILink {
+  linkText: string
   title: string
   url: string
-  linkText: string
 }
 
 export interface IPartnerSection {
-  title: string
   featuredImages: IImage[]
   shortDescription: string
   slug: string
+  title: string
 }
 
 interface IReport {
+  image: string
   title: string
   url: string
-  image: string
 }
 export interface IPartner extends IPartnerSection {
-  longDescription: string
-  images?: IImage[]
   annualReports?: IReport[]
+  images?: IImage[]
+  longDescription: string
   videoReports?: IReport[]
+}
+
+export interface IWebinar {
+  category: string
+  description: string
+  title: string
+  webinarLink: string
 }
 
 /**

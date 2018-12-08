@@ -5,7 +5,7 @@ import matchSorter from 'match-sorter'
 import * as React from 'react'
 import styled from 'styled-components/macro'
 import staticLiaisons from '../../assets/data/staticLiaisons.json'
-import { InputGroup, PageWrapper } from '../../components/Elements'
+import { InputGroup, P, PageWrapper, SubHeading } from '../../components/Elements'
 import Icon from '../../components/Icon'
 import { useHash } from '../../hooks/hooks'
 import { ILiaison } from '../../types'
@@ -40,7 +40,7 @@ const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
 
   return (
     <PageWrapper>
-      <Heading>What Is A Liaison?</Heading>
+      <SubHeading>What Is A Liaison?</SubHeading>
       <P>
         4-H military liaisons are the official point of contact for all 4-H military programs. A liaison serves as a
         professional connection between various military branches and the 4-H organization.
@@ -49,7 +49,7 @@ const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
         Liaisons coordinate support to 4-H clubs on and off military installations that serve military youth. They also
         educate university staff and citizens about the unique challenges faced by military children.
       </P>
-      <Heading ref={findRef as any}>Find A Liaison</Heading>
+      <SubHeading ref={findRef as any}>Find A Liaison</SubHeading>
       {liaisons && (
         <Downshift
           itemToString={item => (item ? item.region : '')}
@@ -131,18 +131,6 @@ const FindLiaison: React.FC<RouteComponentProps> = ({ location }) => {
 }
 export default FindLiaison
 
-const Heading = styled.h2`
-  color: ${props => props.theme.secondary};
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  text-align: center;
-`
-const P = styled.p`
-  padding-bottom: 1.5rem;
-  max-width: 85rem;
-  margin: 0 auto;
-  font-size: 1.8rem;
-`
 const Menu = styled.ul`
   ${elevation(3)};
   padding: 1.5rem 0;

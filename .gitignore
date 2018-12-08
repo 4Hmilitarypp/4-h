@@ -6,6 +6,9 @@ node_modules/
 # code coverage
 coverage/
 
+# code coverage
+client/coverage
+
 # production
 build
 

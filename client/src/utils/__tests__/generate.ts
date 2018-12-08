@@ -25,7 +25,7 @@ describe('generate.liaison', () => {
 })
 
 describe('generate.liaisons', () => {
-  it('should return a liaison with the given region', () => {
+  it('should return multiple liaisons', () => {
     const res = generate.liaisons(2)
     expect(res.length).toBe(2)
     expect(res).toEqual(
@@ -50,9 +50,47 @@ describe('generate.liaisons', () => {
 })
 
 describe('generate.SignInForm', () => {
-  const res = generate.signInForm()
-  expect(res).toEqual({
-    email: expect.any(String),
-    password: expect.any(String),
+  it('should return the correct sign in form', () => {
+    const res = generate.signInForm()
+    expect(res).toEqual({
+      email: expect.any(String),
+      password: expect.any(String),
+    })
+  })
+})
+
+describe('generate.webinar', () => {
+  it('should return a correct webinar', () => {
+    const res = generate.webinar(100)
+    expect(res).toEqual({
+      category: expect.any(String),
+      description: expect.any(String),
+      title: expect.any(String),
+      webinarLink: expect.any(String),
+    })
+    expect(res.description.split(' ').length).toBe(100)
+  })
+})
+
+describe('generate.webinars', () => {
+  it('should return multiple webinars', () => {
+    const res = generate.webinars(2)
+    expect(res.length).toBe(2)
+    expect(res).toEqual(
+      expect.arrayContaining([
+        {
+          category: expect.any(String),
+          description: expect.any(String),
+          title: expect.any(String),
+          webinarLink: expect.any(String),
+        },
+        {
+          category: expect.any(String),
+          description: expect.any(String),
+          title: expect.any(String),
+          webinarLink: expect.any(String),
+        },
+      ])
+    )
   })
 })

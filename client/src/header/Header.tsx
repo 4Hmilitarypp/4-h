@@ -28,7 +28,7 @@ const Header: React.FC<RouteComponentProps> = () => {
             <TitleWords>4-H Military</TitleWords>
             <TitleWords>Partnerships</TitleWords>
           </Title>
-          <Logo src="https://res.cloudinary.com/four-hmpp/image/upload/v1542786198/logos/4h-logo.png" />
+          <Logo src="https://res.cloudinary.com/four-hmpp/image/upload/v1542786198/logos/4h-logo.png" alt="4-H Logo" />
         </Heading>
         <Links ref={navRef as any}>
           <LinkGroup title="About Us" manageBackground={backgroundManagement}>
@@ -76,15 +76,19 @@ const Header: React.FC<RouteComponentProps> = () => {
             </StyledDropdownLink>
           </LinkGroup>
           <LinkGroup title="Educators" manageBackground={backgroundManagement}>
-            <StyledDropdownLink to="/educators/#webinars">
+            <StyledDropdownLink to="/educators">
+              <LinkTitle>General Info</LinkTitle>
+              <LinkDescription>Learn about your role as an educator</LinkDescription>
+            </StyledDropdownLink>
+            <StyledDropdownLink to="/educators/webinars">
               <LinkTitle>Webinars</LinkTitle>
               <LinkDescription>Watch recorded webinars</LinkDescription>
             </StyledDropdownLink>
-            <StyledDropdownLink to="/educators/#research">
+            <StyledDropdownLink to="/educators/research">
               <LinkTitle>Research</LinkTitle>
               <LinkDescription>Read up on some relevant research articles</LinkDescription>
             </StyledDropdownLink>
-            <StyledDropdownLink to="/educators" hash="resources">
+            <StyledDropdownLink to="/educators/resources">
               <LinkTitle>Resources</LinkTitle>
               <LinkDescription>Find the educating resources you need</LinkDescription>
             </StyledDropdownLink>
@@ -127,8 +131,9 @@ const Heading = styled(Link)`
 const Title = styled.div`
   font-weight: bold;
 `
-const TitleWords = styled.div`
+const TitleWords = styled.span`
   line-height: 1.4;
+  display: block;
 `
 const Logo = styled.img`
   height: 4.2rem;
