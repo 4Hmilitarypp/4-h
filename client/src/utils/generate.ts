@@ -21,7 +21,7 @@ const generate = {
     category: faker.commerce.productAdjective(),
     description: faker.lorem.words(descriptionLength),
     title: faker.company.catchPhrase(),
-    webinarLink: faker.internet.domainName(),
+    url: faker.internet.domainName(),
   }),
   webinars: (length: number): IWebinar[] => Array.from({ length }, () => generate.webinar(100)),
 }

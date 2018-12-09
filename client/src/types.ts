@@ -111,7 +111,7 @@ export interface IWebinar {
   category: string
   description: string
   title: string
-  webinarLink: string
+  url: string
 }
 
 /**

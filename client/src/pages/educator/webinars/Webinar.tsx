@@ -11,7 +11,7 @@ interface IProps {
 }
 
 const Webinar: React.FC<IProps> = ({ webinar }) => {
-  const { title, webinarLink, description } = webinar
+  const { title, url, description } = webinar
   const descriptionRef = React.useRef<HTMLDivElement>(null)
   const [trimDescription, setTrimDescription] = React.useState(false)
   const [showExpand, setShowExpand] = React.useState(false)
@@ -39,7 +39,7 @@ const Webinar: React.FC<IProps> = ({ webinar }) => {
         <MySubHeading center={false} as="h3">
           {title}
         </MySubHeading>
-        <ViewButton as="a" className="override" href={webinarLink}>
+        <ViewButton as="a" className="override" href={url}>
           View the Webinar
         </ViewButton>
       </WebinarTitle>

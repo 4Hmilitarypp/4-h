@@ -66,7 +66,7 @@ describe('generate.webinar', () => {
       category: expect.any(String),
       description: expect.any(String),
       title: expect.any(String),
-      webinarLink: expect.any(String),
+      url: expect.any(String),
     })
     expect(res.description.split(' ').length).toBe(100)
   })
@@ -82,13 +82,13 @@ describe('generate.webinars', () => {
           category: expect.any(String),
           description: expect.any(String),
           title: expect.any(String),
-          webinarLink: expect.any(String),
+          url: expect.any(String),
         },
         {
           category: expect.any(String),
           description: expect.any(String),
           title: expect.any(String),
-          webinarLink: expect.any(String),
+          url: expect.any(String),
         },
       ])
     )
