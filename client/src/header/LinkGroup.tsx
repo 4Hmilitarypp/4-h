@@ -1,3 +1,4 @@
+import { Link } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
 import { IBackgroundCoords, Omit } from '../types'
@@ -9,9 +10,10 @@ interface IProps {
     navRef: React.RefObject<HTMLDivElement>
   }
   title: string
+  to: string
 }
 
-const UnstyledLinkGroup: React.FC<IProps> = ({ children, manageBackground, title, ...rest }) => {
+const UnstyledLinkGroup: React.FC<IProps> = ({ children, manageBackground, title, to, ...rest }) => {
   const liRef = React.useRef<HTMLLIElement>(null)
   const dropdownRef = React.useRef<HTMLDivElement>(null)
 
@@ -76,14 +78,16 @@ const UnstyledLinkGroup: React.FC<IProps> = ({ children, manageBackground, title
       onMouseEnter={showDropDownAndBackground}
       onMouseLeave={hideDropdownAndBackground}
     >
-      <DropdownTitle tabIndex={0}>{title}</DropdownTitle>
+      <DropdownTitle to={to} tabIndex={0}>
+        {title}
+      </DropdownTitle>
       <Dropdown ref={dropdownRef as any}>{children}</Dropdown>
     </li>
   )
 }
 
-const DropdownTitle = styled.span`
-  color: ${props => props.theme.secondary};
+const DropdownTitle = styled(Link)`
+  color: ${(props: any) => props.theme.secondary};
   font-size: 1.7rem;
   margin: 2rem 0.5rem;
   padding: 0 0.5rem;

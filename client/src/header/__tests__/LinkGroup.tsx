@@ -19,7 +19,7 @@ const setup = (propOverrides?: {}) => {
     setOpen: jest.fn(),
   }
 
-  const utils = render(<LinkGroup title="test" manageBackground={manageBackground} />)
+  const utils = render(<LinkGroup title="test" to="/test" manageBackground={manageBackground} />)
   const liNode = utils.getByText('test')
 
   return {

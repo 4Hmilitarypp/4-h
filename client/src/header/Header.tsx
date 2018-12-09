@@ -31,7 +31,7 @@ const Header: React.FC<RouteComponentProps> = () => {
           <Logo src="https://res.cloudinary.com/four-hmpp/image/upload/v1542786198/logos/4h-logo.png" alt="4-H Logo" />
         </Heading>
         <Links ref={navRef as any}>
-          <LinkGroup title="About Us" manageBackground={backgroundManagement}>
+          <LinkGroup title="About Us" to="/about" manageBackground={backgroundManagement}>
             <StyledDropdownLink to="/about">
               <LinkTitle>About Us</LinkTitle>
               <LinkDescription>Learn about the 4-H Military Partnership</LinkDescription>
@@ -41,13 +41,13 @@ const Header: React.FC<RouteComponentProps> = () => {
               <LinkDescription>Learn about our history</LinkDescription>
             </StyledDropdownLink>
           </LinkGroup>
-          <LinkGroup title="Partners" manageBackground={backgroundManagement}>
+          <LinkGroup title="Partners" to="/partners" manageBackground={backgroundManagement}>
             <StyledDropdownLink to="/partners">
               <LinkTitle>Partners List</LinkTitle>
               <LinkDescription>View all of the partners affiliated with 4-H</LinkDescription>
             </StyledDropdownLink>
           </LinkGroup>
-          <LinkGroup title="Events" manageBackground={backgroundManagement}>
+          <LinkGroup title="Events" to="/events/" manageBackground={backgroundManagement}>
             <StyledDropdownLink to="/events/#past-events">
               <LinkTitle>Past Events</LinkTitle>
               <LinkDescription>Check out some of the past events we have sponsored</LinkDescription>
@@ -61,7 +61,7 @@ const Header: React.FC<RouteComponentProps> = () => {
               <LinkDescription>View some of the photos taken at our fun events</LinkDescription>
             </StyledDropdownLink>
           </LinkGroup>
-          <LinkGroup title="4-H Club" manageBackground={backgroundManagement}>
+          <LinkGroup title="4-H Club" to="/4-h-club" manageBackground={backgroundManagement}>
             <StyledDropdownLink to="/4-h-club">
               <LinkTitle>About</LinkTitle>
               <LinkDescription>Learn about 4-H club in general</LinkDescription>
@@ -75,7 +75,7 @@ const Header: React.FC<RouteComponentProps> = () => {
               <LinkDescription>Check out the 4-H official website</LinkDescription>
             </StyledDropdownLink>
           </LinkGroup>
-          <LinkGroup title="Educators" manageBackground={backgroundManagement}>
+          <LinkGroup title="Educators" to="/educators" manageBackground={backgroundManagement}>
             <StyledDropdownLink to="/educators">
               <LinkTitle>General Info</LinkTitle>
               <LinkDescription>Learn about your role as an educator</LinkDescription>
@@ -93,7 +93,7 @@ const Header: React.FC<RouteComponentProps> = () => {
               <LinkDescription>Find the educating resources you need</LinkDescription>
             </StyledDropdownLink>
           </LinkGroup>
-          <LinkGroup title="Connect" manageBackground={backgroundManagement}>
+          <LinkGroup title="Connect" to="/find-a-liaison" manageBackground={backgroundManagement}>
             <StyledDropdownLink to="/find-a-liaison">
               <LinkTitle>What is a Liaison?</LinkTitle>
               <LinkDescription>Learn about how our liaisons can assist you</LinkDescription>
