@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 
 const Header: React.FC<RouteComponentProps> = () => (
   <HeaderContainer>
-    <Text>Created by Alex Wendte</Text>
+    <Text>4-H Military Partnerships</Text>
   </HeaderContainer>
 )
 export default Header

@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-// import RedisStore from 'connect-redis'
+// TODO import RedisStore from 'connect-redis'
 import cors from 'cors'
 import express from 'express'
 import session from 'express-session'
@@ -10,7 +10,7 @@ import path from 'path'
 import * as errorHandlers from './handlers/errorHandlers'
 import setupRoutes from './routes'
 
-// RedisStore(session)
+// TODO RedisStore(session)
 // initialize the application and create the routes
 const app = express()
 
@@ -19,7 +19,10 @@ app.use(helmet())
 
 // allow cors so my site can communicate with my back-end.
 // ! Configure this in production so only correct people can access it
-app.use(cors())
+const corsOptions = {
+  origin: [process.env.FRONTEND_URL || '', process.env.NODE_ENV === 'dev' ? 'http://localhost:2323' : ''],
+}
+app.use(cors(corsOptions))
 
 // so that I can look at the body of post requests
 app.use(express.json())
@@ -28,7 +31,7 @@ app.use(express.urlencoded({ extended: true }))
 // Exposes a bunch of methods for validating data. Used heavily on userController.validateRegister
 app.use(expressValidator())
 
-// const store = new (RedisStore as any)({ host: 'localhost', pass: process.env.REDIS_PASSWORD || 'secret', port: 6379 })
+// TODO const store = new (RedisStore as any)({ host: 'localhost', pass: process.env.REDIS_PASSWORD || 'secret', port: 6379 })
 
 // Sessions allow us to store data on visitors from request to request
 // This keeps users logged in and allows us to send flash messages
@@ -61,9 +64,9 @@ app.use((req, res, next) => {
 setupRoutes(app)
 
 // Serve any static files
-app.use(express.static(path.resolve(__dirname, './ui/build'), { maxAge: '30d' }))
+app.use(express.static(path.resolve(__dirname, '../../client/build'), { maxAge: '30d' }))
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, './ui/build/index.html'), (err: Error) => {
+  res.sendFile(path.join(__dirname, '../../client/build/index.html'), (err: Error) => {
     if (err) {
       res.status(500).send(err)
     }

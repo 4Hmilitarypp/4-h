@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom'
 import App from './App'
 import './assets/styles/index.css'
 import './assets/styles/reset.css'
-// import registerServiceWorker from './registerServicesWorker'
+import api from './utils/api'
 
+api.init()
 ReactDOM.render(<App />, document.getElementById('root'))
-// registerServiceWorker()
