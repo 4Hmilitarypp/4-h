@@ -1,21 +1,40 @@
 import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
+import { Button } from './components/Elements'
 
 const Header: React.FC<RouteComponentProps> = () => (
-  <HeaderContainer>
-    <Text>4-H Military Partnerships</Text>
-  </HeaderContainer>
+  <HeaderWrapper>
+    <Logo src="https://res.cloudinary.com/four-hmpp/image/upload/v1542786198/logos/4h-logo.png" alt="4-H Logo" />
+    <Title>4-H Military Partnerships</Title>
+    <User>
+      <Name>Alex Wendte</Name>
+      <Button>Logout</Button>
+    </User>
+  </HeaderWrapper>
 )
 export default Header
 
-const HeaderContainer = styled.div`
+const HeaderWrapper = styled.header`
   background: ${props => props.theme.primary};
   color: ${props => props.theme.white};
-  padding: 1rem;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
 `
 
-const Text = styled.h2`
-  font-size: 1.6rem;
-  text-align: center;
+const Logo = styled.img`
+  height: 4rem;
+  padding-left: 2rem;
+`
+
+const Title = styled.h1`
+  font-size: 2.4rem;
+`
+
+const User = styled.div``
+const Name = styled.span`
+  padding-right: 2rem;
 `
