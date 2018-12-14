@@ -2,6 +2,7 @@ import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
 import { Link } from './components/Elements'
+import { elevation } from './utils/mixins'
 
 const Sidebar: React.FC<RouteComponentProps> = ({ location: { pathname: path = '' } = {} }) => {
   return (
@@ -57,6 +58,7 @@ const SidebarWrapper = styled.div`
   height: 100%;
   width: 24rem;
   position: fixed;
+  ${elevation(3)};
 `
 
 const LinkGroup = styled.nav`

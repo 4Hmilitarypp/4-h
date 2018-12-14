@@ -4,7 +4,7 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components/macr
 import Header from './Header'
 import Camps from './pages/Camps'
 import Home from './pages/Home'
-import Liaisons from './pages/Liaisons'
+import Liaisons from './pages/liaisons/Liaisons'
 import Media from './pages/Media'
 import NotFound from './pages/NotFound'
 import Partners from './pages/Partners'
@@ -68,7 +68,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: Rubik, arial, sans-serif;
   }
   input,
-  textarea {
+  textarea, button {
     font-family: Rubik, arial;
   }
 `

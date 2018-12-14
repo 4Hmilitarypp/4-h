@@ -45,7 +45,7 @@ export const Button: any = styled.button`
   background: ${props => props.theme.buttonBackground};
   border: none;
   padding: 1rem 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   ${elevation(3)};
   ${transition({ prop: 'all', time: 0.15, name: 'easeOutQuart' })};
   &:hover,

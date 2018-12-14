@@ -1,9 +1,10 @@
 import { RouteComponentProps } from '@reach/router'
 import * as React from 'react'
 import styled from 'styled-components/macro'
-import { Heading } from '../components/Elements'
-import { ILiaison } from '../sharedTypes'
-import api from '../utils/api'
+import { Heading } from '../../components/Elements'
+import { ILiaison } from '../../sharedTypes'
+import api from '../../utils/api'
+import Liaison from './Liaison'
 
 const Liaisons: React.FC<RouteComponentProps> = () => {
   const [liaisons, setLiaisons] = React.useState<ILiaison[] | undefined>(undefined)
@@ -16,11 +17,11 @@ const Liaisons: React.FC<RouteComponentProps> = () => {
   }, [])
   return (
     <LiaisonsContainer>
-      <Heading>Liaisons</Heading>
+      <LiaisonHeading>Liaisons</LiaisonHeading>
       {liaisons && (
         <ul>
           {liaisons.map(l => (
-            <li key={l.region}>{l.name}</li>
+            <Liaison key={l.region} liaison={l} />
           ))}
         </ul>
       )}
@@ -29,6 +30,8 @@ const Liaisons: React.FC<RouteComponentProps> = () => {
 }
 export default Liaisons
 
-const LiaisonsContainer = styled.div`
-  padding: 2rem;
+const LiaisonsContainer = styled.div``
+const LiaisonHeading = styled(Heading)`
+  padding-left: 4rem;
+  padding-bottom: 4rem;
 `
